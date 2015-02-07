@@ -81,13 +81,21 @@ Do not place the .htpasswd in the `/var/www` folder. You can create an [.htpassw
 
 ## Importing users
 
+If everything went well you can now access the WhatsSpy Public interface through your webserver. At this point you need to import users that you want to track:
+
+* Either add any contact manually by using "Add contact by phonenumber".
+* Or use "import google Contacts" which is an script that retrieves all your Google Contacts and gives an SQL statement which insert all users into the database.
+
+Once you have inserted these users they won't show up automatically. They need to be verified by the tracker which is not running yet.
 
 ## Starting the tracker
+Once you have populated your database with some users, you can start the tracker.
+
 1. start a new `screen` (if you do not have screen: `sudo apt-get install screen` or similar for other distro's)
 2. execute `which php`.
-3. switch to the location where you installed WhatsSpy and use previous command to form the new command: `-location-of-php- tracker.php`
+3. switch to the location where you installed WhatsSpy and use previous command to form the new command: `-output-which- tracker.php`
 4. If all runs well it starts spamming information about privacy options and polls.
-5. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen).
+5. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
 
 ## Other information
 
