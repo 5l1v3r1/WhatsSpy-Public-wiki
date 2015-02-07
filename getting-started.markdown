@@ -20,7 +20,12 @@ For the tracker to work you need an secret which is retrieved from either your P
 * Jailbroken iPhone users: You can retrieve using [this script](https://www.mgp25.com/utilidadiPhone/).
 * Rooted Android phones can use the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) to retrieve the secret. 
 
-Write this secret down, which is required later.
+In order to retrieve the scecret you need to follow these steps:
+
+* Insert your (new) secondary SIM card in your phone and boot it up.
+* Re-install Whatsapp on your phone and activate it using the new phonenumber.
+* Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret. Write this secret down, which is required later. 
+* Insert your normal SIM card and repeat step 2 and 3.
 
 ## Installation
 
