@@ -35,7 +35,9 @@ Write this secret down, which is required later.
 * Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
 * You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
 
-4. You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. For Nginx add the following:
+### Webserver
+
+You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. For Nginx add the following:
 
 
 
@@ -56,7 +58,7 @@ location /whatsspy/ {
 ``` 
 *assuming you installed whatsspy in a subdirectory called `/whatsspy` in the web directory `/var/www/` (default setup)*
 
-4. Check folder rights: both the folder `$whatsspyProfilePath` and `api/` needs write access 
+** Check folder rights: both the folder `$whatsspyProfilePath` and `api/` needs write access! **
 
 ## Importing users
 
