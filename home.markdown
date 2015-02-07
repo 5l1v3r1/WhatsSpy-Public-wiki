@@ -7,7 +7,7 @@ WhatsSpy is an web-oriented application that tracks every move of whoever you li
 * Privacy settings
 * Status messages
 
-*For reference view [this blog article about the Whatsapp Privacy problem](https://maikel.pro/blog/).*
+*For reference view [this blog article about the Whatsapp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/).*
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
