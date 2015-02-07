@@ -30,10 +30,10 @@ Write this secret down, which is required later.
 
 2. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
-..* Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
-..* Your secondary Whatsapp account's phone number in 'number' and the retrieved secret in 'secret' (look at requirements if not retrieved yet) in `$whatsappAuth`.
-..* Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
-..* You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
+* Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
+* Your secondary Whatsapp account's phone number in 'number' and the retrieved secret in 'secret' (look at requirements if not retrieved yet) in `$whatsappAuth`.
+* Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
+* You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
 
 3. Setup Nginx
 
@@ -43,3 +43,13 @@ Write this secret down, which is required later.
 
 
 ## Starting the tracker
+
+## Other information
+
+### IPTables rules
+
+Whatsapp uses an HTTPS connection which is going outbound:
+
+`iptables -A OUTPUT -o eth0 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT`
+
+`iptables -A INPUT -i eth0 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT`
