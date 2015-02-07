@@ -36,7 +36,7 @@ Write this secret down, which is required later.
 * You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
 
 
-**Check folder rights: both the folder `$whatsspyProfilePath` and `api/` needs write access!**
+**Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
 ### Webserver
 
 You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. 
