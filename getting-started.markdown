@@ -25,7 +25,7 @@ In order to retrieve the scecret you need to follow these steps:
 * Insert your (new) secondary SIM card in your phone and boot it up.
 * Re-install Whatsapp on your phone and activate it using the new phonenumber.
 * Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret. Write this secret down, which is required later. 
-* Insert your normal SIM card and repeat step 2 and 3.
+* Insert your normal SIM card and repeat step 2.
 
 ## Installation
 
