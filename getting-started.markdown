@@ -58,6 +58,8 @@ location /whatsspy/ {
 ``` 
 *assuming you installed whatsspy in a subdirectory called `/whatsspy` in the web directory `/var/www/` (default setup)*
 
+You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/).
+
 ** Check folder rights: both the folder `$whatsspyProfilePath` and `api/` needs write access! **
 
 ## Importing users
