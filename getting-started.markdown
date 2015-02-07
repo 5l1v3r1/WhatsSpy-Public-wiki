@@ -35,11 +35,14 @@ Write this secret down, which is required later.
 * Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
 * You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
 
+
+**Check folder rights: both the folder `$whatsspyProfilePath` and `api/` needs write access!**
 ### Webserver
 
-You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. For Nginx add the following:
+You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. 
 
-
+#### Nginx
+For Nginx add the following:
 
 ```
 location /whatsspy/ {
@@ -58,9 +61,18 @@ location /whatsspy/ {
 ``` 
 *assuming you installed whatsspy in a subdirectory called `/whatsspy` in the web directory `/var/www/` (default setup)*
 
-You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/).
+You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). Make sure you reload the configuration by executing `service nginx reload`.
 
-** Check folder rights: both the folder `$whatsspyProfilePath` and `api/` needs write access! **
+#### Apache
+create an `.htaccess` in the whatsspy folder and add the following:
+
+```
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /var/.htpasswd
+Require valid-user
+```
+Do not place the .htpasswd in the `/var/www` folder. You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). The `api/` folder is protected by default.
 
 ## Importing users
 
@@ -73,6 +85,10 @@ You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generat
 5. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen).
 
 ## Other information
+
+### Troubleshooting
+
+You can ask questions in the issues system.
 
 ### IPTables rules
 
