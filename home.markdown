@@ -1,4 +1,4 @@
-# What is WhatsSpy Public
+# What is WhatsSpy Public?
 
 WhatsSpy is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that Whatsapp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. Once it's running it keeps track of the following activities:
 
@@ -11,7 +11,7 @@ WhatsSpy is an web-oriented application that tracks every move of whoever you li
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
-[Click here for installation requirements & instructions](getting-started).
+Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber and some other resources. [Click here for installation requirements & instructions](getting-started).
 
 ## Screenshots
 #### Overview page:
