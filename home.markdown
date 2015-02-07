@@ -11,7 +11,9 @@ WhatsSpy is an web-oriented application that tracks every move of whoever you li
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
-Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber and some other resources. [Click here for installation requirements & instructions](getting-started).
+Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber and some other resources. 
+
+[Click here for installation requirements & instructions](getting-started).
 
 ## Screenshots
 #### Overview page:
