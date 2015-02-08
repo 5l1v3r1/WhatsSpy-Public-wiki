@@ -35,8 +35,9 @@ In order to retrieve the scecret you need to follow these steps:
 ```
 CREATE ROLE whatsspy LOGIN
   PASSWORD ''
-  NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
+  NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;```
 
+```
 CREATE DATABASE whatsspy
   WITH OWNER = whatsspy
        ENCODING = 'UTF8'
@@ -44,7 +45,8 @@ CREATE DATABASE whatsspy
        LC_COLLATE = 'en_US.UTF-8'
        LC_CTYPE = 'en_US.UTF-8'
        CONNECTION LIMIT = -1;
-GRANT ALL ON DATABASE whatsspy TO whatsspy;```
+GRANT ALL ON DATABASE whatsspy TO whatsspy;
+```
 
 2. Open `api/whatsspy-db.sql` and execute these SQL commands in your new database (with PgAdmin for example). 
 
