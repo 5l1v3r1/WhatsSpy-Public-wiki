@@ -25,6 +25,10 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 ![screencapture-maikel-pro-whatsspy-compare](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/c92d1328fd/screencapture-maikel-pro-whatsspy-compare.png)
 
 
+## Notes
+
+This project is **NOT** used to "show off" my PHP or web-application skills. It started as a hobby project under my own running dashboard. This dashboard is over 5 years old, so a lot of code is not up to standard (next to the fact there is almost no VCS or dependency management). I might adress these issues later.
+
 ## License (CC-BY-NC)
 
 THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
