@@ -35,9 +35,7 @@ In order to retrieve the scecret you need to follow these steps:
 ```
 CREATE ROLE whatsspy LOGIN
   PASSWORD ''
-  NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;```
-
-```
+  NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
 CREATE DATABASE whatsspy
   WITH OWNER = whatsspy
        ENCODING = 'UTF8'
