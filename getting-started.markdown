@@ -33,9 +33,12 @@ In order to retrieve the scecret you need to follow these steps:
 
 2. Log in your PostgreSQL database and create an new DB and user for WhatsSpy Public **(Insert password for DB user)**:
 ```
+-- Execute command by command!
+-- cmd 1
 CREATE ROLE whatsspy LOGIN
   PASSWORD ''
   NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
+-- cmd 2
 CREATE DATABASE whatsspy
   WITH OWNER = whatsspy
        ENCODING = 'UTF8'
@@ -43,6 +46,7 @@ CREATE DATABASE whatsspy
        LC_COLLATE = 'en_US.UTF-8'
        LC_CTYPE = 'en_US.UTF-8'
        CONNECTION LIMIT = -1;
+-- cmd 3
 GRANT ALL ON DATABASE whatsspy TO whatsspy;
 ```
 
