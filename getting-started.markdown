@@ -109,8 +109,7 @@ Once you have inserted these users they won't show up automatically. They need t
 Once you have populated your database with some users, you can start the tracker.
 
 1. start a new `screen` (if you do not have screen: `sudo apt-get install screen` or similar for other distro's)
-2. execute `which php`.
-3. switch to the location where you installed WhatsSpy and use previous command to form the new command: `-output-which- tracker.php`
+3. cd to the install of the Whatsspy (for example `/var/www/whatsspy/`) and execute `\`which php\` api/tracker.php`.
 4. If all runs well it starts spamming information about privacy options and polls.
 5. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
 
