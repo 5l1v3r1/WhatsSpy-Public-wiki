@@ -31,7 +31,23 @@ In order to retrieve the scecret you need to follow these steps:
 
 1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`).
 
-2. Open `api/whatsspy-db.sql` and execute these SQL commands in your PostgreSQL database (for example with PgAdmin). **Don't forget** to fill in an password for the `whatsspy` user.
+2. Log in your PostgreSQL database and create an new DB and user for WhatsSpy Public **(Insert password for DB user)**:
+```
+CREATE ROLE whatsspy LOGIN
+  PASSWORD ''
+  NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
+
+CREATE DATABASE whatsspy
+  WITH OWNER = whatsspy
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'en_US.UTF-8'
+       LC_CTYPE = 'en_US.UTF-8'
+       CONNECTION LIMIT = -1;
+GRANT ALL ON DATABASE whatsspy TO whatsspy;
+```
+
+2. Open `api/whatsspy-db.sql` and execute these SQL commands in your new database (with PgAdmin for example). 
 
 3. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
