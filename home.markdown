@@ -27,7 +27,7 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 
 ## Notes
 
-This project is **NOT** used to "show off" my PHP or web-application skills. It started as a hobby project under my own running dashboard. This dashboard is over 5 years old, so a lot of code is not up to standard (next to the fact there is almost no VCS or dependency management). I might adress these issues later.
+This project is **NOT** used to "show off" my PHP or web-application skills. It started as a hobby project under my own running dashboard. This dashboard is over 4 years old, so a lot of code is not up to standard (next to the fact there is almost no VC or dependency management or error management). I might adress these issues later.
 
 ## License (CC-BY-NC)
 
