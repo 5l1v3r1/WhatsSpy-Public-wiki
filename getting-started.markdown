@@ -44,8 +44,7 @@ CREATE DATABASE whatsspy
        LC_COLLATE = 'en_US.UTF-8'
        LC_CTYPE = 'en_US.UTF-8'
        CONNECTION LIMIT = -1;
-GRANT ALL ON DATABASE whatsspy TO whatsspy;
-```
+GRANT ALL ON DATABASE whatsspy TO whatsspy;```
 
 2. Open `api/whatsspy-db.sql` and execute these SQL commands in your new database (with PgAdmin for example). 
 
