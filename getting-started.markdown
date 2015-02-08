@@ -120,6 +120,11 @@ Once you have populated your database with some users, you can start the tracker
 
 You can ask questions in the issues system.
 
+### Error Reporting
+
+The application does not proper report errors. This needs to be done in an update coming soon.
+
+
 ### IPTables rules
 
 Whatsapp uses an HTTPS connection which is going outbound:
