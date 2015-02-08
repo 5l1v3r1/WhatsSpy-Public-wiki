@@ -7,6 +7,8 @@ WhatsSpy Public is an web-oriented application that tracks every move of whoever
 * Privacy settings
 * Status messages
 
+I made this project for you to realise how broken the privacy options actually are. It just started out as experimenting with Whatsapp to build an Bot, but I was stunned when I realised someone could abuse this "online" feauture of Whatsapp to track anyone.
+
 *For reference view [this blog article about the Whatsapp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/).*
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
