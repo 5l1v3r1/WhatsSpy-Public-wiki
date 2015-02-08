@@ -111,7 +111,8 @@ Once you have populated your database with some users, you can start the tracker
 1. start a new `screen` (if you do not have screen: `sudo apt-get install screen` or similar for other distro's)
 3. cd to the install of the Whatsspy (for example `/var/www/whatsspy/`) and execute `` `which php` api/tracker.php``.
 4. If all runs well it starts spamming information about privacy options and polls.
-5. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
+5. It keeps polling every 2 seconds and outputs any statusses on the screen.
+6. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
 
 ## Other information
 
