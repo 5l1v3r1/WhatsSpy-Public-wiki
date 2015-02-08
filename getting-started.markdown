@@ -48,7 +48,7 @@ CREATE DATABASE whatsspy
 GRANT ALL ON DATABASE whatsspy TO whatsspy;
 ```
 
-2. Open `api/whatsspy-db.sql` and execute these SQL commands in your new database (with PgAdmin for example). 
+2. Open `api/whatsspy-db.sql` and execute these SQL commands in your **whatsspy** database (with PgAdmin for example). 
 
 3. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
