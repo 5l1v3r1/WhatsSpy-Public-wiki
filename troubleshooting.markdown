@@ -2,6 +2,15 @@
 
 You can ask questions per mail.
 
+### Tracker says "An error occured, please check your configuration."
+
+You might have one of the following problems:
+
+* [PDO](http://php.net/manual/en/book.pdo.php) might be not installed in your PHP.
+* Your configuration might be wrong: Does the PostgreSQL username and password actually work? Does the user have rights to acces the tables? etc.
+
+Check the error logs at /var/log/nginx/error.log if you use Nginx. Apache would be roughly the same.
+
 ### Error Reporting
 
 The application does not proper report errors. This needs to be done in an update coming soon.
