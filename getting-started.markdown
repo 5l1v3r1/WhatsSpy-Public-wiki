@@ -105,7 +105,7 @@ If everything went well you can now access the WhatsSpy Public interface through
 * Either add any contact manually by using "Add contact by phonenumber".
 * Or use "import google Contacts" which is an script that retrieves all your Google Contacts and gives an SQL statement which insert all users into the database.
 
-Once you have inserted these users they won't show up automatically. They need to be verified by the tracker which is not running yet.
+**Once you have inserted these users they won't show up automatically. They need to be verified by the tracker which is not running yet.**
 
 ## Starting the tracker
 Once you have populated your database with some users, you can start the tracker.
