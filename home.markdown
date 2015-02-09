@@ -17,7 +17,7 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 
 [Click here for installation requirements & instructions](getting-started).
 
-**Update 1.0.1** : Small UI and Tracker fix. Just replace the `whatsspy/` folder with the one of the repository.
+**Update 1.0.2** : Small UI and Tracker fix. Shutdown the tracker (`screen -r` and press `Ctrl+c`). Replace the `whatsspy/` folder with the one of the repository and start the tracker back up again.
 
 ## Screenshots
 #### Overview page:
