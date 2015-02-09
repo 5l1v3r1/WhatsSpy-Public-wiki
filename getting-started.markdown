@@ -100,7 +100,7 @@ Do not place the .htpasswd in the `/var/www` folder. You can create an [.htpassw
 
 ## Importing users
 
-If everything went well you can now access the WhatsSpy Public interface through your webserver. At this point you need to import users that you want to track:
+If everything went well you can now access the WhatsSpy Public interface through your webserver. At this point you need to import users that you want to track ([Troubleshooting](troubleshooting)):
 
 * Either add any contact manually by using "Add contact by phonenumber".
 * Or use "import google Contacts" which is an script that retrieves all your Google Contacts and gives an SQL statement which insert all users into the database.
