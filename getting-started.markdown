@@ -57,6 +57,7 @@ GRANT ALL ON DATABASE whatsspy TO whatsspy;
 4. Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
 5. Insert your 'number' and 'secret' in `$whatsappAuth`. 
 6. **'number'** needs to be <countrycode><phonenumber> without any prefix 0's. 0031 06 xxx becomes 31 6 xxx (no 0's prefix for both the country code and phonenumber itself).
+7. **'number'** may only contain digits. No spaces, + is accepted. *Example: 316732174*
 7. Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
 8. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
 9. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
