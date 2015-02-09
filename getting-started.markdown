@@ -1,5 +1,5 @@
 # Getting started
-*This guide requires knowledge of Linux, PHP, PostgreSQL. There is no proper error reporting. I'm not responsible in any way if you screw it up!*
+*This guide requires knowledge of Linux, PHP, PostgreSQL. There is no proper error reporting. I'm not responsible in any way if you screw it up! WhatsApp might even block your account, I can't tell.*
 
 ## Requirements
 
@@ -28,6 +28,8 @@ In order to retrieve the scecret you need to follow these steps:
 * Insert your normal SIM card and repeat step 2.
 
 ## Installation
+
+**[Troubleshooting](troubleshooting)**
 
 1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`).
 
@@ -114,21 +116,3 @@ Once you have populated your database with some users, you can start the tracker
 5. It keeps polling every 2 seconds and outputs any statusses on the screen.
 6. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
 
-## Other information
-
-### Troubleshooting
-
-You can ask questions in the issues system.
-
-### Error Reporting
-
-The application does not proper report errors. This needs to be done in an update coming soon.
-
-
-### IPTables rules
-
-Whatsapp uses an HTTPS connection which is going outbound:
-
-`iptables -A OUTPUT -o eth0 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT`
-
-`iptables -A INPUT -i eth0 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT`
