@@ -2,12 +2,12 @@
 
 WhatsSpy Public is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that Whatsapp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. Once it's running it keeps track of the following activities:
 
-* Online/Offline status **(even with privacy options to nobody)**
+* Online/Offline status **(even with privacy options set to "nobody")**
 * Profile pictures
 * Privacy settings
 * Status messages
 
-I made this project for you to realise how broken the privacy options actually are. It just started out as experimenting with Whatsapp to build an Bot, but I was stunned when I realised someone could abuse this "online" feauture of Whatsapp to track anyone.  I could just say in like a blog article (like I tried but got marked as spam) that the privacy options are broken, but you wouldnt realise the impact it actually has.
+I made this project for you to realise how broken the privacy options actually are. It just started out as experimenting with Whatsapp to build an Bot, but I was stunned when I realised someone could abuse this "online" feauture of Whatsapp to track anyone.  I could just say this in like a blog article (like I tried but got marked as spam) that the privacy options are broken, but you wouldnt realise the impact it actually has.
 
 **For reference view [this blog article about the Whatsapp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/).**
 
@@ -16,6 +16,8 @@ I made this project for you to realise how broken the privacy options actually a
 Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber and some other resources. 
 
 [Click here for installation requirements & instructions](getting-started).
+
+**Update 1.0.1** : Small UI and Tracker fix. Just replace the `whatsspy/` folder with the one of the repository.
 
 ## Screenshots
 #### Overview page:
