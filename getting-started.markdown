@@ -1,5 +1,5 @@
 # Getting started
-*This guide requires average knowledge of webservers, phones and PHP.*
+*This guide requires knowledge of Linux, PHP, PostgreSQL. There is no proper error reporting. I'm not responsible in any way if you screw it up!*
 
 ## Requirements
 
