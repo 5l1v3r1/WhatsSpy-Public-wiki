@@ -13,7 +13,7 @@
 
 
 ## Notice
-WhatsSpy Public requires an **secondary Whatsapp account**. Once the tracker is started, you will not be able to recieve any messages over Whatsapp for this phonenumber. You can either try to register an non-Whatsapp used phonenumber ([with for example this script](https://github.com/mgp25/WhatsAPI-Official/blob/master/examples/exampleRegister.php)) or just by an 5 euro SIM Card and use this phonenumber for the tracker.
+WhatsSpy Public requires an **secondary Whatsapp account**. Once the tracker is started, you will not be able to recieve any messages over Whatsapp for this phonenumber. You can either try to register an non-Whatsapp used phonenumber [with for example this script](https://github.com/mgp25/WhatsAPI-Official/blob/master/examples/exampleRegister.php) or just buy an 5 euro SIM Card and use this phonenumber for the tracker.
 
 For the tracker to work you need an secret which is retrieved from either your Phone or the register script mentioned above. In case of phone registration you need an **jailbroken iPhone** or **rooted Android** device in order to retrieve the secret. 
 
