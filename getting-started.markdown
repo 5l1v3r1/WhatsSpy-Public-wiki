@@ -8,7 +8,7 @@
 * Secondary Whatsapp account (phonenumber that doesn't use Whatsapp)
 * Rooted Android phone OR Jailbroken iPhone OR PHP knowledge
 * Server/RPi that runs 24/7
-* Nginx or Apache with PHP (you can't host on simple webhoster, you need bash)
+* Nginx or Apache with PHP with PDO (php5-pgsql installed) (you can't host on simple webhoster, you need bash)
 * Postgresql
 
 
