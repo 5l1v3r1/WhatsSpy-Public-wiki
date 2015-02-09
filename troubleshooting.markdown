@@ -13,7 +13,7 @@ Check the error logs at /var/log/nginx/error.log if you use Nginx. Apache would 
 
 ### Error Reporting
 
-The application does not proper report errors. This needs to be done in an update coming soon.
+The application does not proper report errors. This needs to be done in an update.
 
 
 ### IPTables rules
