@@ -4,6 +4,8 @@ You can ask questions per mail.
 
 ### Tracker says "An error occured, please check your configuration."
 
+Check if `api/?whatsspy=getStats` (if you have installed WhatsSpy Public in `/whatsspy/` this should be `/whatsspy/api/?whatsspy=getStats`) gives any error.
+
 You might have one of the following problems:
 
 * [PDO](http://php.net/manual/en/book.pdo.php) might be not installed in your PHP.
