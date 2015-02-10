@@ -27,6 +27,8 @@ In order to retrieve the scecret you need to follow these steps:
 * Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret. Write this secret down, which is required later. 
 * Insert your normal SIM card and re-install WhatsApp for normal use.
 
+**[Do not use the WhatsApp application with the same phonenumber as the tracker, this will reset the connection creating an dead tracker.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
+
 ## Installation
 
 **[Troubleshooting](troubleshooting)**
