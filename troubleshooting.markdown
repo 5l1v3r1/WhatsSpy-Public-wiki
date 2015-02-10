@@ -14,6 +14,14 @@ You might have one of the following problems:
 
 Check the error logs at /var/log/nginx/error.log if you use Nginx. Apache would be roughly the same.
 
+### I have started the tracker but the UI shows "tracker offline"
+
+The UI comminucates with the tracker via PostgreSQL. If this problem occurs it means there is something going wrong with PostgreSQL:
+
+* Check if all the tables exist in the correct database `whatsspy`.
+* Make sure the connecting database user has rights to read/write/delete in any of these tables.
+* Make sure the PDO is working.
+
 ### Error Reporting
 
 The application does not proper report errors. This needs to be done in an update.
