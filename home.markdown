@@ -21,6 +21,8 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 
 **Update 1.0.1/1.0.2/1.0.3** : Small UI and Tracker fix. Shutdown the tracker (`screen -r` and press `Ctrl+c`). Replace the `whatsspy/` folder with the one of the repository and start the tracker back up again.
 
+**Update 1.0.4** : Status message bug fixed. Same rules apply as for 1.0.3
+
 ## Screenshots
 #### Overview page:
 ![screencapture-maikel-pro-whatsspy](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/3252b4b488/screencapture-maikel-pro-whatsspy.png)
