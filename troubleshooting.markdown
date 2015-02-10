@@ -14,6 +14,10 @@ You might have one of the following problems:
 
 Check the error logs at /var/log/nginx/error.log if you use Nginx. Apache would be roughly the same.
 
+### Broken pipe and it stops tracking
+
+Look at https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4
+
 ### I have started the tracker but the UI shows "tracker offline"
 
 The UI comminucates with the tracker via PostgreSQL. If this problem occurs it means there is something going wrong with PostgreSQL:
