@@ -11,6 +11,8 @@ I made this project for you to realise how broken the privacy options actually a
 
 **For reference view [this blog article about the Whatsapp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/).**
 
+**Follow [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates or future news**
+
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
 Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber and some other resources. 
