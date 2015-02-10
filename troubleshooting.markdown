@@ -24,7 +24,7 @@ The UI comminucates with the tracker via PostgreSQL. If this problem occurs it m
 
 ### Error Reporting
 
-The application does not proper report errors. This needs to be done in an update.
+The application does not proper report errors.
 
 
 ### IPTables rules
