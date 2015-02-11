@@ -25,6 +25,7 @@ The UI comminucates with the tracker via PostgreSQL. If this problem occurs it m
 * Check if all the tables exist in the correct database `whatsspy`.
 * Make sure the connecting database user has rights to read/write/delete in any of these tables.
 * Make sure the PDO is working.
+* Make sure you understand the difference between **schema** and **database**. You need to use the **database whatsspy** and **schema public**.
 
 ### Error Reporting
 
