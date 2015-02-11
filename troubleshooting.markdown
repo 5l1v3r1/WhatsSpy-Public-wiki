@@ -27,6 +27,21 @@ The UI comminucates with the tracker via PostgreSQL. If this problem occurs it m
 * Make sure the PDO is working.
 * Make sure you understand the difference between **schema** and **database**. You need to use the **database whatsspy** and **schema public**.
 
+To test any database issues try the following in the terminal:
+```
+psql -U whatsspy
+\connect whatsspy
+SELECT * FROM accounts;
+```
+If the last command returns that there is no relation called accounts you have probably inserted the tables in the wrong database.
+
+You can insert in the correct database by executing the following command:
+```
+cd <location of whatsspy>/api/
+psql -U whatsspy -d whatsspy -f whatsspy-db.sql
+```
+**For these commands to work you need to have created the database whatsspy**
+
 ### Error Reporting
 
 The application does not proper report errors.
