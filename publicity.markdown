@@ -9,6 +9,7 @@
 [Wired.de](https://www.wired.de/collection/latest/whatsapp-hacker-sicherheitsluecke-facebook-privatsph%C3%A4re-privacy-verschluesselung-safer-internet-day-google-hangouts)
 
 [Ibitimes.com](http://www.ibtimes.com/whatsapp-status-hack-lets-stalkers-track-you-bypassing-privacy-settings-1810890)
+
 [Alaraby.co.uk](http://www.alaraby.co.uk/medianews/2fbfbc18-dc93-44a4-a44e-b2859b7586b4)
 
 [th3professional](http://www.th3professional.com/2015/02/whatsspy-whatsapp.html?m=1)
