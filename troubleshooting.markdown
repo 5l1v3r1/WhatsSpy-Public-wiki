@@ -1,6 +1,6 @@
 # Troubleshooting
 
-You can ask questions per mail.
+You can create an account on this Gitlab server and ask questions in the Issues section of this project.
 
 ### Tracker says "An error occured, please check your configuration."
 
