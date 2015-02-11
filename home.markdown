@@ -32,6 +32,7 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 #### Compare page:
 ![screencapture-maikel-pro-whatsspy-compare](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/c92d1328fd/screencapture-maikel-pro-whatsspy-compare.png)
 
+[Publicity](publicity)
 
 ## Notes
 
