@@ -19,3 +19,5 @@
 [chip.de](http://www.chip.de/news/WhatsSpy-App-spioniert-Sie-aus-Dieses-Tool-weiss-fast-alles-ueber-WhatsApp_76371669.html)
 
 [heise.de](http://www.heise.de/security/meldung/WhatsSpy-Beliebige-WhatsApp-Nutzer-rund-um-die-Uhr-ueberwachen-2543968.html)
+
+And the list goes on...
