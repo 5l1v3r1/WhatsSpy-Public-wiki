@@ -26,6 +26,8 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 
 **Update 1.0.4** : Status message bug fixed. Same rules apply as for 1.0.3
 
+**Update 1.0.5** : Fixed broken pipe and added DB check at startup. Same rules apply as for 1.0.3
+
 ## Screenshots
 #### Overview page:
 ![screencapture-maikel-pro-whatsspy](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/3252b4b488/screencapture-maikel-pro-whatsspy.png)
