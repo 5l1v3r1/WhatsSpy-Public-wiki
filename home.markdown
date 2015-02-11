@@ -13,6 +13,8 @@ I made this project for you to realise how broken the privacy options actually a
 
 **Follow [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news**
 
+**If you have any problems/information requests you can contact me by email: maikeldus@hotmail.com**
+
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
 Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber and some other resources. 
