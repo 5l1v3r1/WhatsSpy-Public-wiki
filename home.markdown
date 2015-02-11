@@ -13,7 +13,9 @@ I made this project for you to realise how broken the privacy options actually a
 
 **Follow [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news**
 
-**If you have any information requests you can contact me by email: maikeldus@hotmail.com [Check out the publicity page](publicity)**
+**If you have any information requests you can contact me by email: maikeldus@hotmail.com**
+
+[Check out the publicity page](publicity)
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
