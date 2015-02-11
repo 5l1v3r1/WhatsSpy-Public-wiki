@@ -52,7 +52,7 @@ CREATE DATABASE whatsspy
 GRANT ALL ON DATABASE whatsspy TO whatsspy;
 ```
 
-3. Open `api/whatsspy-db.sql` and execute these SQL commands in your **whatsspy** database (with PgAdmin or step 3). 
+3. Open `api/whatsspy-db.sql` and execute these SQL commands in your **whatsspy** database (with PgAdmin or step 4). 
 
 4. **Update**: You can use the commmand 
 ```
