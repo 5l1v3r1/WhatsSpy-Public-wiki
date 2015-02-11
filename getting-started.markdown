@@ -54,8 +54,10 @@ GRANT ALL ON DATABASE whatsspy TO whatsspy;
 
 2. Open `api/whatsspy-db.sql` and execute these SQL commands in your **whatsspy** database (with PgAdmin for example). 
 
-3. **Update**: You can use the commmand `cd <location of whatsspy>/api/
-psql -U whatsspy -d whatsspy -f whatsspy-db.sql` to insert these SQL statements in the correct database.
+3. **Update**: You can use the commmand 
+```cd <location of whatsspy>/api/
+psql -U whatsspy -d whatsspy -f whatsspy-db.sql
+``` to insert these SQL statements in the correct database.
 
 3. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
