@@ -33,7 +33,7 @@ In order to retrieve the scecret you need to follow these steps:
 
 **[Troubleshooting](troubleshooting)**
 
-1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`).
+1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`). **note that the git clone does not work for SSH. You can only use HTTP on this gitlab server**
 
 2. Log in your PostgreSQL database and create an new DB and user for WhatsSpy Public **(Insert password for DB user)**:
 ```
