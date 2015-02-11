@@ -13,7 +13,7 @@ I made this project for you to realise how broken the privacy options actually a
 
 **Follow [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news**
 
-**If you have any information requests you can contact me by email: maikeldus@hotmail.com I have a detailed report for journalists about the problem and its solution. People that have problems setting up this project, you can now register at this Gitlab and use the issues system.**
+**If you have any information requests you can contact me by email: maikeldus@hotmail.com [Check out the publicity page](publicity)**
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
@@ -26,6 +26,8 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 **Update 1.0.4** : Status message bug fixed. Same rules apply as for 1.0.3
 
 **Update 1.0.5** : Fixed broken pipe and added DB check at startup. Same rules apply as for 1.0.3
+
+**People that have problems setting up this project, you can now register at this Gitlab and use the issues system.**
 
 ## Screenshots
 #### Overview page:
