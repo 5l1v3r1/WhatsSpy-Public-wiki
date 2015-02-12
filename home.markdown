@@ -17,7 +17,7 @@ I made this project for you to realise how broken the privacy options actually a
 
 [Check out the publicity page](publicity)
 
-**You can register at this Gitlab server for any issues, mail server is also up again.**
+**You can register at this Gitlab server for any issues, mail server is also up again (you can request activation mail via the login panel).**
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
@@ -31,8 +31,7 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 
 **Update 1.0.5** : Fixed broken pipe and added DB check at startup. Same rules apply as for 1.0.3
 
-**People that have problems setting up this project, you can now register at this Gitlab and use the issues system.**
-
+**People that have problems setting up this project, you can register at this Gitlab server for any issues, mail server is also up again (you can request activation mail via the login panel).**
 ## Screenshots
 #### Overview page:
 ![screencapture-maikel-pro-whatsspy](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/3252b4b488/screencapture-maikel-pro-whatsspy.png)
