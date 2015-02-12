@@ -1,13 +1,13 @@
 # What is WhatsSpy Public?
 
-WhatsSpy Public is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that Whatsapp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. Once it's running it keeps track of the following activities:
+WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that Whatsapp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. Once it's running it keeps track of the following activities:
 
 * Online/Offline status **(even with privacy options set to "nobody")**
 * Profile pictures
 * Privacy settings
 * Status messages
 
-I made this project for you to realise how broken the privacy options actually are. It just started out as experimenting with Whatsapp to build an Bot, but I was stunned when I realised someone could abuse this "online" feature of WhatsApp to track anyone.  I could just say this in like a blog article (like I tried but got marked as spam) that the privacy options are broken, but you wouldnt realise the impact it actually has.
+I made this project for you to realise how broken the privacy options actually are. It just started out as experimenting with Whatsapp to build an Bot, but I was stunned when I realised someone could abuse this "online" feature of WhatsApp to track anyone.  I could just say this in like a blog article (like I tried but got marked as spam) that the privacy options are broken, but you wouldn't realise the impact it actually has.
 
 **For reference view [this blog article about the WhatsApp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/).**
 
@@ -16,8 +16,6 @@ I made this project for you to realise how broken the privacy options actually a
 **If you have any information requests you can contact me by email: maikeldus@hotmail.com**
 
 [Check out the publicity page](publicity)
-
-**You can register at this Gitlab server for any issues, mail server is also up again (you can request activation mail via the login panel).**
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
