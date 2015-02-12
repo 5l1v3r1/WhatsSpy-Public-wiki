@@ -47,6 +47,6 @@
 
 [kitploit](http://www.kitploit.com/2015/02/whatsspy-trace-moves-of-whatsapp-user.html) 
 
-
+[securitylab.ru](http://www.securitylab.ru/news/471079.php)
 
 And the list goes on...
