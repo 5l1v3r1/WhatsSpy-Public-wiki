@@ -1,6 +1,8 @@
 # Getting started
 *This guide requires knowledge of Linux, PHP, PostgreSQL. There is no proper error reporting. I'm not responsible in any way if you screw it up! WhatsApp might even block your account, I can't tell.*
 
+*Please do not attempt to setup this project if you have no IT knowledge whatsoever.*
+
 ## Requirements
 
 **Shortlist requirements:**
