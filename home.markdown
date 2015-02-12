@@ -9,7 +9,7 @@ WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application th
 
 I made this project for you to realise how broken the privacy options actually are. It just started out as experimenting with Whatsapp to build an Bot, but I was stunned when I realised someone could abuse this "online" feature of WhatsApp to track anyone.  I could just say this in like a blog article (like I tried but got marked as spam) that the privacy options are broken, but you wouldn't realise the impact it actually has.
 
-**For reference view [this blog article about the WhatsApp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/).**
+**For reference view [this blog article about the WhatsApp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/) and [this article explaining it](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/).**
 
 **Follow [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news**
 
