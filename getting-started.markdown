@@ -3,6 +3,7 @@
 
 *Please do not attempt to setup this project if you have no IT knowledge whatsoever.*
 
+**For reference view [this blog article about the WhatsApp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/) and [this article explaining it further](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/).**
 ## Requirements
 
 **Shortlist requirements:**
