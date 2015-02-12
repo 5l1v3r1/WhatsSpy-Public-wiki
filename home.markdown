@@ -17,6 +17,8 @@ I made this project for you to realise how broken the privacy options actually a
 
 [Check out the publicity page](publicity)
 
+**You can register at this Gitlab server for any issues, mail server is also up again.**
+
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
 Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber and some other resources. 
