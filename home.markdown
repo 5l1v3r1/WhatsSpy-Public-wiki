@@ -29,6 +29,8 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 
 **Update 1.0.5** : Fixed broken pipe and added DB check at startup. Same rules apply as for 1.0.3
 
+**Update 1.0.6** : Better error reporting and LiveNotifier added. You can undertake the same steps as 1.0.3. Please add `$whatsspyLNKey = '';` to your current config.
+
 **People that have problems setting up this project, you can register at this Gitlab server for any issues, mail server is also up again (you can request activation mail via the login panel).**
 ## Screenshots
 #### Overview page:
