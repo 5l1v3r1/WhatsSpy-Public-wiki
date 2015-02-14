@@ -49,7 +49,7 @@ This project is **NOT** used to "show off" my PHP or web-application skills. It 
 
 ## License (CC-BY-NC)
 
-This project serves as an Proof-of-Concept to show the current problem with WhatsApp. This tool is created by Maikel Zweerink. This is just to prove a point, and not an project to gain money from. 
+This project serves as an Proof-of-Concept to show the current problem with WhatsApp. This tool is created by Maikel Zweerink and this is to prove a point about your and my own privacy in WhatsApp. You may not use this project to gain money or use it for any other cause then to confront yourself and known friends what anybody can know about you.
 
 THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
 
