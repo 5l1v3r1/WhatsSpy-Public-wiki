@@ -1,6 +1,6 @@
 # What is WhatsSpy Public?
 
-WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that WhatsApp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. Once it's running it keeps track of the following activities:
+WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that WhatsApp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. It keeps track of the following activities:
 
 * Online/Offline status **[(even with privacy options set to "nobody")](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/)**
 * Profile pictures **(if privacy option is set to "everyone" (by default) or "my contacts")**
