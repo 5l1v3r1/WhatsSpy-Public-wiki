@@ -1,7 +1,7 @@
 # Getting started
 *This guide requires knowledge of Linux, PHP, PostgreSQL. There is no proper error reporting. I'm not responsible in any way if you screw it up! WhatsApp might even block your account, I can't tell.*
 
-*Please do not attempt to setup this project if you have no IT knowledge whatsoever.*
+*Please do not attempt to setup this project if you have no IT knowledge whatsoever!*
 
 **Blog articles:**
 
@@ -12,7 +12,7 @@
 
 **Shortlist requirements:**
 
-* Secondary Whatsapp account (phonenumber that doesn't actively uses Whatsapp)
+* Secondary Whatsapp account (phonenumber that doesn't actively uses WhatsApp, because you can't receive messages when the tracker is online)
 * Rooted Android phone OR Jailbroken iPhone OR PHP knowledge
 * Server/RPi that runs 24/7
 * Nginx or Apache with PHP with PDO (php5-pgsql installed) (you can't host on simple webhoster, you need bash)
