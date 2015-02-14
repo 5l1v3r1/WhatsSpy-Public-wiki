@@ -1,13 +1,13 @@
 # What is WhatsSpy Public?
 
-WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that Whatsapp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. Once it's running it keeps track of the following activities:
+WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that WhatsApp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. Once it's running it keeps track of the following activities:
 
-* Online/Offline status **(even with privacy options set to "nobody")**
-* Profile pictures
+* Online/Offline status **[(even with privacy options set to "nobody")](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/)**
+* Profile pictures **(if privacy option is set to "everyone" (by default) or "my contacts")**
+* Status messages **(if privacy option is set to "everyone" (by default) or "my contacts")**
 * Privacy settings
-* Status messages
 
-I made this project for you to realise how broken the privacy options actually are. It just started out as experimenting with Whatsapp to build an Bot, but I was stunned when I realised someone could abuse this "online" feature of WhatsApp to track anyone.  I could just say this in like a blog article (like I tried but got marked as spam) that the privacy options are broken, but you wouldn't realise the impact it actually has.
+I made this project for you to realize how broken the privacy options actually are. It just started out as experimenting with WhatsApp to build an bot, but I was stunned when I realized someone could abuse this "online" feature of WhatsApp to track anyone's online status.  I could just say this in like a blog article (like I tried but got marked as spam) that the privacy options are broken, but you wouldn't realize the impact it actually has.
 
 **For reference view [this blog article about the WhatsApp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/) and [this article explaining it further](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/).**
 
@@ -45,11 +45,11 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 
 ## Notes
 
-This project is **NOT** used to "show off" my PHP or web-application skills. It started as a hobby project under my own running dashboard. This dashboard is over 4 years old, so a lot of code is not up to standard (next to the fact there is almost no VC or dependency management or error management). I might adress these issues later.
+This project is **NOT** used to "show off" my PHP or web-application skills. It started as a hobby project under my own running dashboard. This dashboard is over 4 years old, so a lot of code is not up to standard (next to the fact there is almost no version control, dependency management or error management). This is just to prove a point.
 
 ## License (CC-BY-NC)
 
-This project serves as an Proof-of-Concept to show the current problem with WhatsApp. This tool is created by Maikel Zweerink and this is to prove a point about your and my own privacy in WhatsApp. You may not use this project to gain money or use it for any other cause then to confront yourself and known friends what anybody can know about you.
+This project serves as an Proof-of-Concept to show the current problem with WhatsApp. This tool is created by Maikel Zweerink and this is to prove a point about your and my own privacy in WhatsApp. You may not use this project to gain money or use it for any other cause then to confront yourself and known friends what anybody can know about you on WhatsApp.
 
 THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
 
