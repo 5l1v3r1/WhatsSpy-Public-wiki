@@ -82,7 +82,7 @@ You need to restrict access to Whatsspy and the api of Whatsspy from unauthorise
 For Nginx add the following:
 
 ```
-location /whatsspy/ {
+location ~ /whatsspy/ {
         auth_basic "Restricted";
         auth_basic_user_file /etc/nginx/.htpasswd; 
     }
