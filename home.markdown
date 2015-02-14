@@ -11,7 +11,7 @@ I made this project for you to realize how broken the privacy options actually a
 
 **For reference view [this blog article about the WhatsApp Privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/) and [this article explaining it further](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/).**
 
-**Follow [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news or by email: maikeldus@hotmail.com**
+**Follow [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news or contact by email: maikeldus@hotmail.com**
 
 [Check out the publicity page](publicity)
 
