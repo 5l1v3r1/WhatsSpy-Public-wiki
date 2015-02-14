@@ -16,9 +16,11 @@ I made this project for you to realize how broken the privacy options actually a
 * [General introduction to WhatsSpy Public](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/)
 * [In-depth about the WhatsApp privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/)
 
-**Follow [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news or contact by email: maikeldus@hotmail.com**
+**Media:**
 
-[Publicity page](publicity)
+* [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news 
+* contact by email: maikeldus@hotmail.com (help/suggestions/info requests)
+* [Publicity page](publicity)
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
