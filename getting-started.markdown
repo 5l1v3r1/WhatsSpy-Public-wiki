@@ -70,7 +70,7 @@ to insert these SQL statements in the correct database.
 7. Insert your 'number' and 'secret' in `$whatsappAuth`. 
 8. **'number'** needs to be <countrycode><phonenumber> without any prefix 0's. 0031 06 xxx becomes 31 6 xxx (no 0's prefix for both the country code and phonenumber itself).
 9. **'number'** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
-10. **'secret'** If you don't have this yet, read Notice (scroll up)
+10. **'secret'** If you don't have this yet, read [Notice (scroll up)](#notice)
 11. Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
 12. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
 13. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
