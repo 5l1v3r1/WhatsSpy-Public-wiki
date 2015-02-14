@@ -1,5 +1,10 @@
 # Related news
 
+**Blog articles by Maikel Zweerink:**
+
+* [General introduction to WhatsSpy Public](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/)
+* [In-depth about the WhatsApp privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/)
+
 ## International (English)
 
 [Softpedia.com](http://news.softpedia.com/news/WhatsSpy-Public-Tracks-WhatsApp-Activity-472528.shtml)
