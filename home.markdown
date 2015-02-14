@@ -7,7 +7,7 @@ WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application th
 * Status messages*
 * Privacy settings
 
-* *Only if privacy option is set to "everyone" (by default)*
+\* *Only if privacy option is set to "everyone" (by default)*
 
 I made this project for you to realize how broken the privacy options actually are. It just started out as experimenting with WhatsApp to build an bot, but I was stunned when I realized someone could abuse this "online" feature of WhatsApp to track anyone's online status.  I could just say this in like a blog article (like I tried but got marked as spam) that the privacy options are broken, but you wouldn't realize the impact it actually has.
 
