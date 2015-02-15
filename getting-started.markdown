@@ -79,6 +79,9 @@ to insert these SQL statements in the correct database.
 12. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
 13. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
 ```
+-- These are guidelins, for debuggin you can use 777 instead of 760.
+chgrp www-data -R <location-of-whatsspy-public>/api/
+chgrp www-data -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 chmod 760 -R <location-of-whatsspy-public>/api/
 chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 ```
