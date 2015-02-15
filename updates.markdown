@@ -25,4 +25,6 @@ Make sure that you before the update undertake these steps:
 
 **Update 1.0.8/1.0.9** : Fix for people living in timezones which contain +/- 30 minutes. same rules apply as `1.0.6`.
 
-**People that have problems setting up this project, you can register at this Gitlab server for any issues, mail server is also up again (you can request activation mail via the login panel).**
+
+
+**People that have problems setting up this project, you can register at this Gitlab server for any issues.**
