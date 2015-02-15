@@ -23,6 +23,7 @@
 WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phonenumber. You can either try to register a non-Whatsapp used phonenumber [with for example this script](https://github.com/mgp25/WhatsAPI-Official/blob/master/examples/exampleRegister.php) or use [WART](https://github.com/shirioko/WART) or just buy an 5 euro SIM Card and activate this with your jailbroken iPhone or rooted Android phone.
 
 **The 5 euro SIM-card solution:**
+
 For the tracker to work you need an secret which is retrieved from either your Phone or the register script mentioned above. In case of phone registration you need an **jailbroken iPhone** or **rooted Android** device in order to retrieve the secret. 
 
 * Jailbroken iPhone users: You can retrieve using [this script](https://www.mgp25.com/utilidadiPhone/).
