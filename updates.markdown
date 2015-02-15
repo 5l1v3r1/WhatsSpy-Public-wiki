@@ -1,4 +1,4 @@
-#WhatsSpy Public updates
+# WhatsSpy Public updates
 
 How to update to a newer version? + changelog
 
