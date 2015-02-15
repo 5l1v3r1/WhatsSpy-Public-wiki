@@ -3,7 +3,7 @@
 This page contains notes about how to update a running instance of WhatsSpy Public. This is always relatively easy.
 
 
-## Before updating
+## Before/After updating
 
 Make sure that you before the update undertake these steps:
 
