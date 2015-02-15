@@ -8,7 +8,7 @@ Check if `api/?whatsspy=getStats` (if you have installed WhatsSpy Public in `/wh
 
 You might have one of the following problems:
 
-* [PDO](http://php.net/manual/en/book.pdo.php) might be not installed in your PHP.
+* [PDO](http://php.net/manual/en/book.pdo.php) might be not installed in your PHP (make sure you edit the `php.ini` for both the CGI and CLI).
 * Make sure you have the newest PHP (5.4+)
 * Your configuration might be wrong: Does the PostgreSQL username and password actually work? Does the user have rights to acces the tables? etc.
 
