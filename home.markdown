@@ -16,6 +16,8 @@ I made this project for you to realize how broken the privacy options actually a
 * [General introduction to WhatsSpy Public](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/)
 * [In-depth about the WhatsApp privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/)
 
+**Bitcoin donations:** 1KjZRyFKcMRu89zLUzeCoLBWuAss4PeWbc
+
 **Media:**
 
 * [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news 
