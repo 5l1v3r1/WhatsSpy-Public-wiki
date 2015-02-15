@@ -78,7 +78,10 @@ to insert these SQL statements in the correct database.
 11. Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
 12. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
 13. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
-
+```
+chmod 760 -R <location-of-whatsspy-public>/api/
+chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
+```
 ### Webserver
 
 You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. 
