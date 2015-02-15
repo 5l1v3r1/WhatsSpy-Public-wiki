@@ -28,7 +28,7 @@ I made this project for you to realize how broken the privacy options actually a
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
-Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber and some other resources. 
+Setting up WhatsSpy Public somewhat IT knowledge and you might need a second SIM card. 
 
 [Click here for installation requirements & instructions](getting-started).
 
