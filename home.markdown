@@ -38,7 +38,7 @@ Setting up WhatsSpy Public requires an SIM Card or non-Whatsapp used phonenumber
 
 **Update 1.0.7** : Fixed UTF8 support (works in FF only), added lastseen option and fixed some other small issues. same rules apply as `1.0.6`.
 
-**Update 1.0.8** : Fix for people living in timezones which contain +/- 30 minutes. Just replace the `whatsspy/` folder with the one of the repository.
+**Update 1.0.8/1.0.9** : Fix for people living in timezones which contain +/- 30 minutes. Just replace the `whatsspy/` folder with the one of the repository.
 
 **People that have problems setting up this project, you can register at this Gitlab server for any issues, mail server is also up again (you can request activation mail via the login panel).**
 ## Screenshots
