@@ -9,6 +9,8 @@
 
 [Softpedia.com](http://news.softpedia.com/news/WhatsSpy-Public-Tracks-WhatsApp-Activity-472528.shtml)
 
+[The WAN Show - Linus](https://www.youtube.com/watch?v=w5boVxmH_Yc#t=4739)
+
 [NDTV](http://gadgets.ndtv.com/apps/news/whatsapp-flaw-said-to-let-anyone-track-you-regardless-of-privacy-settings-659811?site=classic)
 
 [NetworkWorld](http://www.networkworld.com/article/2881468/microsoft-subnet/whatsspy-public-tracks-whatsapp-activity-even-if-privacy-settings-are-locked-down.html)
