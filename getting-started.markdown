@@ -13,15 +13,16 @@
 **Shortlist requirements:**
 
 * Secondary Whatsapp account (phonenumber that doesn't actively uses WhatsApp, because you can't receive messages when the tracker is online)
-* Rooted Android phone **OR** Jailbroken iPhone **OR** Real PHP knowledge
+* Rooted Android phone **OR** Jailbroken iPhone **OR** Real PHP knowledge **OR** Use [WART](https://github.com/shirioko/WART)
 * Linux Server/RPi that runs 24/7 (tested on Debian/Ubuntu) (Do not use Windows, use a [virtual machine instead](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html))
 * Nginx or Apache with PHP with PDO (php5-pgsql installed) (you can't host on simple webhoster, you need a terminal!)
 * PostgreSQL
 
 
 ## Notice
-WhatsSpy Public requires an **secondary Whatsapp account**. Once the tracker is started, you will not be able to recieve any messages over Whatsapp for this phonenumber. You can either try to register an non-Whatsapp used phonenumber [with for example this script](https://github.com/mgp25/WhatsAPI-Official/blob/master/examples/exampleRegister.php) or just buy an 5 euro SIM Card and use this phonenumber for the tracker.
+WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phonenumber. You can either try to register a non-Whatsapp used phonenumber [with for example this script](https://github.com/mgp25/WhatsAPI-Official/blob/master/examples/exampleRegister.php) or use [WART](https://github.com/shirioko/WART) or just buy an 5 euro SIM Card and activate this with your jailbroken iPhone or rooted Android phone.
 
+**The 5 euro SIM-card solution:**
 For the tracker to work you need an secret which is retrieved from either your Phone or the register script mentioned above. In case of phone registration you need an **jailbroken iPhone** or **rooted Android** device in order to retrieve the secret. 
 
 * Jailbroken iPhone users: You can retrieve using [this script](https://www.mgp25.com/utilidadiPhone/).
