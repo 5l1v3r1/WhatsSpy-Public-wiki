@@ -142,3 +142,7 @@ Once you have populated your database with some users, you can start the tracker
 5. It keeps polling every 2 seconds and outputs any statusses on the screen.
 6. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
 
+
+## Other things you can do
+
+Do you want to start WhatsSpy Public on startup? Do you want to auto-update? Please check the [FAQ](FAQ).
