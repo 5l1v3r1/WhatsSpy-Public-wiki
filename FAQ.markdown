@@ -1,4 +1,8 @@
+# Frequently asked Questions
 
+## Updates
+
+Check the [updatelog here](updates).
 
 ## Automatic updates
 
