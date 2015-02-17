@@ -15,6 +15,8 @@
 
 [NDTV](http://gadgets.ndtv.com/apps/news/whatsapp-flaw-said-to-let-anyone-track-you-regardless-of-privacy-settings-659811?site=classic)
 
+[nakedsecurity.sophos.com](https://nakedsecurity.sophos.com/2015/02/17/whatsapp-spy-tool-lets-anyone-track-when-youre-online/)
+
 [NetworkWorld](http://www.networkworld.com/article/2881468/microsoft-subnet/whatsspy-public-tracks-whatsapp-activity-even-if-privacy-settings-are-locked-down.html)
 
 [Techworm.net](http://www.techworm.net/2015/02/whatsspy-public-whatsapp-status-tool-lets-stalkers-track-bypassing-privacy-settings.html)
