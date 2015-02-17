@@ -9,7 +9,7 @@
 
 [Softpedia.com](http://news.softpedia.com/news/WhatsSpy-Public-Tracks-WhatsApp-Activity-472528.shtml)
 
-[The WAN Show - Linus](https://www.youtube.com/watch?v=w5boVxmH_Yc#t=4739)
+[India Today](http://indiatoday.intoday.in/technology/story/regardless-of-privacy-settings-flaw-in-whatsapp-can-let-anyone-to-track-you/1/418453.html)
 
 [XDA frontpage link](http://www.xda-developers.com/)
 
@@ -41,13 +41,20 @@
 
 [digit.in](http://www.digit.in/mobile-phones/new-vulnerability-reveals-whatsapp-privacy-is-broken-25276.html)
 
+[The WAN Show - Linus](https://www.youtube.com/watch?v=w5boVxmH_Yc#t=4739)
+
+[kitploit](http://www.kitploit.com/2015/02/whatsspy-trace-moves-of-whatsapp-user.html) 
+
 [gadgets.ndtv.com](http://gadgets.ndtv.com/apps/news/whatsapp-flaw-said-to-let-anyone-track-you-regardless-of-privacy-settings-659811?pfrom=home-editorpick)
 
 [cyberkendra.com](http://www.cyberkendra.com/2015/02/whatsspy-tool-to-spy-on-whatsapp.html)
 
+[theregister.co.uk](http://www.theregister.co.uk/2015/02/16/whatsapp_security_slip_up_concept_privacy/)
+
 ## Dutch
 
 [Computerworld.nl](http://computerworld.nl/beveiliging/85330-nederlander-maakt-whatsapp-gedrag-pijnlijk-zichtbaar)
+
 
 ## Deutsch
 
@@ -77,47 +84,64 @@
 
 [t3n.de](http://t3n.de/news/whatsapp-messenger-hack-593162/)
 
-## Other
+[futurezone](http://futurezone.at/digital-life/whatsspy-tool-zur-whatsapp-ueberwachung/113.095.132)
+
+
+## Swedish
+
+[idg.se](http://www.idg.se/2.1085/1.609317/student-hittade-lucka-i-whatsapp---har-slappt-ett-spionprogram-pa-natet)
+
+## Arabic
+
 [Alaraby.co.uk](http://www.alaraby.co.uk/medianews/2fbfbc18-dc93-44a4-a44e-b2859b7586b4)
 
 [Arndroid](http://ardroid.com/2015/02/09/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%8A%D8%AA%D9%8A%D8%AD-%D8%A7%D9%84%D8%AA%D8%AC%D8%B3%D8%B3-%D8%B9%D9%84%D9%89-%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8/)
 
-[India Today](http://indiatoday.intoday.in/technology/story/regardless-of-privacy-settings-flaw-in-whatsapp-can-let-anyone-to-track-you/1/418453.html)
+[isecnews.com](http://isecnews.com/%D8%A8%D9%87%D8%B0%D8%A7-%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%8A%D9%85%D9%83%D9%86%D9%83-%D8%A7%D9%84%D8%A2%D9%86-%D8%A7%D9%84%D8%AA%D8%AC%D8%B3%D8%B3-%D8%B9%D9%84%D9%89-%D9%85%D8%B3%D8%AA/)
+
+
+
+## Portuguese
 
 [Globo](http://revistagalileu.globo.com/Tecnologia/noticia/2015/02/software-espiao-revela-foto-e-status-de-qualquer-usuario-do-whatsapp.html)
 
-[Pulzo](http://www.pulzo.com/tecnologia/289686-con-ganas-de-espiar-su-pareja-o-otra-persona-por-whatsapp-whatsspy-es-para-usted)
-
 [Olhardigital](http://olhardigital.uol.com.br/noticia/programa-espiona-usuario-no-whatsapp/46795)
-
-[lafm](http://www.lafm.com.co/noticias/whatsspy-public-permite-espiar-177211)
-
-[kitploit](http://www.kitploit.com/2015/02/whatsspy-trace-moves-of-whatsapp-user.html) 
-
-[securitylab.ru](http://www.securitylab.ru/news/471079.php)
-
-[cincodias](http://cincodias.com/cincodias/2015/02/09/lifestyle/1423479271_643693.html)
-
-[futurezone](http://futurezone.at/digital-life/whatsspy-tool-zur-whatsapp-ueberwachung/113.095.132)
-
-[isecnews.com](http://isecnews.com/%D8%A8%D9%87%D8%B0%D8%A7-%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%8A%D9%85%D9%83%D9%86%D9%83-%D8%A7%D9%84%D8%A2%D9%86-%D8%A7%D9%84%D8%AA%D8%AC%D8%B3%D8%B3-%D8%B9%D9%84%D9%89-%D9%85%D8%B3%D8%AA/)
-
-[bug.hr](http://www.bug.hr/vijesti/ugrozena-privatnost-whatsappu/140315.aspx)
 
 [abril.com.br](http://info.abril.com.br/noticias/seguranca/2015/02/ferramenta-espia-pode-monitorar-atividades-do-usuario-do-whatsapp.shtml)
 
-[caffeinamagazine.it](http://www.caffeinamagazine.it/tecnologia/10736-terrore-whatsspy-ecco-l-applicazione-che-permette-di-spiare-il-vostro-whatsapp)
-
-[noticias.terra.com.pe](http://noticias.terra.com.pe/tecnologia/evita-que-te-espien-con-whatsspy-la-app-para-fisgonear-whatsapp,784df80b9a38b410VgnVCM4000009bcceb0aRCRD.html)
-
 [opovo.com.br](http://www.opovo.com.br/app/maisnoticias/tecnologia/2015/02/13/noticiastecnologia,3392813/whatspy-public-pode-monitorar-o-whatsapp-de-outra-pessoa.shtml)
 
-[tuttoandroid.net](http://www.tuttoandroid.net/news/whatsspy-il-software-che-tiene-traccia-dei-contatti-whatsapp-251836/)
 
-[olhardigital](http://olhardigital.uol.com.br/noticia/programa-espiona-usuario-no-whatsapp/46795)
+## Spanish
+
+[Pulzo](http://www.pulzo.com/tecnologia/289686-con-ganas-de-espiar-su-pareja-o-otra-persona-por-whatsapp-whatsspy-es-para-usted)
+
+[lafm](http://www.lafm.com.co/noticias/whatsspy-public-permite-espiar-177211)
+
+[cincodias](http://cincodias.com/cincodias/2015/02/09/lifestyle/1423479271_643693.html)
+
+[noticias.terra.com.pe](http://noticias.terra.com.pe/tecnologia/evita-que-te-espien-con-whatsspy-la-app-para-fisgonear-whatsapp,784df80b9a38b410VgnVCM4000009bcceb0aRCRD.html)
 
 [whatsapppara.com](http://www.whatsapppara.com/whatsapp-espiado-whatsspy-public/)
 
 [cincodias.com](http://cincodias.com/cincodias/2015/02/09/lifestyle/1423479271_643693.html)
+
+
+## Russian
+
+[securitylab.ru](http://www.securitylab.ru/news/471079.php)
+
+## Croatian
+
+[bug.hr](http://www.bug.hr/vijesti/ugrozena-privatnost-whatsappu/140315.aspx)
+
+
+## Italian
+
+[caffeinamagazine.it](http://www.caffeinamagazine.it/tecnologia/10736-terrore-whatsspy-ecco-l-applicazione-che-permette-di-spiare-il-vostro-whatsapp)
+
+[tuttoandroid.net](http://www.tuttoandroid.net/news/whatsspy-il-software-che-tiene-traccia-dei-contatti-whatsapp-251836/)
+
+
 
 And the list goes on...
