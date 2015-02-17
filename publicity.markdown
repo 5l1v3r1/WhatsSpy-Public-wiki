@@ -88,6 +88,8 @@
 
 [futurezone](http://futurezone.at/digital-life/whatsspy-tool-zur-whatsapp-ueberwachung/113.095.132)
 
+[chip.de](http://www.chip.de/news/WhatsSpy-App-spioniert-Sie-aus-Dieses-Tool-weiss-fast-alles-ueber-WhatsApp_76371669.html)
+
 
 ## Swedish
 
