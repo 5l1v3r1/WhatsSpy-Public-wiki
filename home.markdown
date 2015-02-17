@@ -1,5 +1,5 @@
 # What is WhatsSpy Public?
-**[Version 1.1.0](updates) containing a new page called [timeline](#Timeline-page) is out: [FAQ](FAQ)**
+**[Version 1.1.0](updates) containing a new page called [timeline](#Timeline) is out: [FAQ](FAQ)**
 
 WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that WhatsApp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. It keeps track of the following activities:
 
@@ -34,16 +34,16 @@ Setting up WhatsSpy Public somewhat IT knowledge and you might need a second SIM
 
 [Check here for any updates](updates)
 
-## Screenshots
-#### Overview-page
+## Screenshots of the WhatsSpy Public pages
+#### Overview
 
 ![overview](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/f71067d1e9/overview.png)
 
-#### Compare-page
+#### Compare
 
 ![compare](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/3fe815793b/compare.png)
 
-#### Timeline-page
+#### Timeline
 
 ![timeline](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/78f9d0ec84/timeline.png)
 
