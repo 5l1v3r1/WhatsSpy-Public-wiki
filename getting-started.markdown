@@ -78,12 +78,13 @@ to insert these SQL statements in the correct database.
 9. **'number'** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 10. **'secret'** If you don't have this yet, read [Notice (scroll up)](#notice)
 11. Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
-12. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
-13. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
+12. Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web.
+13. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
+14. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
-chgrp www-data -R <location-of-whatsspy-public>/api/
-chgrp www-data -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
+chown www-data:www-data -R <location-of-whatsspy-public>/api/
+chown www-data:www-data -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 chmod 760 -R <location-of-whatsspy-public>/api/
 chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 ```
