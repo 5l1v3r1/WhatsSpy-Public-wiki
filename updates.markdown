@@ -29,6 +29,6 @@ Make sure that you before the update undertake these steps:
 
 **Update 1.1.1/1.1.2** : Bug fix on file rights, PHP timezone and message throttling by WhatsApp. same rules apply as `1.0.6`.
 
-
+**Update 1.1.3** : Cascading delete button in the UI, small timeline fix for "ghost" users. same rules apply as `1.0.6`.
 
 **People that have problems setting up this project, you can register at this Gitlab server for any issues.**
