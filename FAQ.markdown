@@ -8,10 +8,12 @@ Check the [updatelog here](updates).
 
 It tracks the following properties:
 
-* Online/offline in realtime (10-60 seconds offset due to WhatsApp or your connection).
-* Status messages in realtime (10-60 seconds offset due to WhatsApp or your connection).
+* Online/offline in realtime (5-45 seconds offset due to WhatsApp or your connection).
+* Status messages in realtime (5-45 seconds offset due to WhatsApp or your connection).
 * Last seen privacy / status message privacy settings every 2 hours.
 * Profile picture (and privacy setting) every 3 hours.
+
+The more users it tracks, the less accurate it becomes with the online/offline statuses. Just look at the data minute wise and it becomes accurate again.
 
 ## Automatic updates
 
