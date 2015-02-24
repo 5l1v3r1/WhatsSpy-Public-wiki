@@ -35,4 +35,6 @@ Make sure that you before the update undertake these steps:
 
 **Update 1.2.1** : Improved tracker capacity and error handling. Fixed timeline issues where it misses statuses. same rules apply as `1.0.6`.
 
+**Update 1.2.2** : Improved query performance on PostgreSQL and fixed responsive UI for mobile. same rules apply as `1.0.6`.
+
 **People that have problems setting up this project, you can register at this Gitlab server for any issues.**
