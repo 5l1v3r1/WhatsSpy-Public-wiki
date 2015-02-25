@@ -20,16 +20,21 @@
 
 
 ## 1) Secondary WhatsApp account
-WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phonenumber. You can either try to register a non-Whatsapp used phonenumber with [WART](https://github.com/shirioko/WART) or just buy an 5 euro SIM Card and activate this with your jailbroken iPhone or rooted Android phone (or use the SIM card with WART). You need to do this registration to get a 'secret' from WhatsApp which WhatsSpy Public will use to login.
+WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phonenumber. You need to register at WhatsApp to retrieve a 'secret' which you will need later in when settting up WhatsSpy Public.
 
-**The 5 euro SIM-card solution:**
+### 1.1) Getting a phonenumber
 
-For the tracker to work you need an secret which is retrieved from either your Phone or the register script mentioned above. In case of phone registration you need an **jailbroken iPhone** or **rooted Android** device in order to retrieve the secret. 
+You need a phone(number) where you can recieve SMS or voice calls for the WhatsApp activation to work. You can try to register your landline, or just buy a 5 euro SIM card an register that phonenumber at WhatsApp.
 
-* Jailbroken iPhone users: You can retrieve using [this script](https://www.mgp25.com/utilidadiPhone/).
-* Rooted Android phones can use the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) to retrieve the secret. 
+### 1.2) Activation at WhatsApp
 
-In order to retrieve the scecret you need to follow these steps:
+You have two methods:
+
+* Use [WART](https://github.com/shirioko/WART), a Windows registration tool which allows you to retrieve the secret via a GUI.
+* Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
+
+
+In case of registration via phone you need a **jailbroken iPhone** or a **rooted Android** device in order to retrieve the secret. In order to retrieve the scecret you need to follow these steps:
 
 * Insert your (new) secondary SIM card in your phone and boot it up.
 * Re-install Whatsapp on your phone and activate it using the new phonenumber.
@@ -88,16 +93,17 @@ to insert these SQL statements in the correct database.
 10. **'secret'** If you don't have this yet, read [Notice (scroll up)](#notice)
 11. Set the correct timezone of the place where you are.
 12. Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
-13. Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web.
+13. Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/whatsspy/images/profilepicture/` (including `/` and cut the `/var/www/`)
 14. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
 15. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
-chown www-data:www-data -R <location-of-whatsspy-public>/api/
-chown www-data:www-data -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
-chmod 760 -R <location-of-whatsspy-public>/api/
-chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
+sudo chown www-data:www-data -R <location-of-whatsspy-public>/api/
+sudo chown www-data:www-data -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
+sudo chmod 760 -R <location-of-whatsspy-public>/api/
+sudo chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 ```
+
 ### Webserver
 
 You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. I assume you have Nginx and php already up and running (you can follow [this tutorial partly in case you dont](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-7))
