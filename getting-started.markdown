@@ -19,8 +19,8 @@
 * PostgreSQL
 
 
-## Notice - Secondary WhatsApp account
-WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phonenumber. You can either try to register a non-Whatsapp used phonenumber with [WART](https://github.com/shirioko/WART) or just buy an 5 euro SIM Card and activate this with your jailbroken iPhone or rooted Android phone. You need to do this registration to get a 'secret' from WhatsApp which WhatsSpy Public will use to login.
+## 1) Secondary WhatsApp account
+WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phonenumber. You can either try to register a non-Whatsapp used phonenumber with [WART](https://github.com/shirioko/WART) or just buy an 5 euro SIM Card and activate this with your jailbroken iPhone or rooted Android phone (or use the SIM card with WART). You need to do this registration to get a 'secret' from WhatsApp which WhatsSpy Public will use to login.
 
 **The 5 euro SIM-card solution:**
 
@@ -38,9 +38,11 @@ In order to retrieve the scecret you need to follow these steps:
 
 **[Do not use the WhatsApp application with the same phonenumber as the tracker, this will reset the connection creating an dead tracker.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
 
-## Installation
+## 2) Installation
 
 **[Troubleshooting](troubleshooting)**
+
+**Update: [You can also download a Raspbian image with WhatsSpy Public pre-installed. This requires a lot less steps.](getting-started-rpi-image)**
 
 1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`). **note that the git clone does not work for SSH. You can only use HTTP on this gitlab server**
 
