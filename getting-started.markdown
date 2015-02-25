@@ -42,14 +42,21 @@ In order to retrieve the scecret you need to follow these steps:
 
 **[Troubleshooting](troubleshooting)**
 
-**Update: [You can also download a Raspbian image with WhatsSpy Public pre-installed. This requires a lot less steps.](getting-started-rpi-image)**
+### 2.1) You have two choices at the moment
+
+At this time you have two options to start install WhatsSpy Public:
+
+* [Download a Raspbian image with WhatsSpy Public pre-installed. This requires a lot less steps.](getting-started-rpi-image)
+* Follow the manual installation (below) for your Raspberry Pi / VPS / Server
+
+### 2.2) Manual install (debian/ubuntu)
 
 1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`). **note that the git clone does not work for SSH. You can only use HTTP on this gitlab server**
 
 2. Log in your PostgreSQL database and create an new DB and user for WhatsSpy Public **(Insert password for DB user)**:
 ```
 -- Execute command by command!
--- cmd 1
+-- cmd 1 (choose a password)
 CREATE ROLE whatsspy LOGIN
   PASSWORD ''
   NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
@@ -68,7 +75,7 @@ GRANT ALL ON DATABASE whatsspy TO whatsspy;
 4. **Update**: You can use the commmand 
 ```
 cd <location of whatsspy>/api/
-psql -U whatsspy -d whatsspy -f whatsspy-db.sql
+psql -U postgres -d whatsspy -f whatsspy-db.sql
 ``` 
 to insert these SQL statements in the correct database.
 
@@ -93,13 +100,18 @@ chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 ```
 ### Webserver
 
-You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. 
+You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. I assume you have Nginx and php already up and running (you can follow [this tutorial partly in case you dont](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-7))
 
 #### Nginx
 For Nginx add the following:
 
 ```
-location ~ /whatsspy/ {
+    index index.html index.php;
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    location ~ /whatsspy/ {
         auth_basic "Restricted";
         auth_basic_user_file /etc/nginx/.htpasswd; 
     }
@@ -109,11 +121,12 @@ location ~ /whatsspy/ {
         return 404;
     }
 
-    location ~ /whatsspy/api/ {
-        rewrite ^ /whatsspy/api/index.php last;
+    location ~ /whatsspy/api/((?!index\.php).+) {
+        deny all;
+        return 404;
     }
 ``` 
-*assuming you installed whatsspy in a subdirectory called `/whatsspy` in the web directory `/var/www/` (default setup)*
+*assuming you installed whatsspy in a directory called `/var/www/whatsspy` and remeber to put the nginx location for php processing (location ~ \.php$ ....)*
 
 You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). Make sure you reload the configuration by executing `service nginx reload`.
 
