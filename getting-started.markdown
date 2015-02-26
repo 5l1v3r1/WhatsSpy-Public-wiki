@@ -19,6 +19,7 @@
 * PostgreSQL
 
 
+
 ## 1) Secondary WhatsApp account
 WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phonenumber. You need to register at WhatsApp to retrieve a 'secret' which you will need later in when settting up WhatsSpy Public.
 
@@ -106,7 +107,7 @@ sudo chmod 760 -R <location-of-whatsspy-public>/api/
 sudo chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 ```
 
-### Webserver
+### Webserver (optional, but don't forget the next step)
 
 You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. I assume you have Nginx and PHP already up and running (you can follow [this tutorial in case you dont](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-7))
 
@@ -149,7 +150,7 @@ Require valid-user
 ```
 Do not place the .htpasswd in the `/var/www` folder. You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). The `api/` folder is protected by default.
 
-## Importing users
+## 3) Importing users
 
 If everything went well you can now access the WhatsSpy Public interface through your webserver. At this point you need to import users that you want to track ([Troubleshooting](troubleshooting)):
 
@@ -158,7 +159,7 @@ If everything went well you can now access the WhatsSpy Public interface through
 
 **Once you have inserted these users they won't show up automatically. They need to be verified by the tracker which is not running yet.**
 
-## Starting the tracker
+## 4) Starting the tracker
 Once you have populated your database with some users, you can start the tracker.
 
 1. start a new `screen` (if you do not have screen: `sudo apt-get install screen` or similar for other distro's)
