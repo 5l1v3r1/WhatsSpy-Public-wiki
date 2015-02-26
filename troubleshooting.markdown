@@ -56,6 +56,9 @@ SELECT NOW();
 -- Check if the +01 corresponds to your correct timezone.
 -- If this timezone is not correct fix this by using this SQL command:
 SET TIME ZONE 'Europe/Amsterdam';
+
+-- Close session
+\q
 ```
 
 ### Error Reporting
