@@ -48,6 +48,7 @@ If the tracker reports incorrect online/offline activites there is probably a mi
 
 * Check if the timezone in the `config.php` is set properly.
 * Check if the PostgreSQL timezone is set correct:
+
 ```
 psql -U postgres
 SELECT NOW();
