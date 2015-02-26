@@ -1,7 +1,7 @@
 # Getting started
 *This guide requires knowledge of Linux, PHP, PostgreSQL. There is no proper error reporting. I'm not responsible in any way if you screw it up! WhatsApp might even block your account, I can't tell.*
 
-*Please do not attempt to setup this project if you have no IT knowledge whatsoever! And do not try to set this up on Windows! You're better off with a Virtual Machine containing Ubuntu.*
+*Please do not attempt to setup this project if you have no IT knowledge whatsoever! And do not try to set this up on Windows! You're better off with a Virtual Machine containing Ubuntu. You can also try the [Raspberry Pi image](getting-started-rpi-image) (more clear and less steps to undertake)*
 
 **Blog articles:**
 
