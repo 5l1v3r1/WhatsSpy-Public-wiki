@@ -41,12 +41,9 @@ In case of registration via phone you need a **jailbroken iPhone** or a **rooted
 * Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret. Write this secret down, which is required later. 
 * Insert your normal SIM card and re-install WhatsApp for normal use.
 
-**[Do not use the WhatsApp application with the same phonenumber as the tracker, this will reset the connection creating an dead tracker.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
+**[Do not use the WhatsApp application with the same phonenumber as the tracker, this will reset the connection creating a dead tracker.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
 
 ## 2) Installation
-
-**[Troubleshooting](troubleshooting)**
-
 ### 2.1) You have two choices at the moment
 
 At this time you have two options to start install WhatsSpy Public:
@@ -56,13 +53,14 @@ At this time you have two options to start install WhatsSpy Public:
 
 ### 2.2) Manual install (debian/ubuntu)
 
+**[Troubleshooting](troubleshooting)**
+
+
 1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`). **note that the git clone does not work for SSH. You can only use HTTPS on this gitlab server**
 
 2. Log in your PostgreSQL database and create an new DB and user for WhatsSpy Public **(Insert password for DB user)**:
 ```
 psql -U postgres
-
-
 -- Execute command by command!
 -- cmd 1 (choose a password)
 CREATE ROLE whatsspy LOGIN
@@ -76,7 +74,6 @@ CREATE DATABASE whatsspy
        CONNECTION LIMIT = -1;
 -- cmd 3
 GRANT ALL ON DATABASE whatsspy TO whatsspy;
-
 \q
 ```
 
