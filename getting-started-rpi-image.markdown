@@ -17,7 +17,7 @@ WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. Thi
 * **phonenumber** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*.
 * Press the request code. You will recieve a SMS with the activation code from WhatsApp.
 * Enter this code in **Step 2** (only the digits) and press confirm code.
-* Write down the password (it's the one-line of strange digits ending with an =).
+* Write down the password (it's the one-line of strange characters ending with an =).
 
 You have retrieved the WhatsApp secret! Now we can setup WhatsSpy Public.
 
