@@ -1,8 +1,10 @@
 # Getting Started with the Rpi Image
 
-On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. You need the 'secret' which is discussed in chapter 1 of the normal [getting started](getting-started).
+*Tested on Rpi Model B (4GB) in combination with Windows*
 
-*Tested on Rpi Model B in combination with Windows*
+On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. **You need the 'secret' which is discussed in chapter 1) of the normal [getting started](getting-started)**.
+
+
 
 ## 1) Download
 
