@@ -61,10 +61,6 @@ SET TIME ZONE 'Europe/Amsterdam';
 \q
 ```
 
-### Error Reporting
-
-The application does not proper report errors.
-
 
 ### IPTables rules
 
