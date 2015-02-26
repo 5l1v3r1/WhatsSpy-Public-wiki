@@ -29,7 +29,7 @@ The UI comminucates with the tracker via PostgreSQL. If this problem occurs it m
 
 To test any database issues try the following in the terminal:
 ```
-psql -U whatsspy
+psql -U postgres
 \connect whatsspy
 SELECT * FROM accounts;
 ```
@@ -38,9 +38,24 @@ If the last command returns that there is no relation called accounts you have p
 You can insert in the correct database by executing the following command:
 ```
 cd <location of whatsspy>/api/
-psql -U whatsspy -d whatsspy -f whatsspy-db.sql
+psql -U postgres-d whatsspy -f whatsspy-db.sql
 ```
 **For these commands to work you need to have created the database whatsspy**
+
+### Wrong timezone set
+
+If the tracker reports incorrect online/offline activites there is probably a misconfiguration:
+
+* Check if the timezone in the `config.php` is set properly.
+* Check if the PostgreSQL timezone is set correct:
+```
+psql -U postgres
+SELECT NOW();
+-- this will return a row with something like: 2015-02-26 01:13:05.155364+01
+-- Check if the +01 corresponds to your correct timezone.
+-- If this timezone is not correct fix this by using this SQL command:
+SET TIME ZONE 'Europe/Amsterdam';
+```
 
 ### Error Reporting
 
