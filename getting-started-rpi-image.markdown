@@ -55,7 +55,7 @@ Password: `whatsspypublic`
 
 Run `sudo nano /var/www/api/config.php` and do the following:
 
-* Fill in the empty fields in `$whatsappAuth` ('number' and 'secret'). The 'secret' is the thing you have retrieved in (chapter 1) Secondary WhatsApp account) of the normal [getting started](getting-started).
+* Fill in the empty fields in `$whatsappAuth` ('number' and 'secret'). The 'secret' is the thing you have retrieved in (chapter 0).
 * **'number'** needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
 * **'number'** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
