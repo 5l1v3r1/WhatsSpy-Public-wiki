@@ -56,10 +56,13 @@ At this time you have two options to start install WhatsSpy Public:
 
 ### 2.2) Manual install (debian/ubuntu)
 
-1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`). **note that the git clone does not work for SSH. You can only use HTTP on this gitlab server**
+1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`). **note that the git clone does not work for SSH. You can only use HTTPS on this gitlab server**
 
 2. Log in your PostgreSQL database and create an new DB and user for WhatsSpy Public **(Insert password for DB user)**:
 ```
+psql -U postgres
+
+
 -- Execute command by command!
 -- cmd 1 (choose a password)
 CREATE ROLE whatsspy LOGIN
@@ -73,6 +76,8 @@ CREATE DATABASE whatsspy
        CONNECTION LIMIT = -1;
 -- cmd 3
 GRANT ALL ON DATABASE whatsspy TO whatsspy;
+
+\q
 ```
 
 3. Open `api/whatsspy-db.sql` and execute these SQL commands in your **whatsspy** database (with PgAdmin or step 4). 
@@ -93,8 +98,8 @@ to insert these SQL statements in the correct database.
 10. **'secret'** If you don't have this yet, read [Notice (scroll up)](#notice)
 11. Set the correct timezone of the place where you are.
 12. Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
-13. Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/whatsspy/images/profilepicture/` (including `/` and cut the `/var/www/`)
-14. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey`. 
+13. Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/whatsspy/images/profilepicture/` (including `/` and cut the `/var/www`)
+14. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey` or `$whatsspyLNKey`. 
 15. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
@@ -106,7 +111,7 @@ sudo chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 
 ### Webserver
 
-You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. I assume you have Nginx and php already up and running (you can follow [this tutorial partly in case you dont](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-7))
+You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. I assume you have Nginx and PHP already up and running (you can follow [this tutorial in case you dont](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-7))
 
 #### Nginx
 For Nginx add the following:
@@ -132,7 +137,7 @@ For Nginx add the following:
         return 404;
     }
 ``` 
-*assuming you installed whatsspy in a directory called `/var/www/whatsspy` and remeber to put the nginx location for php processing (location ~ \.php$ ....)*
+*assuming you installed whatsspy in a directory called `/var/www/whatsspy` and remember to put the nginx location for php processing (location ~ \.php$ ....)*
 
 You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). Make sure you reload the configuration by executing `service nginx reload`.
 
@@ -162,7 +167,7 @@ Once you have populated your database with some users, you can start the tracker
 1. start a new `screen` (if you do not have screen: `sudo apt-get install screen` or similar for other distro's)
 3. cd to the install of the Whatsspy (for example `/var/www/whatsspy/`) and execute `` `which php` api/tracker.php``.
 4. If all runs well it starts spamming information about privacy options and polls.
-5. It keeps polling every 2 seconds and outputs any statusses on the screen.
+5. It keeps polling every second and outputs any statuses on the screen.
 6. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
 
 
