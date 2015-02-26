@@ -14,6 +14,22 @@ You might have one of the following problems:
 
 Check the error logs at /var/log/nginx/error.log if you use Nginx. Apache would be roughly the same.
 
+#### Error after update to `1.3.0`
+
+Update `1.3.0` has a small database adjustment which can cause problems. Check if the `api/?whatsspy=getStats` yields any "The following error occured when trying to upgrade DB:" error. Usually the problem is that the `whatsspy` database user has no rights to alter the database table. You can do the following to adjust this:
+
+```
+psql -U postgres
+\connect whatsspy
+
+ALTER TABLE accounts
+  OWNER TO whatsspy;
+GRANT ALL ON TABLE accounts TO whatsspy;
+
+\q
+```
+Make sure in the future that all the tables belong to the user `whatsspy` (thus repeating these steps for all the tables).
+
 ### Broken pipe and it stops tracking
 
 Look at https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4
