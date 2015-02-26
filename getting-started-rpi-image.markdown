@@ -6,7 +6,9 @@ On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Pu
 
 ## 1) Download
 
-DOWNLOAD COMING
+[Download the Raspbian image (1.6Gb, unpacked 4GB)](https://drive.google.com/file/d/0B_mlyJwD3c1TU1A5c2sxM3JFc3c/view?usp=sharing)
+
+Download this file to your computer, op the `.zip` with WinRAR or 7Zip and extract the `.img` file to your desktop.
 
 ## 2) Writing the .img onto a SD card
 
