@@ -2,15 +2,30 @@
 
 *Tested on Rpi Model B (4GB) in combination with Windows*
 
-On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. **You need the 'secret' which is discussed in chapter 1) of the normal [getting started](getting-started)**.
+On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. 
 
+## 0) Secondary WhatsApp account
 
+*This is a simplified version of [chapter 1) Secondary WhatsApp account](getting-started) or the normal getting started. You can alo use a jailbroken iPhone or rooted Android device.*
+
+WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesnt use WhatsApp, do the following:
+
+* Download [WART](https://github.com/shirioko/WART/blob/master/WART-1.7.3.0.exe?raw=true).
+* Open up WART and fill in **phonenumber** and **password** (just choose one).
+* **Remember** to use the countrycode+phonenumber.
+* **phonenumber** needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
+* **phonenumber** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*.
+* Press the request code. You will recieve a SMS with the activation code from WhatsApp.
+* Enter this code in **Step 2** (only the digits) and press confirm code.
+* Write down the password (it's the one-line of strange digits ending with an =).
+
+You have retrieved the WhatsApp secret! Now we can setup WhatsSpy Public.
 
 ## 1) Download
 
 [Download the Raspbian image (1.6Gb, unpacked 4GB)](https://drive.google.com/file/d/0B_mlyJwD3c1TU1A5c2sxM3JFc3c/view?usp=sharing)
 
-Download this file to your computer, op the `.zip` with WinRAR or 7Zip and extract the `.img` file to your desktop.
+Download this file to your computer, open the `.zip` with WinRAR or 7Zip and extract the `.img` file to your desktop.
 
 ## 2) Writing the .img onto a SD card
 
@@ -41,7 +56,7 @@ Password: `whatsspypublic`
 Run `sudo nano /var/www/api/config.php` and do the following:
 
 * Fill in the empty fields in `$whatsappAuth` ('number' and 'secret'). The 'secret' is the thing you have retrieved in (chapter 1) Secondary WhatsApp account) of the normal [getting started](getting-started).
-* **'number'** needs to be <countrycode><phonenumber> without any prefix 0's. 0031 06 xxx becomes 31 6 xxx (no 0's prefix for both the country code and phonenumber itself).
+* **'number'** needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
 * **'number'** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
 
