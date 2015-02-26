@@ -24,11 +24,11 @@ WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is s
 
 ### 1.1) Getting a phonenumber
 
-You need a phone(number) where you can recieve SMS or voice calls for the WhatsApp activation to work. You can try to register your landline, or just buy a 5 euro SIM card an register that phonenumber at WhatsApp.
+You need a phone(number) over which you can recieve SMS or voice calls for the WhatsApp activation. You can try to register your landline, or just buy a 5 euro SIM card and register that phonenumber at WhatsApp.
 
-### 1.2) Activation at WhatsApp
+### 1.2) Activation at WhatsApp with your secondary phonenumber
 
-You have two methods:
+You have two methods (stick with WART if you do not have a rooted/jailbroken phone):
 
 * Use [WART](https://github.com/shirioko/WART), a Windows registration tool which allows you to retrieve the secret via a GUI.
 * Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
