@@ -4,6 +4,8 @@ You can create an account on this Gitlab server and ask questions in the Issues 
 
 ### Tracker says "An error occured, please check your configuration."
 
+#### Problems while setting it up
+
 Check if `api/?whatsspy=getStats` (if you have installed WhatsSpy Public in `/whatsspy/` this should be `/whatsspy/api/?whatsspy=getStats`) gives any error.
 
 You might have one of the following problems:
