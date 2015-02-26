@@ -1,6 +1,6 @@
 # WhatsSpy Public updates
 
-This page contains notes about how to update a running instance of WhatsSpy Public. This is always relatively easy.
+This page contains notes about how to update a running instance of WhatsSpy Public. This is always relatively easy. **Did you use the Raspbian image? No need to update, this will happen automaticlly within 24 hours.**
 
 
 ## Before/After updating
