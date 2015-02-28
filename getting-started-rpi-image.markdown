@@ -88,7 +88,9 @@ Password: `whatsspypublic`
 In the GUI you can now:
 
 * Either add any contact manually by using "Add contact by phonenumber".
-* Or use "import google Contacts" which is an script that retrieves all your Google Contacts and gives an SQL statement which insert all users into the database.
+* Or use "import google Contacts" which is an script that retrieves all your Google Contacts and gives an SQL statement which insert all users into the database. [Check here how to insert them](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/112).
+
+Once you have inserted these users they won't show up automatically. They need to be verified by the tracker which is not running yet.
 
 ## 6) Starting the tracker
 
@@ -98,5 +100,9 @@ Once you've inserted some users you can start the tracker by executing:
 
 You only need to execute this command once. The next time the Rpi will startup WhatsSpy Public will start automaticly and it will auto-update as well. 
 
+## 7) Other steps
+
 You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `sudo screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
+
+I advise you to change the default password to something else. You can do this by using `passwd`.
 
