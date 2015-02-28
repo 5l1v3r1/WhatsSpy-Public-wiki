@@ -51,7 +51,7 @@ At every update you can just re-download the repository and replace it with the 
 * Tracked user view in page "overview" now contains analytics about WhatsApp usage (today, 7 days, 14 days, alltime).
 * You can now be notified of specific users via WhatsApp about there online/offline status and profile pictures/status messages. You need to edit your config (read down here).
 
-:horse: **Warning:** This update contains a database upgrade. If WhatsSpy Public gives some error after this update, check your database rights (it will try to alter the table). 
+:horse: **Warning:** This update contains a database upgrade. This update will happen automatically. If WhatsSpy Public does not work anymore, this is probably a database issue. Check [troubleshooting](troubleshooting).
 
 :horse: **Warning 2:** Also make sure if you enable notifications, you have `$whatsspyWhatsAppUserNotification` in your `config.php` (you can copy from `config.example.php`).
 
