@@ -98,5 +98,5 @@ Once you've inserted some users you can start the tracker by executing:
 
 You only need to execute this command once. The next time the Rpi will startup WhatsSpy Public will start automaticly and it will auto-update as well. 
 
-You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker.
+You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `sudo screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 
