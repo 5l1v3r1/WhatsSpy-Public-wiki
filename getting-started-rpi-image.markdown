@@ -14,7 +14,7 @@ WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. Thi
 
 * Download [WART](https://github.com/shirioko/WART/blob/master/WART-1.7.3.0.exe?raw=true).
 * Open up WART and fill in **phonenumber** and **password** (just choose one).
-* **Remember** to use the countrycode+phonenumber.
+* **phonenumber** needs to be the countrycode+phonenumber.
 * **phonenumber** needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
 * **phonenumber** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*.
 * Press the request code. You will recieve a SMS with the activation code from WhatsApp.
