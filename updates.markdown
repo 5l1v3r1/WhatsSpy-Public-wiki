@@ -55,6 +55,8 @@ At every update you can just re-download the repository and replace it with the 
 
 :horse: **Warning 2:** Also make sure if you enable notifications, you have `$whatsspyWhatsAppUserNotification` in your `config.php` (you can copy from `config.example.php`).
 
+**Update 1.3.1** : Removed notification for user going offline. Same rules apply as `1.3.0`.
+
 ## Need help?
 
 In case you have any trouble upgrading your version, you can create an issue on this Gitlab server (first create account and login).
