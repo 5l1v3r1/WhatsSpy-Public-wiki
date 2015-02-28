@@ -71,7 +71,7 @@ psql -U postgres
 SET TIME ZONE 'YOURTIMEZONE';
 \q
 ```
-
+(Press `Ctrl` + `Z` in case you cant use \q)
 
 ## 5) Importing users
 
