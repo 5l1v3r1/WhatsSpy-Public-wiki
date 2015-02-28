@@ -42,6 +42,17 @@ In case of registration via phone you need a **jailbroken iPhone** or a **rooted
 * Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret. Write this secret down, which is required later. 
 * Insert your normal SIM card and re-install WhatsApp for normal use.
 
+In case of registration via WART:
+
+* Download [WART](https://github.com/shirioko/WART/blob/master/WART-1.7.3.0.exe?raw=true).
+* Open up WART and fill in **phonenumber** and **password** (just choose one).
+* **phonenumber** needs to be the countrycode+phonenumber.
+* **phonenumber** needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
+* **phonenumber** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*.
+* Press the request code. You will recieve a SMS with the activation code from WhatsApp.
+* Enter this code in **Step 2** (only the digits) and press confirm code.
+* Write down the password (it's the one-line of strange characters ending with an =).
+
 **[Do not use the WhatsApp application with the same phonenumber as the tracker, this will reset the connection creating a dead tracker.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
 
 ## 2) Installation
