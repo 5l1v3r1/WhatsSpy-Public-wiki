@@ -48,4 +48,6 @@ Make sure that you before the update undertake these steps:
 
 **Warning:** This update contains a database upgrade. If WhatsSpy Public gives some error after this update, check your database rights (it will try to alter the table). Also make sure if you enable notifications, you have `$whatsspyWhatsAppUserNotification` in your `config.php` (you can copy from `config.example.php`).
 
-**People that have problems setting up this project, you can register at this Gitlab server for any issues.**
+## Need help?
+
+In case you have any trouble upgrading your version, you can create an issue on this Gitlab server (first create account and login).
