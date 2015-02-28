@@ -8,10 +8,13 @@ This page contains notes about how to update a running instance of WhatsSpy Publ
 Make sure that you before the update undertake these steps:
 
 * Shutdown the tracker by using `screen -r` and then pressing `Ctrl+c` and `Ctrl+a` and `Ctrl+d`.
+* Apply the update: by following the changelog.
 * After the update start the tracker again by using `screen -r` and execute `` `which php` api/tracker.php``.
 
 
 ## Changelog
+
+At every update you can just re-download the repository and replace it with the current files.
 
 **Update 1.0.1/1.0.2/1.0.3** : Small UI and Tracker fix. Replace the `whatsspy/` folder with the one of the repository .
 
@@ -19,7 +22,9 @@ Make sure that you before the update undertake these steps:
 
 **Update 1.0.5** : Fixed broken pipe and added DB check at startup. Same rules apply as for 1.0.3
 
-**Update 1.0.6** : Better error reporting and LiveNotifier added. You can undertake the same steps as 1.0.3. Please add `$whatsspyLNKey = '';` to your current config.
+**Update 1.0.6** : Better error reporting and LiveNotifier added. You can undertake the same steps as 1.0.3. 
+
+:horse: **Warning:** Please add `$whatsspyLNKey = '';` (in case you haven't) to your current config.
 
 **Update 1.0.7** : Fixed UTF8 support (works in FF only), added lastseen option and fixed some other small issues. same rules apply as `1.0.6`.
 
@@ -46,7 +51,9 @@ Make sure that you before the update undertake these steps:
 * Tracked user view in page "overview" now contains analytics about WhatsApp usage (today, 7 days, 14 days, alltime).
 * You can now be notified of specific users via WhatsApp about there online/offline status and profile pictures/status messages. You need to edit your config (read down here).
 
-:horse: **Warning:** This update contains a database upgrade. If WhatsSpy Public gives some error after this update, check your database rights (it will try to alter the table). Also make sure if you enable notifications, you have `$whatsspyWhatsAppUserNotification` in your `config.php` (you can copy from `config.example.php`).
+:horse: **Warning:** This update contains a database upgrade. If WhatsSpy Public gives some error after this update, check your database rights (it will try to alter the table). 
+
+:horse: **Warning 2:** Also make sure if you enable notifications, you have `$whatsspyWhatsAppUserNotification` in your `config.php` (you can copy from `config.example.php`).
 
 ## Need help?
 
