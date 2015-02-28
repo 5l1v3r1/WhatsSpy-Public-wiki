@@ -4,6 +4,8 @@
 
 On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. 
 
+In case you don't get this working, you can create an issue on this Gitlab, or contact me on *maikeldus@hotmail.com*.
+
 ## 0) Secondary WhatsApp account
 
 *This is a simplified version of [chapter 1) Secondary WhatsApp account](getting-started) or the normal getting started. You can alo use a jailbroken iPhone or rooted Android device.*
