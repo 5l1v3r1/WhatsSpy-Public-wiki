@@ -8,7 +8,7 @@ In case you don't get this working, you can create an issue on this Gitlab, or c
 
 ## 0) Secondary WhatsApp account
 
-*This is a simplified version of [chapter 1) Secondary WhatsApp account](getting-started) or the normal getting started. You can alo use a jailbroken iPhone or rooted Android device.*
+*This is a simplified version of [chapter 1) Secondary WhatsApp account](getting-started) or the normal getting started.*
 
 WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesnt use WhatsApp, do the following:
 
