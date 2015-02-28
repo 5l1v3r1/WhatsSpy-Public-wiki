@@ -14,7 +14,7 @@ Make sure that you before the update undertake these steps:
 
 ## Changelog
 
-At every update you can just re-download the repository and replace it with the current files.
+At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files).
 
 **Update 1.0.1/1.0.2/1.0.3** : Small UI and Tracker fix. Replace the `whatsspy/` folder with the one of the repository .
 
