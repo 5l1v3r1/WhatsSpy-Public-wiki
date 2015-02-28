@@ -30,7 +30,14 @@ GRANT ALL ON TABLE accounts TO whatsspy;
 
 \q
 ```
-Make sure in the future that all the tables belong to the user `whatsspy` (thus repeating these steps for all the tables).
+Make sure in the future that all the tables belong to the user `whatsspy` (thus repeating these steps for all the tables). 
+
+If this does not fix the problem use:
+
+```
+chmod 777 -R /var/www/whatsspy/
+```
+(chmod 777 is generally not a good practice, but on your Rpi this should be no problem).
 
 ### Broken pipe and it stops tracking
 
