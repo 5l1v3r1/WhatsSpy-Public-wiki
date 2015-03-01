@@ -59,6 +59,8 @@
 
 [Gelderlander](http://www.gelderlander.nl/regio/nijmegen-e-o/nijmegen/nijmeegse-student-ontdekt-privacylek-in-whatsapp-1.4769849) - [ED](http://www.ed.nl/algemeen/multimedia/nijmeegse-student-ontdekt-privacylek-in-whatsapp-1.4772867) - [tubantia](http://www.tubantia.nl/algemeen/multimedia/nijmeegse-student-ontdekt-privacylek-in-whatsapp-1.4772867) - [bndestem](http://www.bndestem.nl/algemeen/multimedia/nijmeegse-student-ontdekt-privacylek-in-whatsapp-1.4772867)
 
+[Voxweb](http://www.voxweb.nl/student-bewijst-whatsapp-lek/)
+
 ## Deutsch
 
 [AndroidPIT.de](http://www.androidpit.de/whatsapp-so-fahrlaessig-geht-whatsapp-mit-eurer-privatsphaere-um)
