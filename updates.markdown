@@ -63,6 +63,8 @@ At every update you can just re-download the repository and replace it with the 
 
 **Update 1.3.4/5** : WhatsApi core update, serious tracker improvements in accuracy, this update is a must. Same rules apply as `1.3.0`.
 
+* Make sure you PHP can read/write in `api/whatsapp/src/wadata/`
+
 ## Need help?
 
 In case you have any trouble upgrading your version, you can create an issue on this Gitlab server (first create account and login).
