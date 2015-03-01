@@ -59,6 +59,8 @@ At every update you can just re-download the repository and replace it with the 
 
 **Update 1.3.2** : Time fix where (1d) became (2d) and small change in tracking logs. Same rules apply as `1.3.0`.
 
+**Update 1.3.3** : Serious tracker timing improvements. Applied heuristics in end of online statuses. Keep-alive re-implemented with a logout/login. Same rules apply as `1.3.0`.
+
 ## Need help?
 
 In case you have any trouble upgrading your version, you can create an issue on this Gitlab server (first create account and login).
