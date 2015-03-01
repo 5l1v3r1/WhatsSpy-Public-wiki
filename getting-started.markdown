@@ -23,7 +23,7 @@ WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is s
 
 ### 1.1) Getting a phonenumber
 
-You need a phone(number) over which you can recieve SMS or voice calls for the WhatsApp activation. You can try to register your landline, or just buy a 5 euro SIM card and register that phonenumber at WhatsApp.
+You need a phone(number) over which you can recieve SMS or voice calls for the WhatsApp activation. You can try to register your landline, or just buy a 5 euro SIM card and register that phonenumber at WhatsApp. Do not use some shady SMS service, this won't work.
 
 ### 1.2) Activation at WhatsApp with your secondary phonenumber
 
