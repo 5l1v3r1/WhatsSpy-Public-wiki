@@ -107,7 +107,7 @@ to insert these SQL statements in the correct database.
 12. Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
 13. Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/whatsspy/images/profilepicture/` (including `/` and cut the `/var/www`)
 14. You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey` or `$whatsspyLNKey`. 
-15. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath` and `api/`!**
+15. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/` and `api/`!**
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
 sudo chown www-data:www-data -R <location-of-whatsspy-public>/api/
