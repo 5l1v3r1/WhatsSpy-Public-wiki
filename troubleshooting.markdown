@@ -14,6 +14,8 @@ You might have one of the following problems:
 * Make sure you have the newest PHP (5.4+)
 * Your configuration might be wrong: Does the PostgreSQL username and password actually work? Does the user have rights to acces the tables? etc.
 
+Try running in case you get any PDO errors: `sudo apt-get install nginx php5-pgsql postgresql php5-curl php5-cli php5`
+
 Check the error logs at /var/log/nginx/error.log if you use Nginx. Apache would be roughly the same.
 
 #### Error after update to `1.3.0`
