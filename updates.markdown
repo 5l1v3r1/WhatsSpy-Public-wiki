@@ -63,6 +63,15 @@ At every update you can just re-download the repository and replace it with the 
 
 **Update 1.3.4/5** : WhatsApi core update, serious tracker improvements in accuracy, this update is a must. Same rules apply as `1.3.0`.
 
+**Update 1.3.6** : Fixed several UI bugs (statistics, timeline, new number) as well improved performance in the GUI. Same rules apply as `1.3.0`.
+
+:horse: **Warning:** This update contains a database upgrade. This will happen automatically once you open the GUI or start the tracker. In case you get an Database upgrade error you can update the database yourself:
+```
+cd <location of whatsspy>/api/update/
+psql -U whatsspy -d whatsspy -f database-1.3.6.sql
+```
+(you can use `-U postgres` in case whatsspy doesn't work, but please try `whatsspy` first)
+
 * Make sure you PHP can read/write in `api/whatsapp/src/wadata/`
 
 ## Need help?
