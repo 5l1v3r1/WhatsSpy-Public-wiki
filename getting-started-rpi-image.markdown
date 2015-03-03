@@ -98,7 +98,23 @@ Once you've inserted some users you can start the tracker by executing:
 
 `bash /home/pi/whatsspy-public-startup`
 
-You only need to execute this command once. The next time the Rpi will startup WhatsSpy Public will start automaticly and it will auto-update as well. 
+It will output something like this:
+```
+pi@raspberrypi ~ $ bash whatsspy-public-startup
+-------------------------------------------------
+           (Re)starting WhatsSpy Public
+      Check gitlab.maikel.pro for more info.
+-------------------------------------------------
+[update] Checking for updates.
+Fetching origin
+HEAD is now at f8ab30d Fixed timline bug with less than 2 statuses
+[stop] Stopping any existing tracker session.
+No screen session found.
+[rights] Setting rights.
+[start] Starting tracker session.
+```
+
+You only need to execute this command once. The next time the Rpi will boot, WhatsSpy Public will start automaticly and it will auto-update as well (every 24 hours). 
 
 ## 7) Other steps
 
