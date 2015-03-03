@@ -100,7 +100,6 @@ Once you've inserted some users you can start the tracker by executing:
 
 It will output something like this:
 ```
-pi@raspberrypi ~ $ bash whatsspy-public-startup
 -------------------------------------------------
            (Re)starting WhatsSpy Public
       Check gitlab.maikel.pro for more info.
