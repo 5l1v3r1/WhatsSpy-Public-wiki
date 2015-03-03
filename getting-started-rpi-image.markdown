@@ -96,13 +96,13 @@ Once you have inserted these users they won't show up automatically. They need t
 
 Once you've inserted some users you can start the tracker by executing:
 
-`sudo bash /home/pi/whatsspy-public-startup`
+`bash /home/pi/whatsspy-public-startup`
 
 You only need to execute this command once. The next time the Rpi will startup WhatsSpy Public will start automaticly and it will auto-update as well. 
 
 ## 7) Other steps
 
-You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `sudo screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
+You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 
 I advise you to change the default password to something else. You can do this by using `passwd`.
 
