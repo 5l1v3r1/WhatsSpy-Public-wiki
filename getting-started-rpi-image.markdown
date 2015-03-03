@@ -121,3 +121,11 @@ You can use `cat /home/pi/tracker.log` to view any history of the tracker and us
 
 I advise you to change the default password to something else. You can do this by using `passwd`.
 
+If you ever choose to shutdown the pi undertake these steps:
+```
+screen -r
+```
+Press `Ctrl + c` and enter `exit` followed by a enter.
+
+After this you can shutdown by using `sudo shutdown -h now`.
+
