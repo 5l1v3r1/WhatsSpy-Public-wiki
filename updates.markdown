@@ -72,7 +72,9 @@ At every update you can just re-download the repository and replace it with the 
 cd <location of whatsspy>/api/update/
 psql -U whatsspy -d whatsspy -f database-1.3.6.sql
 ```
-(you can use `-U postgres` in case whatsspy doesn't work, but please try `whatsspy` first)
+(you can use `-U postgres` in case whatsspy doesn't work, but please try `-U whatsspy` first)
+
+**Update 1.3.7** : Fixed timezone issue in the statistics page in case PostgreSQL is improperly configured. Also some minor UI fixes. Same rules apply as `1.3.0`.
 
 
 ## Need help?
