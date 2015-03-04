@@ -25,7 +25,7 @@ You have retrieved the WhatsApp secret! Now we can setup WhatsSpy Public.
 
 ## 1) Download
 
-[Download the Raspbian image (1.6Gb, unpacked 4GB)](https://drive.google.com/file/d/0B_mlyJwD3c1TakNsdWd2X2ViRGs/view?usp=sharing)
+[Download the Raspbian image (1.6GB, unpacked 4GB)](https://drive.google.com/file/d/0B_mlyJwD3c1TakNsdWd2X2ViRGs/view?usp=sharing)
 
 Download this file to your computer, open the `.zip` with WinRAR or 7Zip and extract the `.img` file to your desktop.
 
