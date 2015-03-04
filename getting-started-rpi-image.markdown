@@ -65,10 +65,10 @@ Run `sudo nano /var/www/api/config.php` and do the following:
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
 
-Now make sure that PostgreSQL is using the correct timezone (is currently set at Europe/Amsterdam):
+Now make sure that PostgreSQL is using the correct timezone **(make sure you do this step, even for Europe/Amsterdam)**:
 ```
 psql -U postgres
-SET TIME ZONE 'YOURTIMEZONE';
+SET TIME ZONE "Europe/Amsterdam";
 \q
 ```
 (Press `Ctrl` + `Z` in case you cant use \q)
