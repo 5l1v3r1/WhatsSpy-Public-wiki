@@ -62,21 +62,12 @@ Run `sudo nano /var/www/api/config.php` and do the following:
 * **'number'** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
 
-In case you want notifications via WhatsApp add this to the `config.php` file (place it at the end before the `?>`):
+In case you want to enable notifications via WhatsApp add this to the `config.php` file (place it at the end before the `?>`):
 
 ```
-// Set this varible to recieve notficiations via WhatsApp on your phone.
-// In the GUI you can enable user specific tracking of activities etc.
-// On default no actions will be sent of any tracking contact. In the UI you need to enable this for a specific contact under "edit".
-// USE <countrycode><phonenumber> and do not use prefix 0's in countrycode and phonenumber
-// (eg. 0031 0611223300 will become 31 611223300)
-// DO NOT use any special chars (spaces, + etc), only type the number (eg. '31611223300')
-// NOTE: If you change this meanwhile the tracker is running, you need to restart the tracker.
-// NOTE2: If you don't use this, please leave it empty. This greatly reduces queries to PostgreSQL.
-// OPTIONAL
 $whatsspyWhatsAppUserNotification = '';
 ```
-and fill in the `''` (read the comments above it first).
+You need to fill in the `''` with the phonenumber you want to retrieve the messages on. The same **'number'** (described above) rules apply on this field. When you fill in this field you can enable notifications via the web interface.
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
