@@ -67,11 +67,11 @@ Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
 Now make sure that PostgreSQL is using the correct timezone **(make sure you do this step, even for Europe/Amsterdam)**:
 ```
-psql -U postgres
-SET TIME ZONE "Europe/Amsterdam";
+psql -U postgres -d whatsspy
+SET TIME ZONE "YOURTIMEZONE";
 \q
 ```
-(Press `Ctrl` + `Z` in case you cant use \q)
+(Press `Ctrl` + `Z` in case you cant use `\q`)
 
 ## 5) Importing users
 
@@ -79,7 +79,7 @@ Execute `ifconfig` and search for the ipv4 address. Look for `eth0` and find som
 
 Now go to this address on your Windows (in for example Chrome or Firefox):
 
-`http://192.168.2.9/` (where the 192.168.2.9 is the IP in ifconfig).
+`http://192.168.2.9/` (where the `192.168.2.9` is the IP in ifconfig).
 
 You need the following authentication:
 Name: `whatsspypublic`
