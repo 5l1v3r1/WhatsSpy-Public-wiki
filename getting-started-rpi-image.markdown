@@ -64,15 +64,6 @@ Run `sudo nano /var/www/api/config.php` and do the following:
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
-
-Now make sure that PostgreSQL is using the correct timezone **(make sure you do this step, even for Europe/Amsterdam)**:
-```
-psql -U postgres -d whatsspy
-SET TIME ZONE "YOURTIMEZONE";
-\q
-```
-(Press `Ctrl` + `Z` in case you cant use `\q`)
-
 ## 5) Importing users
 
 Execute `ifconfig` and search for the ipv4 address. Look for `eth0` and find something of the form `inet addr:<IPV4 ADDRESS>`.
