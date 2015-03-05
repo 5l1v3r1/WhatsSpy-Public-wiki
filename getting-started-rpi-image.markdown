@@ -53,6 +53,8 @@ The login information:
 User: `pi`
 Password: `whatsspypublic`
 
+*(cannot login? check #141)
+
 ## 4) Configuration
 
 Run `sudo nano /var/www/api/config.php` and do the following:
