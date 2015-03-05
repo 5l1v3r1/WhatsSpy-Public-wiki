@@ -17,7 +17,7 @@ wget https://maikel.pro/etc/whatsspy-public-startup
 chmod 777 whatsspy-public-startup
 ```
 
-Because this problem created a lot of small tracker session you may want to clean your database:
+Because this problem created a lot of small tracker sessions you may want to clean your database:
 ```
 psql -U postgres -d whatsspy
 DELETE FROM tracker_history;
