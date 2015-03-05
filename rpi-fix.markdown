@@ -4,7 +4,7 @@ Anyone who downloaded the Rpi image before the **4th of march 2015** may have co
 
 ## 1) Identify problem
 
-You can identify this problem by going to the compare page and check if the blue background line is interrupted by a lot of white stripes (like in the image this is usually starts at 0:00 AM).
+You can identify this problem by going to the compare page and check if the blue background line is interrupted by a lot of white stripes (this usually starts at 0:00 AM).
 
 ![bug-fix](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/9f007f8bb0/bug-fix.png)
 
