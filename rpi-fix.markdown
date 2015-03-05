@@ -1,4 +1,4 @@
-# Raspberry Pi fix for image of before 4th of march 2015 ([error] Tracker Exception! Connection Closed)
+# Raspberry Pi fix for image of before 4th of march 2015 (`[error] Tracker Exception! Connection Closed!`)
 
 Anyone who downloaded the Rpi image before the **4th of march 2015** may have connection issues. It is important to fix this, because it interferes with the tracker accuracy.
 
