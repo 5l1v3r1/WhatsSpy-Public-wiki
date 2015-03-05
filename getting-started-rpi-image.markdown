@@ -121,7 +121,16 @@ No screen session found.
 
 You only need to execute this command once. The next time the Rpi will boot, WhatsSpy Public will start automaticly and it will auto-update as well (every 24 hours). 
 
-## 8) Other steps
+## 8) Check to be sure
+
+Type `screen -r` to watch the tracker startup. In case it gives an error like:
+```
+[error] Tracker Exception! Tracker Closed!
+```
+Make sure your firewall is allowing traffic from your Raspberry Pi. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
+
+
+## 9) Other steps
 
 You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 
