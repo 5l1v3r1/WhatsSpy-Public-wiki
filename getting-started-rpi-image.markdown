@@ -73,13 +73,11 @@ Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
 ## 5) Check the system time
 
-When you have a working internet connection, your time should adjust automatically but just to be sure:
-
 Run `date`, this would output something like:
 ```
 Thu Mar  5 13:38:05 UTC 2015
 ```
-In case this time is not correct run `sudo dpkg-reconfigure tzdata` and follow the instructions on the screen.
+In case this time is not correct run `sudo dpkg-reconfigure tzdata` and follow the instructions on the screen. After this you can check again by running `date`.
 
 ## 6) Importing users
 
