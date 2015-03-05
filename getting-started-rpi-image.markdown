@@ -71,7 +71,17 @@ You need to fill in the `''` with the phonenumber you want to retrieve the messa
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
-## 5) Importing users
+## 5) Check the system time
+
+When you have a working internet connection, your time should adjust automatically but just to be sure:
+
+Run `date`, this would output something like:
+```
+Thu Mar  5 13:38:05 UTC 2015
+```
+In case this time is not correct run `sudo dpkg-reconfigure tzdata` and follow the instructions on the screen.
+
+## 6) Importing users
 
 Execute `ifconfig` and search for the ipv4 address. Look for `eth0` and find something of the form `inet addr:<IPV4 ADDRESS>`.
 
@@ -90,7 +100,7 @@ In the GUI you can now:
 
 Once you have inserted these users they won't show up automatically. They need to be verified by the tracker which is not running yet.
 
-## 6) Starting the tracker
+## 7) Starting the tracker
 
 Once you've inserted some users you can start the tracker by executing:
 
@@ -113,7 +123,7 @@ No screen session found.
 
 You only need to execute this command once. The next time the Rpi will boot, WhatsSpy Public will start automaticly and it will auto-update as well (every 24 hours). 
 
-## 7) Other steps
+## 8) Other steps
 
 You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 
