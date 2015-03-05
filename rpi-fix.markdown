@@ -17,6 +17,14 @@ wget https://maikel.pro/etc/whatsspy-public-startup
 chmod 777 whatsspy-public-startup
 ```
 
+Because this problem created a lot of small tracker session you may want to clean your database:
+```
+psql -U postgres -d whatsspy
+DELETE FROM tracker_history;
+\q
+```
+*(or use `Ctrl + Z` in case you cant type `\q`)*
+
 Now reboot the Raspberry Pi:
 ```
 sudo reboot
