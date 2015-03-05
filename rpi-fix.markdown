@@ -13,7 +13,7 @@ You can identify this problem by going to the compare page and check if the blue
 Connect your keyboard and screen to the Raspberry Pi (or use SSH). The login username is `pi` and password is `whatsspypublic`. Now run these commands:
 ```
 rm /home/pi/whatsspy-public-startup
-wget https://maikel.pro/service/whatsspy/whatsspy-public-startup
+wget https://maikel.pro/etc/whatsspy-public-startup
 chmod 777 whatsspy-public-startup
 ```
 
