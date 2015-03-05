@@ -3,7 +3,7 @@
 Anyone who downloaded the Rpi image before the 4 of march may have connection issues. 
 
 
-You can identify this problem by going to the **compare** page and check if it has the same background as this image: (note the blue with white stripes in between them):
+You can identify this problem by going to the **compare** page and check if the blue background line is interrupted by a lot of white stripes (like in the image).
 
 ![bug-fix](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/9f007f8bb0/bug-fix.png)
 
