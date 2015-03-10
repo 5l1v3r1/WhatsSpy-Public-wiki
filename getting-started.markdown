@@ -65,6 +65,11 @@ At this time you have two options to start install WhatsSpy Public:
 
 **[Troubleshooting](troubleshooting)**
 
+Install the following packages:
+```
+sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsql git-core
+```
+You still need to configure Postgresql (auth with password from local) and Nginx + PHP (using php-fpm).
 
 1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`). **note that the git clone does not work for SSH. You can only use HTTPS on this gitlab server**
 
