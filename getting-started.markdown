@@ -119,7 +119,7 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174 is correct*
   * `secret` If you don't have this yet, read chapter 1) Secondary WhatsApp account.
 * Set the correct timezone of the place where you are.
-* Set the paths correct for `$whatsspyProfilePath` and `$whatsspyWebProfilePath` in case you did **not** install WhatsSpy Public in `/var/www/whatsspy/`.
+* In case you did **not** install WhatsSpy Public in `/var/www/whatsspy/`, set the paths for `$whatsspyProfilePath` and `$whatsspyWebProfilePath` .
   * `$whatsspyProfilePath` is the absolute path for the system to store the profile pictures. For example `/var/www/whatsspy/images/profilepicture/` (default setting), `/var/www/other-dir/images/profilepicture/`. Don't forget the last `/`!
   * `$whatsspyWebProfilePath` is the path for web users to access the profile pictures. This varible is used in this manner `http://localhost/<this-is-the-var>/some-profile-picture.jpg`. Again, don't forget the `/` at the end).
 
