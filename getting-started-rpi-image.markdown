@@ -71,6 +71,8 @@ And now fill in the following details:
    * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
    * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
+* Change `$whatsspyProfilePath` to: `'/var/www/images/profilepicture/'`;
+* Change `$whatsspyWebProfilePath` to: `'/images/profilepicture/'`;
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
