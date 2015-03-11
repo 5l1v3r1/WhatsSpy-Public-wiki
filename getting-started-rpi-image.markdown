@@ -13,13 +13,13 @@ In case you don't get this working, you can create an issue on this Gitlab, or c
 WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesnt use WhatsApp, do the following:
 
 * Download [WART](https://github.com/shirioko/WART/blob/master/WART-1.7.3.0.exe?raw=true).
-* Open up WART and fill in **phonenumber** and **password** (just choose one).
-* **phonenumber** needs to be the countrycode+phonenumber.
-* **phonenumber** needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
-* **phonenumber** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*.
-* Press the request code. You will recieve a SMS with the activation code from WhatsApp.
-* Enter this code in **Step 2** (only the digits) and press confirm code.
-* Write down the password (it's the one-line of strange characters ending with an =).
+* Open up WART and fill in `phonenumber` and `password` (just choose one).
+* `phonenumber` needs to be the countrycode+phonenumber.
+* `phonenumber` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
+* `phonenumber` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*.
+* Press the request code. You will receive a SMS with the activation code from WhatsApp.
+* Enter this code in **Step 2** and press confirm code.
+* Write down the `secret` (it's the one-line of strange characters ending with an =).
 
 You have retrieved the WhatsApp secret! Now we can setup WhatsSpy Public.
 
@@ -60,8 +60,8 @@ Password: `whatsspypublic`
 Run `sudo nano /var/www/api/config.php` and do the following:
 
 * Fill in the empty fields in `$whatsappAuth` ('number' and 'secret'). The 'secret' is the thing you have retrieved in (chapter 0).
-* **'number'** needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
-* **'number'** may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
+* `'number'` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
+* `'number'` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
 
 In case you want to enable notifications via WhatsApp add this to the `config.php` file (place it at the end before the `?>`):
