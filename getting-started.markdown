@@ -107,7 +107,7 @@ GRANT ALL ON DATABASE whatsspy TO whatsspy;
 
 6. Now it is time to insert the WhatsSpy Public database in PostgreSQL. Execute the following commands:
 ```
-cd <location of whatsspy>/api/
+cd /var/www/whatsspy/api/
 psql -U postgres -d whatsspy -f whatsspy-db.sql
 ``` 
 
@@ -128,9 +128,9 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
 
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
-sudo chown www-data:www-data -R <location-of-whatsspy-public>/api/
+sudo chown www-data:www-data -R /var/www/whatsspy/api/
 sudo chown www-data:www-data -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
-sudo chmod 760 -R <location-of-whatsspy-public>/api/
+sudo chmod 760 -R /var/www/whatsspy/api/
 sudo chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 ```
 
