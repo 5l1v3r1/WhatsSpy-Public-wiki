@@ -66,15 +66,16 @@ As of now you have two options to install WhatsSpy Public:
 
 **[troubleshooting](troubleshooting)**
 
-Install the following packages:
+1. Install the following packages:
 ```
 sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsql git-core screen
 ```
-1. Follow [this tutorial](http://www.thegeekstuff.com/2013/12/nginx-php-fpm/) to setup Nginx with PHP-FPM.
 
-2. Allow local connections for the user `postgres` in PostgreSQL. Check [this post](http://stackoverflow.com/questions/17443379/psql-fatal-peer-authentication-failed-for-user-dev) how to enable this.
+2. Follow [this tutorial](http://www.thegeekstuff.com/2013/12/nginx-php-fpm/) to setup Nginx with PHP-FPM.
 
-3. Make a folder on your machine: `mkdir /var/www/whatsspy/`. After this download WhatsSpy Public:
+3. Allow local connections for the user `postgres` in PostgreSQL. Check [this post](http://stackoverflow.com/questions/17443379/psql-fatal-peer-authentication-failed-for-user-dev) how to enable this.
+
+4. Make a folder on your machine: `mkdir /var/www/whatsspy/`. After this download WhatsSpy Public:
 ```
 cd /var/www/whatsspy/
 git init
@@ -84,7 +85,7 @@ git pull
 *(Please note that SSH does not work on this Gitlab, only HTTPS)*
 
 
-4. Execute the following commands (choose a password for the user at `cmd 1`):
+5. Execute the following commands (choose a password for the user at `cmd 1`):
 ```
 psql -U postgres
 -- Execute command by command!
@@ -104,13 +105,13 @@ GRANT ALL ON DATABASE whatsspy TO whatsspy;
 ```
 *(or use `Ctrl`+`Z` in case you can't type `\q`)*
 
-5. Now it is time to insert the WhatsSpy Public database in PostgreSQL. Execute the following commands:
+6. Now it is time to insert the WhatsSpy Public database in PostgreSQL. Execute the following commands:
 ```
 cd <location of whatsspy>/api/
 psql -U postgres -d whatsspy -f whatsspy-db.sql
 ``` 
 
-6. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
+7. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
 * Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
 * Insert your `'number'` and `'secret'` in `$whatsappAuth`. 
@@ -121,7 +122,8 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
 * Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
 * Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/whatsspy/images/profilepicture/` (including `/` and cut the `/var/www`)
 * You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey` or `$whatsspyLNKey`. 
-* **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/` and `api/`!**
+
+8. **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/` and `api/`!**
 
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
@@ -131,7 +133,7 @@ sudo chmod 760 -R <location-of-whatsspy-public>/api/
 sudo chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
 ```
 
-### Webserver (optional, but don't forget the next step)
+### Webserver
 
 You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. I assume you have Nginx and PHP already up and running (you can follow [this tutorial in case you dont](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-7))
 
