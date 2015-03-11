@@ -32,14 +32,6 @@ You have two methods (stick with WART if you do not have a rooted/jailbroken pho
 * Use [WART](https://github.com/shirioko/WART), a Windows registration tool which allows you to retrieve the secret via a GUI.
 * Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
 
-
-In case of registration via phone you need a **jailbroken iPhone** or a **rooted Android** device in order to retrieve the secret. In order to retrieve the scecret you need to follow these steps:
-
-* Insert your (new) secondary SIM card in your phone and boot it up.
-* Re-install Whatsapp on your phone and activate it using the new phonenumber.
-* Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret. Write this secret down, which is required later. 
-* Insert your normal SIM card and re-install WhatsApp for normal use.
-
 In case of registration via WART:
 
 * Download [WART](https://github.com/shirioko/WART/blob/master/WART-1.7.3.0.exe?raw=true).
@@ -51,7 +43,16 @@ In case of registration via WART:
 * Enter this code in **Step 2** (only the digits) and press confirm code.
 * Write down the password (it's the one-line of strange characters ending with an =).
 
-**[Do not use the WhatsApp application with the same phonenumber as the tracker, this will reset the connection creating a dead tracker.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
+
+In case of registration via phone you need a **jailbroken iPhone** or a **rooted Android** device in order to retrieve the secret. In order to retrieve the scecret you need to follow these steps:
+
+* Insert your (new) secondary SIM card in your phone and boot it up.
+* Re-install Whatsapp on your phone and activate it using the new phonenumber.
+* Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret. Write this secret down, which is required later. 
+* Insert your normal SIM card and re-install WhatsApp for normal use.
+
+
+**[Do not use the WhatsApp application on your phone when the tracker is running, this creates a broken connection.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
 
 ## 2) Installation
 ### 2.1) You have two choices at the moment
@@ -67,11 +68,11 @@ At this time you have two options to start install WhatsSpy Public:
 
 Install the following packages:
 ```
-sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsql git-core
+sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsql git-core screen
 ```
-You still need to configure Postgresql (auth with password from local) and Nginx + PHP (using php-fpm).
+1. Follow [this tutorial](http://www.thegeekstuff.com/2013/12/nginx-php-fpm/) to setup Nginx with PHP-FPM.
 
-1. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`). **note that the git clone does not work for SSH. You can only use HTTPS on this gitlab server**
+2. Download the [repository](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/tree/master) and unpack these files on your server at for example `/whatsspy/` in your web directory (for nginx in debian this is `/var/www/`). **note that the git clone does not work for SSH. You can only use HTTPS on this gitlab server**
 
 2. Log in your PostgreSQL database and create an new DB and user for WhatsSpy Public **(Insert password for DB user)**:
 ```
