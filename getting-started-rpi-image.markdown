@@ -128,7 +128,7 @@ You only need to execute this command once. The next time the Rpi will boot, Wha
 
 Type `screen -r` to watch the tracker startup. In case it gives an error like:
 ```
-[error] Tracker Exception! Tracker Closed!
+[error] Tracker Exception! Connection Closed!
 ```
 Make sure your firewall is allowing traffic from your Raspberry Pi. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 
