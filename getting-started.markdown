@@ -113,10 +113,10 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
 6. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
 * Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
-* Insert your 'number' and 'secret' in `$whatsappAuth`. 
-- `number` needs to be <countrycode><phonenumber> without any prefix 0's. 0031 06 xxx becomes 31 6 xxx (no 0's prefix for both the country code and phonenumber itself).
-- `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
-- `secret` If you don't have this yet, read chapter 1) Secondary WhatsApp account.
+* Insert your `'number'` and `'secret'` in `$whatsappAuth`. 
+  * `'number'` needs to be <countrycode><phonenumber> without any prefix 0's. 0031 06 xxx becomes 31 6 xxx (no 0's prefix for both the country code and phonenumber itself).
+  * `'number'` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
+  * `'secret'` If you don't have this yet, read chapter 1) Secondary WhatsApp account.
 * Set the correct timezone of the place where you are.
 * Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
 * Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/whatsspy/images/profilepicture/` (including `/` and cut the `/var/www`)
