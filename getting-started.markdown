@@ -114,38 +114,42 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
 7. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
 * Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
-* Insert your `'number'` and `'secret'` in `$whatsappAuth`. 
-  * `'number'` needs to be <countrycode><phonenumber> without any prefix 0's. 0031 06 xxx becomes 31 6 xxx (no 0's prefix for both the country code and phonenumber itself).
-  * `'number'` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
-  * `'secret'` If you don't have this yet, read chapter 1) Secondary WhatsApp account.
+* Insert your `number` and `secret` in `$whatsappAuth`, which you have obtained following chapter *1) Secondary WhatsApp account*. 
+  * `number` needs to be <countrycode><phonenumber> without any prefix 0's. 0031 06 xxx becomes 31 6 xxx (no 0's prefix for both the country code and phonenumber itself).
+  * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174 is correct*
+  * `secret` If you don't have this yet, read chapter 1) Secondary WhatsApp account.
 * Set the correct timezone of the place where you are.
-* Set the absolute path correct in `$whatsspyProfilePath`. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/var/www/whatsspy/images/profilepicture/` (including `/`)
-* Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/whatsspy/images/profilepicture/` (including `/` and cut the `/var/www`)
-* You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey` or `$whatsspyLNKey`. 
+* Set the paths correct for `$whatsspyProfilePath` and `$whatsspyWebProfilePath` in case you did **not** install WhatsSpy Public in `/var/www/whatsspy/`.
+  * `$whatsspyProfilePath` is the absolute path for the system to store the profile pictures. For example `/var/www/whatsspy/images/profilepicture/` (default setting), `/var/www/other-dir/images/profilepicture/`. Don't forget the last `/`!
+  * `$whatsspyWebProfilePath` is the path for web users to access the profile pictures. This varible is used in this manner `http://localhost/<this-is-the-var>/some-profile-picture.jpg`. Again, don't forget the `/` at the end).
 
 
-**Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/` and `api/`!**
+**Check folder rights: the tracker needs read/write acces in the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/` and `api/`!**
 
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
+# In case you chose other a $whatsspyProfilePath, you need to use this variable.
 sudo chown www-data:www-data -R /var/www/whatsspy/api/
-sudo chown www-data:www-data -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
+sudo chown www-data:www-data -R /var/www/whatsspy/images/profilepicture/
 sudo chmod 760 -R /var/www/whatsspy/api/
-sudo chmod 760 -R <location-of-the-$whatsspyProfilePath-you-set-in-config.php>
+sudo chmod 760 -R /var/www/whatsspy/images/profilepicture/
 ```
 
 ### Webserver
 
-You need to restrict access to Whatsspy and the api of Whatsspy from unauthorised web access. I assume you have Nginx and PHP already up and running (you can follow [this tutorial in case you dont](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-7))
+You need to restrict access to WhatsSpy Public and the API of WhatsSpy Public from unauthorized web access.
 
 #### Nginx
-For Nginx add the following:
+We need to update your Nginx configuration to restrict access:
 
+`sudo nano /etc/nginx/sites-available/default`
+
+And make sure your configuration looks like:
 ```
+server {
+    listen 80;
+    root /var/www;
     index index.html index.php;
-    location / {
-        try_files $uri $uri/ /index.html;
-    }
 
     location ~ /whatsspy/ {
         auth_basic "Restricted";
@@ -157,17 +161,33 @@ For Nginx add the following:
         return 404;
     }
 
-    location ~ /whatsspy/api/((?!index\.php).+) {
+    location ~ ^/whatsspy/api/((?!index\.php).+) {
         deny all;
         return 404;
     }
-``` 
-*assuming you installed whatsspy in a directory called `/var/www/whatsspy` and remember to put the nginx location for php processing (location ~ \.php$ ....)*
 
-You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). Make sure you reload the configuration by executing `service nginx reload`.
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+}
+``` 
+In case you installed your WhatsSpy Public in a other place you need to edit the paths slightly.
+
+You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). Copy the output of this generator and save it:
+```
+sudo nano /etc/nginx/.htpasswd
+```
+Paste in the generated code and save it by using `Ctrl`+`X`, type `y` and press enter.
+
+Make sure you reload the configuration by executing `sudo service nginx reload`.
 
 #### Apache
-create an `.htaccess` in the whatsspy folder and add the following:
+create an `.htaccess` in the WhatsSpy Public folder and add the following:
 
 ```
 AuthType Basic
@@ -175,7 +195,7 @@ AuthName "Password Protected Area"
 AuthUserFile /var/.htpasswd
 Require valid-user
 ```
-Do not place the .htpasswd in the `/var/www` folder. You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). The `api/` folder is protected by default.
+Do not place the .htpasswd in the `/var/www/..` folder, but store it somewhere save (like `/var/`?). You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). The `api/` folder is protected by default.
 
 ## 3) Importing users
 
