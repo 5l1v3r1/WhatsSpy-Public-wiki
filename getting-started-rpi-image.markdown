@@ -53,23 +53,24 @@ The login information:
 User: `pi`
 Password: `whatsspypublic`
 
-*(cannot login? check #141)
+*(cannot login? check #141)*
+
 
 ## 4) Configuration
 
-Run `sudo nano /var/www/api/config.php` and do the following:
+First copy the example configuration over to a real config:
+```
+sudo rm /var/www/api/config.php
+sudo cp /var/www/api/config.example.php /var/www/api/config.php
+sudo nano /var/www/api/config.php
+```
+And now fill in the following details:
 
-* Fill in the empty fields in `$whatsappAuth` ('number' and 'secret'). The 'secret' is the thing you have retrieved in (chapter 0).
-* `'number'` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
-* `'number'` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
+* Find`$dbAuth` and type between the quotes after `'password'`: `T7hGdg5Y8H3CfNN0yi6G`.
+* Fill in the empty fields in `$whatsappAuth` (`number` and `secret`). The `secret` is the thing you have retrieved in chapter 0.
+   * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
+   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
-
-In case you want to enable notifications via WhatsApp add this to the `config.php` file (place it at the end before the `?>`):
-
-```
-$whatsspyWhatsAppUserNotification = '';
-```
-You need to fill in the `''` with the phonenumber you want to retrieve the messages on. The same **'number'** (described above) rules apply on this field. When you fill in this field you can enable notifications via the web interface.
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
