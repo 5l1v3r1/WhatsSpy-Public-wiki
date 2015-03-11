@@ -122,6 +122,7 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
 * Set the path correct in `$whatsspyWebProfilePath`. This path is to make sure you access the `$whatsspyProfilePath` from the web. If you've installed WhatsSpy Public in for example `/var/www/whatsspy` the correct directory would be `/whatsspy/images/profilepicture/` (including `/` and cut the `/var/www`)
 * You can set an Optional NotifyMyAndroid key for notifications about the tracker (startup,shutdown,errors etc) in `$whatsspyNMAKey` or `$whatsspyLNKey`. 
 * **Check folder rights: the tracker needs read/write acces in both the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/` and `api/`!**
+
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
 sudo chown www-data:www-data -R <location-of-whatsspy-public>/api/
