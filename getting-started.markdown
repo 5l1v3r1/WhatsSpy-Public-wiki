@@ -151,7 +151,7 @@ server {
     root /var/www;
     index index.html index.php;
 
-    location ~ /whatsspy/ {
+    location /whatsspy/ {
         auth_basic "Restricted";
         auth_basic_user_file /etc/nginx/.htpasswd; 
     }
