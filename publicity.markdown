@@ -53,6 +53,21 @@
 
 [theregister.co.uk](http://www.theregister.co.uk/2015/02/16/whatsapp_security_slip_up_concept_privacy/)
 
+[techtimes.com](http://www.techtimes.com/articles/32469/20150212/whatsapp-security-hole-whatsspy-web-track-users.htm)
+
+[inferse.com](http://www.inferse.com/22642/whatsspy-hacks-and-tracks-whatsapp-users-activity/)
+
+[androidpit.com](http://www.androidpit.com/whatsspy-can-track-your-whatsapp-online-activity)
+
+[idigitaltimes.com](http://www.idigitaltimes.com/whatsapp-pc-app-vulnerability-whatsspy-public-proves-facebook-owned-messenger-has-415209)
+
+[techcabal.com](http://techcabal.com/2015/02/25/whatsspy-goodbye-whatsapp-privacy/)
+
+[pressandupdate.com](http://pressandupdate.com/whatsapp-free-download-users-security-risk-new-bug-exposes-activity-log-strangers/)
+
+[]()
+
+[]()
 ## Dutch
 
 [Computerworld.nl](http://computerworld.nl/beveiliging/85330-nederlander-maakt-whatsapp-gedrag-pijnlijk-zichtbaar)
@@ -60,6 +75,8 @@
 [Gelderlander](http://www.gelderlander.nl/regio/nijmegen-e-o/nijmegen/nijmeegse-student-ontdekt-privacylek-in-whatsapp-1.4769849) - [ED](http://www.ed.nl/algemeen/multimedia/nijmeegse-student-ontdekt-privacylek-in-whatsapp-1.4772867) - [tubantia](http://www.tubantia.nl/algemeen/multimedia/nijmeegse-student-ontdekt-privacylek-in-whatsapp-1.4772867) - [bndestem](http://www.bndestem.nl/algemeen/multimedia/nijmeegse-student-ontdekt-privacylek-in-whatsapp-1.4772867)
 
 [Voxweb](http://www.voxweb.nl/student-bewijst-whatsapp-lek/)
+
+[demorgen.be](http://www.demorgen.be/technologie/nederlandse-student-klaagt-met-stalker-app-veiligheidslek-in-whatsapp-aan-a2221610/)
 
 ## Deutsch
 
@@ -93,6 +110,11 @@
 
 [chip.de](http://www.chip.de/news/WhatsSpy-App-spioniert-Sie-aus-Dieses-Tool-weiss-fast-alles-ueber-WhatsApp_76371669.html)
 
+[swp.de](http://www.swp.de/ulm/nachrichten/vermischtes/WhatsSpy-spioniert-WhatsApp-Nutzer-aus;art4304,3043245)
+
+[bild.de](http://www.bild.de/digital/smartphone-und-tablet/whatsapp/whatsapp-spy-freunde-ausspionieren-39710786.bild.html)
+
+[netzwelt.de](http://www.netzwelt.de/news/151197-geek-feed-11-whatsapp-spione-ueberwachungsdrohnen.html)
 
 ## Swedish
 
@@ -106,7 +128,17 @@
 
 [isecnews.com](http://isecnews.com/%D8%A8%D9%87%D8%B0%D8%A7-%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%8A%D9%85%D9%83%D9%86%D9%83-%D8%A7%D9%84%D8%A2%D9%86-%D8%A7%D9%84%D8%AA%D8%AC%D8%B3%D8%B3-%D8%B9%D9%84%D9%89-%D9%85%D8%B3%D8%AA/)
 
+[worldakhbar.com](http://www.worldakhbar.com/science-technology/23799.html)
 
+[egybreak.com](http://www.egybreak.com/topic/84117)
+
+[sadda.co](http://www.sadda.co/Technology/474.html)
+
+[mojazeg.com](http://www.mojazeg.com/tech/53535/)
+
+[advar-egypt.com](http://advar-egypt.com/46311.html)
+
+[today-news.co](http://www.today-news.co/news-technology/3874.html)
 
 ## Portuguese
 
@@ -117,6 +149,8 @@
 [abril.com.br](http://info.abril.com.br/noticias/seguranca/2015/02/ferramenta-espia-pode-monitorar-atividades-do-usuario-do-whatsapp.shtml)
 
 [opovo.com.br](http://www.opovo.com.br/app/maisnoticias/tecnologia/2015/02/13/noticiastecnologia,3392813/whatspy-public-pode-monitorar-o-whatsapp-de-outra-pessoa.shtml)
+
+[under-linux.org](https://under-linux.org/content.php?r=9304)
 
 
 ## Spanish
@@ -133,11 +167,17 @@
 
 [cincodias.com](http://cincodias.com/cincodias/2015/02/09/lifestyle/1423479271_643693.html)
 
+[muycomputerpro.com](http://www.muycomputerpro.com/2015/03/05/whatsspy-public-uso-corporativo-whatsapp)
 
 ## Russian
 
 [securitylab.ru](http://www.securitylab.ru/news/471079.php)
 
+[expert.bg](http://www.expert.bg/4-t%D0%B5-naj-gol%D0%B5mi-zaplahi-koito-kri%D0%B5-WhatsApp--460954.html)
+
+[digital.bg](http://www.digital.bg/novini/%D0%BA%D0%B0%D0%BA%D0%B2%D0%B8-%D0%B7%D0%B0%D0%BF%D0%BB%D0%B0%D1%85%D0%B8-%D0%BA%D1%80%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D1%82%D0%BE-whatsapp-news46706.html)
+
+[expert.bg](http://www.expert.bg/4-t%D0%B5-naj-gol%D0%B5mi-zaplahi-koito-kri%D0%B5-WhatsApp--460954.html)
 ## Croatian
 
 [bug.hr](http://www.bug.hr/vijesti/ugrozena-privatnost-whatsappu/140315.aspx)
@@ -149,7 +189,15 @@
 
 [tuttoandroid.net](http://www.tuttoandroid.net/news/whatsspy-il-software-che-tiene-traccia-dei-contatti-whatsapp-251836/)
 
+[mondoinformazione.com](http://www.mondoinformazione.com/tecnologia/whatsspy-spiare-whatsapp/141381/)
 
+[ultima-ora.zazoom.it](http://ultima-ora.zazoom.it/notizia/284869/whatsspy-spiare-i-propri-contatti-visualizzando-la-cronologia-dello-stato-online)
+
+## Other
+
+[zonamovilidad.es](http://www.zonamovilidad.es/noticia/9998/Aplicaciones/WhatsApp-no-es-tan-confidencial-como-creemos.html)
+
+[version2.dk](http://www.version2.dk/artikel/studerende-afsloerer-sikkerhedsfejl-i-whatsapp-77308)
 
 
 And the list goes on...
