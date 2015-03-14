@@ -58,7 +58,9 @@ Password: `whatsspypublic`
 
 ## 4) Configuration
 
-First copy the example configuration over to a real config:
+First execute `bash /home/pi/whatsspy-public-startup` to make sure you have the newest version (don't care about the output yet).
+
+Second: copy the example configuration over to a real config:
 ```
 sudo rm /var/www/api/config.php
 sudo cp /var/www/api/config.example.php /var/www/api/config.php
@@ -139,7 +141,7 @@ Make sure your firewall is allowing traffic from your Raspberry Pi. You can exit
 
 You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 
-I advise you to change the default password to something else. You can do this by using `passwd`.
+I advise you to change the default password of the user `pi` to something else. You can do this by using `passwd`.
 
 If you ever choose to shutdown the pi undertake these steps:
 ```
