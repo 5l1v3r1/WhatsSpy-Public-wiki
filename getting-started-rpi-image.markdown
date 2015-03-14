@@ -78,6 +78,8 @@ And now fill in the following details:
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
+**If anything is unclear, please register at this gitlab and create a new issue!**
+
 ## 5) Check the system time
 
 Run `date`, this would output something like:
