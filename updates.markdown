@@ -16,8 +16,9 @@ Make sure that you before the update undertake these steps:
 
 ## Changelog
 
-At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files).
+*At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files).*
 
+---
 **Update 1.4.0** : Added groups, better notification handling, performance improvements and somewhat better responsive design.
 
 :horse: **Warning:** This update contains a database upgrade. This update will happen automatically. If WhatsSpy Public does not work anymore, this is probably a database issue. Check [troubleshooting](troubleshooting).
