@@ -24,6 +24,8 @@ At every update you can just re-download the repository and replace it with the 
 
 :horse: **Warning 2:** The configuration file has changed! Take a look at `config.example.php` and copy over any missing variables `$whatsspyNotificatons` (which replaces the old NMA and LN variables) and a new `debug` option in `$whatsappAuth`.
 
+
+
 **Update 1.3.7** : Fixed timezone issue in the statistics page in case PostgreSQL is improperly configured. Also some minor UI fixes. Same rules apply as `1.3.0`.
 
 **Update 1.3.6** : Fixed several UI bugs (statistics, timeline, new number) as well improved performance in the GUI. Same rules apply as `1.3.0`.
