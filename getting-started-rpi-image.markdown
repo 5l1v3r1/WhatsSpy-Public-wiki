@@ -8,7 +8,7 @@ In case you don't get this working, you can create an issue on this Gitlab, or c
 
 ## 0) Secondary WhatsApp account
 
-*This is a simplified version of [chapter 1) Secondary WhatsApp account](getting-started) or the normal getting started.*
+*This is a simplified version of [chapter 1) Secondary WhatsApp account](getting-started) of the normal getting started.*
 
 WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesnt use WhatsApp, do the following:
 
@@ -69,7 +69,7 @@ sudo nano /var/www/api/config.php
 And now fill in the following details:
 
 * Find`$dbAuth` and type between the quotes after `'password'`: `T7hGdg5Y8H3CfNN0yi6G`.
-* Fill in the empty fields in `$whatsappAuth` (`number` and `secret`). The `secret` is the thing you have retrieved in chapter 0.
+* Fill in the empty fields in `$whatsappAuth` (`number` and `secret`). The `secret` is the thing you have retrieved in *chapter 0*.
    * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
    * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
