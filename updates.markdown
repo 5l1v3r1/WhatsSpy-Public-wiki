@@ -2,10 +2,12 @@
 
 This page contains notes about how to update a running instance of WhatsSpy Public. This is always relatively easy. 
 
-**Did you use the Raspbian image? No need to update, this will happen automaticlly within 24 hours. HOWEVER: did you download the Rpi image before the 4th of march? [please check this problem](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/rpi-fix)**
+**Did you use the Raspbian image? No need to update, this will happen automaticlly within 24 hours. HOWEVER: make sure your `config.php` complies with any changes.**
 
 
 ## Before/After updating
+
+**Does not apply to the Rpi users who downloaded the image**
 
 Make sure that you before the update undertake these steps:
 
