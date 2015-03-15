@@ -25,7 +25,7 @@ Make sure that you before the update undertake these steps:
 
 :horse: **Warning:** This update contains a database upgrade. This update will happen automatically. If WhatsSpy Public does not work anymore, this is probably a database issue. Check [troubleshooting](troubleshooting).
 
-:horse: **Warning 2:** The configuration file has changed! Take a look at `config.example.php` and copy over any missing variables `$whatsspyNotificatons` (which replaces the old NMA and LN variables) and a new `debug` option in `$whatsappAuth`.
+:horse: **Warning 2:** The configuration file has changed! Take a look at `config.example.php` and copy over any missing variables `$whatsspyNotificatons` (which replaces the old NMA and LN variables) and a new `debug` option in `$whatsappAuth`. Make sure you restart the tracker!
 
 ---
 
