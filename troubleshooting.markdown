@@ -2,6 +2,20 @@
 
 You can create an account on this Gitlab server and ask questions in the Issues section of this project.
 
+
+### Error after update
+
+Check what the URL `api/?whatsspy=getStats` gives you. It might say something like: 
+```
+The following error occured when trying to upgrade DB:
+<something more specific here>
+```
+
+This will probably a DB right issue, which you need to fix for future updates. But you can manually update by using this command:
+```
+psql -U postgres -d whatsspy -f update/database-<version>.sql
+```
+
 ### Tracker says "An error occured, please check your configuration."
 
 #### Problems while setting it up
