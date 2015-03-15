@@ -1,6 +1,6 @@
 # Getting Started with the Rpi Image
 
-*Tested on Rpi Model 1B (4GB) and 2B (16GB) in combination with Windows*
+*Tested on Rpi Model 1B (4GB) and 2B (16GB) in combination with Windows, QUEMU does not seem to work*
 
 On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. 
 
