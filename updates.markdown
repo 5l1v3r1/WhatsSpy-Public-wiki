@@ -19,6 +19,7 @@ Make sure that you before the update undertake these steps:
 ## Changelog
 
 *At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files).*
+
 ---
 **Update 1.4.1** : Multiple groups for one contact and play sounds in timeline if desired.
 
