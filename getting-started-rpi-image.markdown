@@ -68,7 +68,7 @@ sudo nano /var/www/api/config.php
 ```
 And now fill in the following details:
 
-* Find`$dbAuth` and type between the quotes after `'password'`: `T7hGdg5Y8H3CfNN0yi6G`.
+* Find`$dbAuth` and type between the quotes after `'password'`: `T7hGdg5Y8H3CfNN0yi6G` *(yes that is a zero, not a O)*.
 * Fill in the empty fields in `$whatsappAuth` (`number` and `secret`). The `secret` is the thing you have retrieved in *chapter 0*.
    * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
    * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
