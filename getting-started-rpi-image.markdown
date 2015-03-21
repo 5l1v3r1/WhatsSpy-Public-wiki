@@ -138,6 +138,13 @@ Type `screen -r` to watch the tracker startup. In case it gives an error like:
 ```
 Make sure your firewall is allowing traffic from your Raspberry Pi. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 
+**OR**
+
+```
+[error] Tracker Exception! Login failure!
+```
+Make sure the `number` and `secret` are correct. If you think they are correct, please re-use WART to generate a new secret.
+
 
 ## 9) Other steps
 
