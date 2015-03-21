@@ -33,7 +33,7 @@ Setting up WhatsSpy Public requires somewhat IT knowledge and you might need a s
 
 **Other/Rpi**: [Setup WhatsSpy on a existing VPS/Rpi/Server](getting-started).
 
-[updatelog and how to update](updates)
+*[updatelog and how to update](updates)*
 
 ## Screenshots of the WhatsSpy Public pages
 #### Overview
