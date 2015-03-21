@@ -80,7 +80,7 @@ sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsq
 cd /var/www/whatsspy/
 git init
 git remote add origin https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public.git
-git pull
+git pull origin master
 ```
 *(Please note that SSH does not work on this Gitlab, only HTTPS)*
 
