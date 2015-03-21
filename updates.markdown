@@ -21,6 +21,9 @@ Make sure that you before the update undertake these steps:
 *At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files).*
 
 ---
+**Update 1.4.3** : About page update, prevent accidental delete, DB migrations user independent, custom script agent created, compare page slightly updated.
+
+---
 **Update 1.4.2** : Proper database errors now visible in the tracker.
 
 ---
