@@ -92,19 +92,7 @@ psql -U postgres-d whatsspy -f whatsspy-db.sql
 If the tracker reports incorrect online/offline activites there is probably a misconfiguration:
 
 * Check if the timezone in the `config.php` is set properly.
-* Check if the PostgreSQL timezone is set correct:
 
-```
-psql -U postgres
-SELECT NOW();
--- this will return a row with something like: 2015-02-26 01:13:05.155364+01
--- Check if the +01 corresponds to your correct timezone.
--- If this timezone is not correct fix this by using this SQL command:
-SET TIME ZONE 'Europe/Amsterdam';
-
--- Close session
-\q
-```
 
 
 ### IPTables rules
