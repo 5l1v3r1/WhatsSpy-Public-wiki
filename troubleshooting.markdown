@@ -2,6 +2,13 @@
 
 You can create an account on this Gitlab server and ask questions in the Issues section of this project.
 
+### Login failure
+
+```
+[error] Tracker Exception! Login failure!
+```
+Make sure the `number` and `secret` are correct. If you think they are correct, please re-use WART to generate a new secret.
+
 
 ### Error after update
 
