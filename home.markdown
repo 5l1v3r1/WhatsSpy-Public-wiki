@@ -31,7 +31,7 @@ Setting up WhatsSpy Public requires somewhat IT knowledge and you might need a s
 
 **Rpi image**: [Use a Raspberry Pi image with WhatsSpy Public already on it](getting-started-rpi-image).
 
-**Other/Rpi**: [Setup WhatsSpy on a existing VPS/Rpi/Server](getting-started).
+**Normal**: [Setup WhatsSpy Public on a existing VPS/Rpi/Server](getting-started).
 
 *[updatelog and how to update](updates)*
 
