@@ -29,6 +29,13 @@ pg_dump whatsspy -U postgres > whatsspy_backup.sql
 *(where `whatsspy` is the database name)*
 
 This command creates a file called `whatsspy_backup.sql` of the whole database in your home directory. You can copy this file over with for example `WinScp` (if you use SSH) or just copy it over to a USB drive).
+
+## How to shutdown tracker
+
+You can shutdown the tracker down via a proper method (closing the sessions in the database):
+
+Use `screen -r` to re-attach to the tracker session. Now you can use `Ctrl` + `c` to shutdown the tracker process. After this you can quit the screen by using `exit`.
+
 ## Automatic updates
 
 ```
