@@ -12,7 +12,7 @@ In case you don't get this working, you can create an issue on this Gitlab, or c
 
 WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesnt use WhatsApp, do the following:
 
-* Download [WART](https://github.com/shirioko/WART/blob/master/WART-1.7.3.0.exe?raw=true).
+* Download [WART](https://github.com/shirioko/WART/blob/master/WART-1.7.3.0.exe?raw=true) **(WART IS TAKEN DOWN, USE THE FULL GUIDE OR WAIT UNTIL TOMORROW)**.
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
   * `phonenumber` needs to be the countrycode+phonenumber.
   * `phonenumber` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
