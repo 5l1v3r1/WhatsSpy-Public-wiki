@@ -30,12 +30,12 @@ You need a phone(number) over which you can recieve SMS or voice calls for the W
 
 You have two methods (stick with WART if you do not have a rooted/jailbroken phone):
 
-* Use [WART](https://github.com/shirioko/WART), a Windows registration tool which allows you to retrieve the secret via a GUI.
+* Use [WART](https://github.com/mgp25/WART/), a Windows registration tool which allows you to retrieve the secret via a GUI.
 * Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
 
-In case of registration via WART **(WART IS TAKEN DOWN, WAIT TILL TOMORROW)**:
+In case of registration via WART:
 
-* Download [WART](https://github.com/shirioko/WART/blob/master/WART-1.7.3.0.exe?raw=true).
+* Download [WART](https://github.com/mgp25/WART/blob/master/WART-1.8.0.0.exe?raw=true).
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
   * `phonenumber` needs to be the countrycode+phonenumber.
   * `phonenumber` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
