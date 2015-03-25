@@ -12,7 +12,7 @@
 ## Requirements
 
 * Secondary WhatsApp account (phonenumber that doesn't actively uses WhatsApp, because you can't receive messages when the tracker is online).
-* [WART](https://github.com/shirioko/WART) on your Windows desktop **OR** Rooted Android phone **OR** Jailbroken iPhone to retrieve the WhatsApp `secret`.
+* [WART](https://github.com/mgp25/WART/) on your Windows desktop **OR** Rooted Android phone **OR** Jailbroken iPhone to retrieve the WhatsApp `secret`.
 * Linux Server/VPS/RPi that runs 24/7 (tested on Debian/Ubuntu) (**Do not use Windows**, use a [virtual machine instead](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html)).
 * Nginx or Apache with PHP with PDO (you can't host on simple webhoster, **you need a terminal**!)
 * PostgreSQL
