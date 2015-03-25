@@ -33,7 +33,7 @@ You have two methods (stick with WART if you do not have a rooted/jailbroken pho
 * Use [WART](https://github.com/shirioko/WART), a Windows registration tool which allows you to retrieve the secret via a GUI.
 * Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
 
-In case of registration via WART **(WART IS TAKEN DOWN, YOU CANNOT USE THIS ANYMORE)**:
+In case of registration via WART **(WART IS TAKEN DOWN, WAIT TILL TOMORROW)**:
 
 * Download [WART](https://github.com/shirioko/WART/blob/master/WART-1.7.3.0.exe?raw=true).
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
