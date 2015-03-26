@@ -35,6 +35,8 @@ You have two methods (stick with WART if you do not have a rooted/jailbroken pho
 
 In case of registration via WART:
 
+**If WART does not work, please open a issue at the [github page of WART](https://github.com/mgp25/WART/)**
+
 * Download [WART](https://github.com/mgp25/WART/blob/master/WART-1.8.0.0.exe?raw=true).
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
   * `phonenumber` needs to be the countrycode+phonenumber.
