@@ -12,6 +12,8 @@ In case you don't get this working, you can create an issue on this Gitlab, or c
 
 WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesnt use WhatsApp, do the following:
 
+**If WART does not work, please open a issue at the [github page of WART](https://github.com/mgp25/WART/)**
+
 * Download [WART](https://github.com/mgp25/WART/blob/master/WART-1.8.0.0.exe?raw=true).
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
   * `phonenumber` needs to be the countrycode+phonenumber.
