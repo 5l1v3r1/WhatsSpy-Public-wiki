@@ -28,14 +28,14 @@ You need a phone(number) over which you can recieve SMS or voice calls for the W
 
 ### 1.2) Activation at WhatsApp with your secondary phonenumber
 
-You have two methods (stick with WART if you do not have a rooted/jailbroken phone):
+You have three methods (stick with WART if you do not have a rooted/jailbroken phone):
 
 * Use [WART](https://github.com/mgp25/WART/), a Windows registration tool which allows you to retrieve the secret via a GUI.
 * Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
 
 In case of registration via WART:
 
-**If WART does not work, please open a issue at the [github page of WART](https://github.com/mgp25/WART/)**
+**WART might tell you the activation code is wrong, double check but it might be a bug. Resort to other method if this is the case.**
 
 * Download [WART](https://github.com/mgp25/WART/blob/master/WART-1.8.0.0.exe?raw=true).
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
