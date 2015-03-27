@@ -27,6 +27,7 @@ WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. Thi
 **2)** If registration via WART does not work, use this method. This method requires that you first follow step **1) Download, 2) Writing onto SD card and 3) Booting it**. Execute the following commands on the Raspberry Pi:
 
 * Open the terminal and execute `cd /var/www/whatsspy/`.
+* Execute `bash /home/pi/whatsspy-public-startup` to update to the latest version.
 * Execute `php api/whatsapp/registerTool.php`.
 * Request activation via SMS or Voice.
 * Enter the retrieved code in the script.
