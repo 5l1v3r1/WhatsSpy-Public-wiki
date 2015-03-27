@@ -54,7 +54,7 @@ You have three methods (stick with WART if you do not have a rooted/jailbroken p
 * Execute `php api/whatsapp/registerTool.php`.
 * Request activation via SMS or Voice.
 * Enter the retrieved code in the script.
-* Write down the password/secret which is required later.
+* Write down the `secret` (it's the one-line of strange characters ending with an =).
 
 
 **3)** In case of registration via phone you need a **jailbroken iPhone** or a **rooted Android** device in order to retrieve the secret. In order to retrieve the scecret you need to follow these steps:
