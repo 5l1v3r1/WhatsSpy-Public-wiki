@@ -34,9 +34,9 @@ You have three methods (stick with WART if you do not have a rooted/jailbroken p
 * Use a supplied PHP script `registerTool.php` that will guide you through the steps (use if WART does not work).
 * Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
 
-In case of registration via WART:
+**1)** In case of registration via WART:
 
-**WART might tell you the activation code is wrong, double check but it might be a bug. Resort to supplied script `registerTool.php`.**
+**WART might tell you the activation code is wrong, use method two in this case.**
 
 * Download [WART](https://github.com/mgp25/WART/blob/master/WART-1.8.0.0.exe?raw=true).
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
@@ -47,7 +47,7 @@ In case of registration via WART:
 * Enter this code in **Step 2** and press confirm code.
 * Write down the `secret` (it's the one-line of strange characters ending with an =).
 
-In case of registration via the script you need to execute the following steps:
+**2)** In case of registration via the `registerTool.php` script you need to execute the following steps:
 
 * First follow the step **4** under **2.2) Manual installation** (mentioned below).
 * Make sure you are still in `/var/www/whatsspy/` (by using `cd`).
@@ -57,7 +57,7 @@ In case of registration via the script you need to execute the following steps:
 * Write down the password/secret which is required later.
 
 
-In case of registration via phone you need a **jailbroken iPhone** or a **rooted Android** device in order to retrieve the secret. In order to retrieve the scecret you need to follow these steps:
+**3)** In case of registration via phone you need a **jailbroken iPhone** or a **rooted Android** device in order to retrieve the secret. In order to retrieve the scecret you need to follow these steps:
 
 * Insert your (new) secondary SIM card in your phone and boot it up.
 * Re-install WhatsApp on your phone and activate it using the new phonenumber.
