@@ -10,9 +10,9 @@ In case you don't get this working, you can create an issue on this Gitlab, or c
 
 *This is a simplified version of [chapter 1) Secondary WhatsApp account](getting-started) of the normal getting started.*
 
-WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesnt use WhatsApp, do the following:
+WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesnt use WhatsApp, use one of the two methods:
 
-**If WART does not work, please open a issue at the [github page of WART](https://github.com/mgp25/WART/)**
+**1)** Use WART to retrieve the secret (WART might tell you the activation code is wrong, use method two in this case.):
 
 * Download [WART](https://github.com/mgp25/WART/blob/master/WART-1.8.0.0.exe?raw=true).
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
@@ -21,6 +21,15 @@ WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. Thi
   * `phonenumber` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*.
 * Press the request code. You will receive a SMS with the activation code from WhatsApp.
 * Enter this code in **Step 2** and press confirm code.
+* Write down the `secret` (it's the one-line of strange characters ending with an =).
+
+
+**2)** If registration via WART does not work, use this method. This method requires that you first follow step **1) Download, 2) Writing onto SD card and 3) Booting it**. Execute the following commands on the Raspberry Pi:
+
+* Open the terminal and execute `cd /var/www/whatsspy/`.
+* Execute `php api/whatsapp/registerTool.php`.
+* Request activation via SMS or Voice.
+* Enter the retrieved code in the script.
 * Write down the `secret` (it's the one-line of strange characters ending with an =).
 
 You have retrieved the WhatsApp secret! Now we can setup WhatsSpy Public.
