@@ -88,7 +88,7 @@ sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsq
 
 3. Allow local connections for the user `postgres` in PostgreSQL. Check [this post](http://stackoverflow.com/questions/17443379/psql-fatal-peer-authentication-failed-for-user-dev) how to enable this.
 
-4. Make a folder on your machine: `mkdir /var/www/whatsspy/`. After this download WhatsSpy Public:
+4. Make a folder on your machine: `/var/www/whatsspy/` (with `mkdir`). After this download WhatsSpy Public:
 ```
 cd /var/www/whatsspy/
 git init
