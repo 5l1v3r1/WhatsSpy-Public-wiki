@@ -39,26 +39,42 @@ Make sure that you before the update undertake these steps:
 
 **2)** For Nginx:
 
-Execute `sudo nano /etc/nginx/sites-available/default` (or similar, for your Nginx configuration).
-
-Remove **(Rpi users only need to remove the two `auth_basic` lines, check [this issue](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/203))**:
+* Execute `sudo nano /etc/nginx/sites-available/default` (or similar, for your Nginx configuration).
+* Remove :
 ```
 location /whatsspy/ {
         auth_basic "Restricted";
         auth_basic_user_file /etc/nginx/.htpasswdwhatsspy; 
     }
 ```
-*Authentication is now done via the GUI of WhatsSpy Public*
 
-Add the following:
+* Add the following:
 ```
 location /whatsspy/images/profilepicture/ {
         deny all;
         return 404;
 }
 ```
+* Don't forget to reload the configuration by using `sudo service nginx reload`.
 
-Don't forget to reload the configuration by using `sudo service nginx reload`.
+**3)** Raspberry Pi image users:
+
+You also need to edit your Nginx config but in a slightly different way ([help](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/203)):
+
+* Execute `sudo nano /etc/nginx/sites-available/default`
+* Remove:
+```
+        auth_basic "Restricted";
+        auth_basic_user_file /etc/nginx/.htpasswdwhatsspy; 
+```
+* Add before the last `}`:
+```
+location /images/profilepicture/ {
+        deny all;
+        return 404;
+}
+```
+* Reload config: `sudo service nginx reload`.
 
 **If you use a browser like Chrome, use `Ctrl` + `F5` to force a page refresh.**
 
