@@ -87,7 +87,8 @@ This project is **NOT** used to "show off" my PHP or web-application skills. It 
 
 ## License (CC-BY-NC)
 
-This project serves as an Proof-of-Concept to show the current problem with WhatsApp. This tool is created by Maikel Zweerink and this is to prove a point about your and my own privacy in WhatsApp. You may not use this project to gain money or use it for any other cause then to confront yourself and known friends what anybody can know about you on WhatsApp.
+
+This project serves as an Proof-of-Concept to show the current privacy problem in WhatsApp. This tool is created by Maikel Zweerink and this is to prove a point about your and my own privacy in WhatsApp. You may not use this project to gain money or use it for any other cause then to confront yourself and known friends what anybody can know about you on WhatsApp. You may not use this tool for mass surveillance in ANY way. You may only add contacts that are considered friends, again with the only purpose to confront them with the privacy problem. This project has nothing to do with "WhatsSpy", what seems to be a fake.
 
 THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
 
