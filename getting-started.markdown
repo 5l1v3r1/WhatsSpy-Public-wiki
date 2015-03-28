@@ -123,16 +123,17 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
 Rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
 * Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
-* Insert your `number` and `secret` in `$whatsappAuth`, which you have obtained following chapter *1) Secondary WhatsApp account*. 
+* Insert your `number` and `secret` in `$whatsappAuth`. 
   * `number` needs to be <countrycode><phonenumber> without any prefix 0's. 0031 06 xxx becomes 31 6 xxx (no 0's prefix for both the country code and phonenumber itself).
   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174 is correct*
-  * `secret` If you don't have this yet, read chapter 1) Secondary WhatsApp account.
+  * `secret` You obtained this in the chapter *2.3) Retrieve the `secret` for a secondary WhatsApp account*.
 * Set the correct timezone of the place where you are.
 * In case you did **not** install WhatsSpy Public in `/var/www/whatsspy/`, set the path for `$whatsspyProfilePath`.
   * `$whatsspyProfilePath` is the absolute path for the system to store the profile pictures. For example `/var/www/whatsspy/images/profilepicture/` (default setting), `/var/www/other-dir/images/profilepicture/`. Don't forget the last `/`!
 
+### 2.5) Correct file rights
 
-**Check folder rights: the tracker needs read/write acces in the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/`!**
+The tracker needs read/write acces in the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/`.
 
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
@@ -143,7 +144,7 @@ sudo chmod 760 -R /var/www/whatsspy/api/whatsapp/src/wadata/
 sudo chmod 760 -R /var/www/whatsspy/images/profilepicture/
 ```
 
-### 2.5) Configure web server
+### 2.6) Configure web server
 
 You need to restrict access to WhatsSpy Public and the API of WhatsSpy Public from unauthorized web access. We need to update your Nginx configuration to restrict access:
 
