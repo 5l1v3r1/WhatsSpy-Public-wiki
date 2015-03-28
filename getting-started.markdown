@@ -22,24 +22,31 @@
 
 **[troubleshooting](troubleshooting)**
 
-1. Install the following packages:
+### 2.1) Required packages and config
+
+Install the following packages:
 ```
 sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsql git-core screen
 ```
 
-2. Verify that your PHP-FPM installation uses the Unix socket:
+Verify that your PHP-FPM installation uses the Unix socket:
 ```
 sudo nano /etc/php5/fpm/pool.d/www.conf
-// The following line should in in the config file (and NOT 127.0.0.1):
+```
+
+The following line should be in the config file (and NOT `listen = 127.0.0.1`):
+```
 listen = /var/run/php5-fpm.sock
 ```
 
-3. Allow local connections for the user `postgres` in PostgreSQL by makeing sure your `/etc/postgresql/9.1/main/pg_hba.conf` has the following line:
+Allow local connections for the user `postgres` in PostgreSQL by making sure your `/etc/postgresql/9.1/main/pg_hba.conf` has the following line:
 ```
 local   all             postgres                                trust
 ```
 
-4. Make a folder on your machine: `/var/www/whatsspy/` (with `mkdir`). After this download WhatsSpy Public:
+### 2.2) Download WhatsSpy Public
+
+Make a folder on your machine: `/var/www/whatsspy/` (with `mkdir`). After this download WhatsSpy Public:
 ```
 cd /var/www/whatsspy/
 git init
@@ -48,7 +55,9 @@ git pull origin master
 ```
 *(Please note that SSH does not work on this Gitlab, only HTTPS)*
 
-5. Get the `secret` from your Phone number required to use WhatsSpy Public:
+### 2.3) Retrieve the `secret`
+
+Get the `secret` from your Phone number required to use WhatsSpy Public:
 
    * Execute `php /var/www/whatsspy/api/whatsapp/registerTool.php`.
    * Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
@@ -58,7 +67,9 @@ git pull origin master
    * Enter the retrieved code in the script without any dashes (only the digits!).
    * Write down the `secret` (it's the one-line of strange characters ending with an =).
 
-6. Execute the following commands one at a time (CHOOSE a password at first query):
+### 2.4) Setup database
+
+Execute the following commands one at a time (CHOOSE a password at first query):
 ```
 psql -U postgres
 -- Execute command by command!
@@ -78,13 +89,15 @@ GRANT ALL ON DATABASE whatsspy TO whatsspy;
 ```
 *(or use `Ctrl`+`Z` in case you can't type `\q`)*
 
-7. Now it is time to insert the WhatsSpy Public database in PostgreSQL. Execute the following commands:
+Now it is time to insert the WhatsSpy Public database in PostgreSQL. Execute the following commands:
 ```
 cd /var/www/whatsspy/api/
 psql -U postgres -d whatsspy -f whatsspy-db.sql
 ``` 
 
-8. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
+### 2.4) Setup the config
+
+Rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
 * Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
 * Insert your `number` and `secret` in `$whatsappAuth`, which you have obtained following chapter *1) Secondary WhatsApp account*. 
@@ -107,7 +120,7 @@ sudo chmod 760 -R /var/www/whatsspy/api/whatsapp/src/wadata/
 sudo chmod 760 -R /var/www/whatsspy/images/profilepicture/
 ```
 
-### Webserver
+### 2.5) Configure web server
 
 You need to restrict access to WhatsSpy Public and the API of WhatsSpy Public from unauthorized web access. We need to update your Nginx configuration to restrict access:
 
