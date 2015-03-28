@@ -72,13 +72,11 @@ For updates please check [updatelog and how to update](updates).
 
 #### And it's even mobile!
 
-![pin-to-start-mobile](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/bf2a392d8b/pin-to-start-mobile.png)
+![pin-to-start-mobile](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/97f9ee5de9/pin-to-start-mobile.png)
+
 *An external installation pinned to the home-screen of an Android phone*
 
-![overview-mobile](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/bebf8d686f/overview-mobile.png)
-
-
-
+![overview-mobile](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/7a1e054ff9/overview-mobile.png)
 
 
 [Publicity](publicity)
