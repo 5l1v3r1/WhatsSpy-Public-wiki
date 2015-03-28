@@ -29,7 +29,7 @@ Install the following packages:
 sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsql git-core screen
 ```
 
-Verify that your PHP-FPM installation uses the Unix socket:
+**1)** Verify that your PHP-FPM installation uses the Unix socket:
 ```
 sudo nano /etc/php5/fpm/pool.d/www.conf
 ```
@@ -39,10 +39,18 @@ The following line should be in the config file (and NOT `listen = 127.0.0.1`):
 listen = /var/run/php5-fpm.sock
 ```
 
-Allow local connections for the user `postgres` in PostgreSQL by making sure your `/etc/postgresql/9.1/main/pg_hba.conf` has the following line:
+**2)** Make sure that your PostgreSQL allows local connections for the user `postgres`:
+
+```
+
+sudo nano /etc/postgresql/9.1/main/pg_hba.conf
+``` 
+It requires the following line:
 ```
 local   all             postgres                                trust
 ```
+
+Reload the configuration by using `sudo service postgresql reload`.
 
 ### 2.2) Download WhatsSpy Public
 
