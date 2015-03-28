@@ -8,7 +8,7 @@ In case you don't get this working, you can create an issue on this Gitlab, or c
 
 ## 1) Download
 
-[Download the Raspbian image 1.6GB, unpacked 4GB **(New version is being uploaded and will be up in 10 hours)**.
+Download the Raspbian image 1.6GB, unpacked 4GB **(New version is being uploaded and will be up in 10 hours)**.
 
 Download this file to your computer, open the `.zip` with WinRAR or 7Zip and extract the `.img` file to your desktop.
 
