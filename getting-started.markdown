@@ -203,20 +203,9 @@ Once you have populated your database with some users, you can start the tracker
 5. It keeps polling every second and outputs any statuses on the screen.
 6. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
 
+## 10) Optional steps / handy things to know
 
-**In case it gives an error like:**
-```
-[error] Tracker Exception! Connection Closed!
-```
-Make sure your firewall is allowing traffic from your Raspberry Pi. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
+* You can enable notifications via *NotifyMyAndroid*, *LiveNotifier* or even WhatsApp. For this you need to edit your `config.php` (like before) and change entries in `$whatsspyNotificatons`. After saving your change restart the tracker by again calling `bash /home/pi/whatsspy-public-startup`.
+* If you want to share profiles via the internet you need to make sure your installation is accessible from the internet.
 
-**OR**
-
-```
-[error] Tracker Exception! Login failure!
-```
-Make sure the `number` and `secret` are correct. If you think they are correct, please re-use WART to generate a new secret.
-
-## Other things you can do
-
-Do you want to start WhatsSpy Public on startup? Do you want to auto-update? Please check the [FAQ](FAQ).
+Please check the [FAQ](FAQ).
