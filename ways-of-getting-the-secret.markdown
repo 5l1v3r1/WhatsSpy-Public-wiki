@@ -14,7 +14,20 @@ You have three methods:
 * Use a supplied PHP script `registerTool.php` that will guide you through the steps (use if WART does not work).
 * Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
 
-**1)** In case of registration via WART:
+#### 1) registration via the `registerTool.php` script
+
+In case of registration via the `registerTool.php` script you need to execute the following steps:
+
+* First make sure you have downloaded WhatsSpy Public on your Linux machine (Assuming you installed it in `/var/www/whatsspy/`).
+* Execute `php /var/www/whatsspy/api/whatsapp/registerTool.php`.
+* Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
+   * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
+   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
+* Request activation via `SMS` and wait for a SMS to arrive at the phone.
+* Enter the retrieved code in the script without any dashes (only the digits!).
+* Write down the `secret` (it's the one-line of strange characters ending with an =).
+
+#### 2) registration via WART
 
 **WART might tell you the activation code is wrong, use method two in this case.**
 
@@ -27,19 +40,9 @@ You have three methods:
 * Enter this code in **Step 2** and press confirm code.
 * Write down the `secret` (it's the one-line of strange characters ending with an =).
 
-**2)** In case of registration via the `registerTool.php` script you need to execute the following steps:
+#### 3) registration via the Phone
 
-* First make sure you have downloaded WhatsSpy Public on your Linux machine (Assuming you installed it in `/var/www/whatsspy/`).
-* Execute `php /var/www/whatsspy/api/whatsapp/registerTool.php`.
-* Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
-   * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
-   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
-* Request activation via `SMS` and wait for a SMS to arrive at the phone.
-* Enter the retrieved code in the script without any dashes (only the digits!).
-* Write down the `secret` (it's the one-line of strange characters ending with an =).
-
-
-**3)** In case of registration via phone you need a **jailbroken iPhone** or a **rooted Android** device in order to retrieve the secret. In order to retrieve the scecret you need to follow these steps:
+In case of registration via phone you need a **jailbroken iPhone** or a **rooted Android** device in order to retrieve the secret. In order to retrieve the scecret you need to follow these steps:
 
 * Insert your (new) secondary SIM card in your phone and boot it up.
 * Re-install WhatsApp on your phone and activate it using the new phonenumber.
