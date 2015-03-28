@@ -60,6 +60,8 @@ location /whatsspy/images/profilepicture/ {
 
 Don't forget to reload the configuration by using `sudo service nginx reload`.
 
+**If you use a browser like Chrome, use `Ctrl` + `F5` to force a page refresh.**
+
 ---
 **Update 1.4.4** : Updated hover on status, improved compare page performance slightly, custom script agent retrieves better parameters. Added notifications for privacy changes.
 
