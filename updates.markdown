@@ -32,12 +32,14 @@ Make sure that you before the update undertake these steps:
 
 :horse: **Warning 2:** This update requires a reconfiguration of Nginx and your `config.php`.
 
-**For the `config.php` (you can copy this over from the `config.example.php`):**
+**1)** For the `config.php` (you can copy this over from the `config.example.php`):
 
 * Remove `$whatsspyWebProfilePath`, this is no longer required.
 * Add `$whatsspyPublicAuth = '<choose-your-login-password>';` to set the password for you WhatsSpy Public installation.
 
-**For Nginx:**
+**2)** For Nginx:
+
+Execute `sudo nano /etc/nginx/sites-available/default`
 
 Remove:
 ```
