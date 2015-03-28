@@ -19,6 +19,14 @@ It tracks the following properties:
 
 The more users it tracks, the less accurate it becomes with the online/offline statuses. One can say the tracker is really accurate on the minute (99% of the cases).
 
+## In what ways can I try WhatsSpy Public
+
+You have three options:
+
+* **Normal**: [Setup WhatsSpy Public on a existing VPS/Rpi/Server](getting-started).
+* **Raspberry Pi image**: [Use a Raspberry Pi image with WhatsSpy Public already on it](getting-started-rpi-image).
+* **QEMU** Use the emulator QEMU with the Raspberry pi image [read experience](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/200).
+
 ## How to backup the database
 
 Go to your terminal and use:
