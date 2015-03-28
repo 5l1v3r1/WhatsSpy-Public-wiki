@@ -9,73 +9,16 @@
 * [General introduction to WhatsSpy Public](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/)
 * [In-depth about the WhatsApp privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/)
 
-## Requirements
+## 1) Check requirements
 
 * Secondary WhatsApp account (phonenumber that doesn't actively uses WhatsApp, because you can't receive messages when the tracker is online).
-* [WART](https://github.com/mgp25/WART/) on your Windows desktop **OR** Rooted Android phone **OR** Jailbroken iPhone to retrieve the WhatsApp `secret`.
 * Linux Server/VPS/RPi that runs 24/7 (tested on Debian/Ubuntu) (**Do not use Windows**, use a [virtual machine instead](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html)).
 * Nginx or Apache with PHP with PDO (you can't host on simple webhoster, **you need a terminal**!)
 * PostgreSQL
 
+**In case you don't have these resources you can also check out the [Raspberry Pi image](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started-rpi-image) (or you can even [emulate it](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/200))**
 
-
-## 1) Secondary WhatsApp account
-WhatsSpy Public requires a **secondary Whatsapp account**. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phonenumber. You need to register at WhatsApp to retrieve a `secret` which you will need later when settting up WhatsSpy Public.
-
-### 1.1) Getting a phonenumber
-
-You need a phone(number) over which you can recieve SMS or voice calls for the WhatsApp activation. You can try to register your landline, or just buy a 5 euro SIM card and register that phonenumber at WhatsApp. Do not use some shady SMS service, this won't work.
-
-### 1.2) Activation at WhatsApp with your secondary phonenumber
-
-You have three methods (stick with WART if you do not have a rooted/jailbroken phone):
-
-* Use [WART](https://github.com/mgp25/WART/), a Windows registration tool which allows you to retrieve the secret via a GUI.
-* Use a supplied PHP script `registerTool.php` that will guide you through the steps (use if WART does not work).
-* Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
-
-**1)** In case of registration via WART:
-
-**WART might tell you the activation code is wrong, use method two in this case.**
-
-* Download [WART](https://github.com/mgp25/WART/blob/master/WART-1.8.0.0.exe?raw=true).
-* Open up WART and fill in `phonenumber` and `password` (just choose one).
-  * `phonenumber` needs to be the countrycode+phonenumber.
-  * `phonenumber` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
-  * `phonenumber` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*.
-* Press the request code. You will receive a SMS with the activation code from WhatsApp.
-* Enter this code in **Step 2** and press confirm code.
-* Write down the `secret` (it's the one-line of strange characters ending with an =).
-
-**2)** In case of registration via the `registerTool.php` script you need to execute the following steps:
-
-* First follow the step **4** under **2.2) Manual installation** (mentioned below).
-* Make sure you are still in `/var/www/whatsspy/` (by using `cd`).
-* Execute `php api/whatsapp/registerTool.php`.
-* Request activation via SMS or Voice.
-* Enter the retrieved code in the script.
-* Write down the `secret` (it's the one-line of strange characters ending with an =).
-
-
-**3)** In case of registration via phone you need a **jailbroken iPhone** or a **rooted Android** device in order to retrieve the secret. In order to retrieve the scecret you need to follow these steps:
-
-* Insert your (new) secondary SIM card in your phone and boot it up.
-* Re-install WhatsApp on your phone and activate it using the new phonenumber.
-* Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret.
-* Write down the `secret` (it's the one-line of strange characters ending with an =).
-* Insert your normal SIM card and re-install WhatsApp for normal use.
-
-**[Do not use the WhatsApp application on your phone when the tracker is running, this creates a broken connection.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
-
-## 2) Installation
-### 2.1) Make the choice
-
-As of now you have two options to install WhatsSpy Public:
-
-* [Download a Raspbian image with WhatsSpy Public pre-installed. This requires a lot less steps.](getting-started-rpi-image)
-* Follow the manual installation (below) for your Raspberry Pi / VPS / Server
-
-### 2.2) Manual install (Debian/Ubuntu)
+## 2) Manual install (Debian/Ubuntu)
 
 **[troubleshooting](troubleshooting)**
 
@@ -84,9 +27,17 @@ As of now you have two options to install WhatsSpy Public:
 sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsql git-core screen
 ```
 
-2. Follow [this tutorial](http://www.thegeekstuff.com/2013/12/nginx-php-fpm/) to setup Nginx with PHP-FPM.
+2. Verify that your PHP-FPM installation uses the Unix socket:
+```
+sudo nano /etc/php5/fpm/pool.d/www.conf
+// The following line should in in the config file (and NOT the 127.0.0.1):
+listen = /var/run/php5-fpm.sock
+```
 
-3. Allow local connections for the user `postgres` in PostgreSQL. Check [this post](http://stackoverflow.com/questions/17443379/psql-fatal-peer-authentication-failed-for-user-dev) how to enable this.
+3. Allow local connections for the user `postgres` in PostgreSQL, make sure your `/etc/postgresql/9.1/main/pg_hba.conf` has the following line:
+```
+local   all             postgres                                trust
+```
 
 4. Make a folder on your machine: `/var/www/whatsspy/` (with `mkdir`). After this download WhatsSpy Public:
 ```
@@ -97,14 +48,22 @@ git pull origin master
 ```
 *(Please note that SSH does not work on this Gitlab, only HTTPS)*
 
+5. Get the `secret` from your Phone number required to use WhatsSpy Public:
+* Execute `php /var/www/whatsspy/api/whatsapp/registerTool.php`.
+* Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
+   * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
+   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
+* Request activation via `SMS` and wait for a SMS to arrive at the phone.
+* Enter the retrieved code in the script without any dashes (only the digits!).
+* Write down the `secret` (it's the one-line of strange characters ending with an =).
 
-5. Execute the following commands (choose a password for the user at `cmd 1`):
+6. Execute the following commands one at a time (CHOOSE a password at first query):
 ```
 psql -U postgres
 -- Execute command by command!
 -- cmd 1 (choose a password)
 CREATE ROLE whatsspy LOGIN
-  PASSWORD ''
+  PASSWORD 'CHOOSEAPASSWORD'
   NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
 -- cmd 2
 CREATE DATABASE whatsspy
@@ -118,13 +77,13 @@ GRANT ALL ON DATABASE whatsspy TO whatsspy;
 ```
 *(or use `Ctrl`+`Z` in case you can't type `\q`)*
 
-6. Now it is time to insert the WhatsSpy Public database in PostgreSQL. Execute the following commands:
+7. Now it is time to insert the WhatsSpy Public database in PostgreSQL. Execute the following commands:
 ```
 cd /var/www/whatsspy/api/
 psql -U postgres -d whatsspy -f whatsspy-db.sql
 ``` 
 
-7. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
+8. rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
 
 * Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
 * Insert your `number` and `secret` in `$whatsappAuth`, which you have obtained following chapter *1) Secondary WhatsApp account*. 
