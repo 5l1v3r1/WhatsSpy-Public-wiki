@@ -6,38 +6,9 @@ On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Pu
 
 In case you don't get this working, you can create an issue on this Gitlab, or contact me on *maikeldus@hotmail.com*.
 
-## 0) Secondary WhatsApp account
-
-*This is a simplified version of [chapter 1) Secondary WhatsApp account](getting-started) of the normal getting started.*
-
-WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesnt use WhatsApp, use one of the two methods:
-
-**1)** Use WART to retrieve the secret (WART might tell you the activation code is wrong, use method two in this case.):
-
-* Download [WART](https://github.com/mgp25/WART/blob/master/WART-1.8.0.0.exe?raw=true).
-* Open up WART and fill in `phonenumber` and `password` (just choose one).
-  * `phonenumber` needs to be the countrycode+phonenumber.
-  * `phonenumber` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
-  * `phonenumber` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*.
-* Press the request code. You will receive a SMS with the activation code from WhatsApp.
-* Enter this code in **Step 2** and press confirm code.
-* Write down the `secret` (it's the one-line of strange characters ending with an =).
-
-
-**2)** If registration via WART does not work, use this method. This method requires that you first follow step **1) Download, 2) Writing onto SD card and 3) Booting it**. Execute the following commands on the Raspberry Pi:
-
-* Open the terminal and execute `cd /var/www/whatsspy/`.
-* Execute `bash /home/pi/whatsspy-public-startup` to update to the latest version.
-* Execute `php api/whatsapp/registerTool.php`.
-* Request activation via SMS or Voice.
-* Enter the retrieved code in the script.
-* Write down the `secret` (it's the one-line of strange characters ending with an =).
-
-You have retrieved the WhatsApp secret! Now we can setup WhatsSpy Public.
-
 ## 1) Download
 
-[Download the Raspbian image 1.6GB, unpacked 4GB **New version is being uploaded and will be up in 10 hours**.
+[Download the Raspbian image 1.6GB, unpacked 4GB **(New version is being uploaded and will be up in 10 hours)**.
 
 Download this file to your computer, open the `.zip` with WinRAR or 7Zip and extract the `.img` file to your desktop.
 
@@ -67,8 +38,19 @@ Password: `whatsspypublic`
 
 *(cannot login? check #141)*
 
+## 4) Getting the `secret`
 
-## 4) Configuration
+WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesn't use WhatsApp. Execute the following commands on the Raspberry Pi:
+
+* Open the terminal and execute `cd /var/www/whatsspy/`.
+* Execute `php api/whatsapp/registerTool.php`.
+* Request activation via `SMS` and wait for a SMS to arrive at the phone.
+* Enter the retrieved code in the script without any dashes (only the digits!).
+* Write down the `secret` (it's the one-line of strange characters ending with an =).
+
+You have retrieved the WhatsApp secret! Now we can configure WhatsSpy Public.
+
+## 5) Configuration
 
 Execute `sudo nano /var/www/api/config.php` to start editing the config to fill in the following details:
 
@@ -79,7 +61,7 @@ Execute `sudo nano /var/www/api/config.php` to start editing the config to fill 
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
-## 5) Check the system time
+## 6) Check the system time
 
 Run `date`, this would output something like:
 ```
@@ -87,7 +69,7 @@ Thu Mar  5 13:38:05 UTC 2015
 ```
 In case this time is not correct run `sudo dpkg-reconfigure tzdata` and follow the instructions on the screen. After this you can check again by running `date`.
 
-## 6) Importing users
+## 7) Importing users
 
 Execute `ifconfig` and search for the ipv4 address. Look for `eth0` and find something of the form `inet addr:<IPV4 ADDRESS>`.
 
@@ -105,7 +87,7 @@ In the GUI you can now:
 
 Once you have inserted these users they won't show up automatically. They need to be verified by the tracker which is not running yet.
 
-## 7) Starting the tracker
+## 8) Starting the tracker
 
 Once you've inserted some users you can start the tracker by executing:
 
@@ -128,9 +110,17 @@ No screen session found.
 
 You only need to execute this command once. The next time the Rpi will boot, WhatsSpy Public will start automaticly and it will auto-update as well (every 24 hours). 
 
-## 8) Check to be sure
+## 9) Check check double check
 
-Type `screen -r` to watch the tracker startup. In case it gives an error like:
+Type `cat /home/pi/tracker.log` after 20 seconds of starting the tracker to check everything went right.
+
+**In case it gives an error like:**
+```
+[error] Tracker Exception! Login failed!
+```
+Make sure you entered the correct phonenumber/secret.
+
+**In case it gives an error like:**
 ```
 [error] Tracker Exception! Connection Closed!
 ```
@@ -144,7 +134,7 @@ Make sure your firewall is allowing traffic from your Raspberry Pi. You can exit
 Make sure the `number` and `secret` are correct. If you think they are correct, please re-use WART to generate a new secret.
 
 
-## 9) Other steps
+## 10) Optional steps / handy things to know
 
 You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 
