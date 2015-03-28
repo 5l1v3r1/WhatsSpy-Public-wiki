@@ -63,11 +63,13 @@ You also need to edit your Nginx config but in a slightly different way ([help](
 
 * Execute `sudo nano /etc/nginx/sites-available/default`
 * Remove:
+
 ```
         auth_basic "Restricted";
         auth_basic_user_file /etc/nginx/.htpasswdwhatsspy; 
 ```
 * Add before the last `}`:
+
 ```
 location /images/profilepicture/ {
         deny all;
