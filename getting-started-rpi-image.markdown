@@ -132,15 +132,12 @@ Make sure the `number` and `secret` are correct. If you think they are correct, 
 
 ## 10) Optional steps / handy things to know
 
-You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
-
-I advise you to change the default password of the user `pi` to something else. You can do this by using `passwd`.
-
-If you ever choose to shutdown the pi undertake these steps:
+* You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
+* I advise you to change the default password of the user `pi` to something else. You can do this by using `passwd`.
+* If you ever choose to shutdown the pi undertake these steps:
 ```
 screen -r
 ```
-Press `Ctrl + c` and enter `exit` followed by a enter.
-
-After this you can shutdown by using `sudo shutdown -h now`.
+Press `Ctrl + c` and enter `exit` followed by a enter. After this you can shutdown by using `sudo shutdown -h now`.
+* The image automatically updates at 4 AM, you need to keep an eye on the [updatelog](updates) to comply with the settings.
 
