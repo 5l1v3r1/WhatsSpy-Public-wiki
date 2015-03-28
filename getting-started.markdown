@@ -132,9 +132,8 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174 is correct*
   * `secret` If you don't have this yet, read chapter 1) Secondary WhatsApp account.
 * Set the correct timezone of the place where you are.
-* In case you did **not** install WhatsSpy Public in `/var/www/whatsspy/`, set the paths for `$whatsspyProfilePath` and `$whatsspyWebProfilePath` .
+* In case you did **not** install WhatsSpy Public in `/var/www/whatsspy/`, set the path for `$whatsspyProfilePath`.
   * `$whatsspyProfilePath` is the absolute path for the system to store the profile pictures. For example `/var/www/whatsspy/images/profilepicture/` (default setting), `/var/www/other-dir/images/profilepicture/`. Don't forget the last `/`!
-  * `$whatsspyWebProfilePath` is the path for web users to access the profile pictures. This varible is used in this manner `http://localhost/<this-is-the-var>/some-profile-picture.jpg`. Again, don't forget the `/` at the end).
 
 
 **Check folder rights: the tracker needs read/write acces in the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/` and `api/`!**
@@ -142,18 +141,15 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
 # In case you chose other a $whatsspyProfilePath, you need to use this variable.
-sudo chown www-data:www-data -R /var/www/whatsspy/api/
+sudo chown www-data:www-data -R /var/www/whatsspy/api/whatsapp/src/wadata/
 sudo chown www-data:www-data -R /var/www/whatsspy/images/profilepicture/
-sudo chmod 760 -R /var/www/whatsspy/api/
+sudo chmod 760 -R /var/www/whatsspy/api/whatsapp/src/wadata/
 sudo chmod 760 -R /var/www/whatsspy/images/profilepicture/
 ```
 
 ### Webserver
 
-You need to restrict access to WhatsSpy Public and the API of WhatsSpy Public from unauthorized web access.
-
-#### Nginx
-We need to update your Nginx configuration to restrict access:
+You need to restrict access to WhatsSpy Public and the API of WhatsSpy Public from unauthorized web access. We need to update your Nginx configuration to restrict access:
 
 `sudo nano /etc/nginx/sites-available/default`
 
@@ -164,12 +160,13 @@ server {
     root /var/www;
     index index.html index.php;
 
-    location /whatsspy/ {
-        auth_basic "Restricted";
-        auth_basic_user_file /etc/nginx/.htpasswd; 
+    
+    location /whatsspy/api/whatsapp/ {
+        deny all;
+        return 404;
     }
 
-    location /whatsspy/api/whatsapp/ {
+    location /whatsspy/images/profilepicture/ {
         deny all;
         return 404;
     }
@@ -189,26 +186,7 @@ server {
 
 }
 ``` 
-In case you installed your WhatsSpy Public in a other place you need to edit the paths slightly.
-
-You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). Copy the output of this generator and save it:
-```
-sudo nano /etc/nginx/.htpasswd
-```
-Paste in the generated code and save it by using `Ctrl`+`X`, type `y` and press enter.
-
-Make sure you reload the configuration by executing `sudo service nginx reload`.
-
-#### Apache
-create an `.htaccess` in the WhatsSpy Public folder and add the following:
-
-```
-AuthType Basic
-AuthName "Password Protected Area"
-AuthUserFile /var/.htpasswd
-Require valid-user
-```
-Do not place the .htpasswd in the `/var/www/..` folder, but store it somewhere save (like `/var/`?). You can create an [.htpasswd here](http://www.htaccesstools.com/htpasswd-generator/). The `api/` folder is protected by default.
+In case you installed your WhatsSpy Public in a other place you need to edit the paths slightly. Make sure you reload the configuration by executing `sudo service nginx reload`.
 
 ## 3) Importing users
 
