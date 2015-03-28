@@ -134,7 +134,7 @@ Make sure the `number` and `secret` are correct. If you think they are correct, 
 ## 10) Optional steps / handy things to know
 
 * You can enable notifications via *NotifyMyAndroid*, *LiveNotifier* or even WhatsApp. For this you need to edit your `config.php` (like before) and change entries in `$whatsspyNotificatons`. After saving your change restart the tracker by again calling `bash /home/pi/whatsspy-public-startup`.
-* If you want to share profiles via the internet you need to port forward port 80 on your Raspberry Pi. Use the IP adress you gained in **7)** and [follow this guide].(http://portforward.com/english/applications/port_forwarding/Apache/default.htm)
+* If you want to share profiles via the internet you need to port forward port 80 on your Raspberry Pi. Use the IP adress you gained in **7)** and [follow this guide](http://portforward.com/english/applications/port_forwarding/Apache/default.htm).
 * You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 * I advise you to change the default password of the user `pi` to something else. You can do this by using `passwd`.
 * If you ever choose to shutdown the pi undertake these steps:
