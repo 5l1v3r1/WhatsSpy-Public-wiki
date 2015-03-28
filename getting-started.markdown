@@ -90,6 +90,7 @@ CREATE ROLE whatsspy LOGIN
   PASSWORD 'CHOOSEAPASSWORD'
   NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
 ```
+*(Using another database username means you need to change every reference in `whatsspy-db.sql`)*
 
 Create database:
 ```
