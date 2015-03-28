@@ -74,7 +74,7 @@ WhatsSpy Public **requires** a secondary WhatsApp account. Once the tracker is s
    * Enter the retrieved code in the script without any dashes (only the digits!).
    * Write down the `secret` (it's the one-line of strange characters ending with an =).
 
-*There are [two other methods described here](ways-of-getting-the-secret)*
+*There are [two other methods described here](ways-of-getting-the-secret) in case this method does not work.*
 
 ### 2.4) Setup database
 
