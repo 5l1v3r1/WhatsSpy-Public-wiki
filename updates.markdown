@@ -41,7 +41,7 @@ Make sure that you before the update undertake these steps:
 
 Execute `sudo nano /etc/nginx/sites-available/default` (or similar, for your Nginx configuration).
 
-Remove:
+Remove **(Rpi users only need to remove the two `auth_basic` lines, check [this issue](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/203))**:
 ```
 location /whatsspy/ {
         auth_basic "Restricted";
