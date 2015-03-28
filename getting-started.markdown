@@ -78,22 +78,36 @@ WhatsSpy Public **requires** a secondary WhatsApp account. Once the tracker is s
 
 ### 2.4) Setup database
 
-Execute the following commands one at a time (CHOOSE a password at first query):
+Login into the database:
 ```
 psql -U postgres
--- Execute command by command!
--- cmd 1 (choose a password)
+```
+*(In case you get an authentication error you did not setup the PostgreSQL authentication correct)*
+
+Create the WhatsSpy user in the database (choose a password):
+```
 CREATE ROLE whatsspy LOGIN
   PASSWORD 'CHOOSEAPASSWORD'
   NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
--- cmd 2
+```
+
+Create database:
+```
 CREATE DATABASE whatsspy
   WITH OWNER = whatsspy
        ENCODING = 'UTF8'
        TABLESPACE = pg_default
        CONNECTION LIMIT = -1;
--- cmd 3
+```
+
+Grant the rights:
+```
+ALTER DATABASE whatsspy OWNER TO whatsspy;
 GRANT ALL ON DATABASE whatsspy TO whatsspy;
+```
+
+Quit the database:
+```
 \q
 ```
 *(or use `Ctrl`+`Z` in case you can't type `\q`)*
