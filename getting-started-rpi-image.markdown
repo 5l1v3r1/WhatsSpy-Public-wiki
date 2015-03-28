@@ -62,6 +62,8 @@ Execute `sudo nano /var/www/api/config.php` to start editing the config to fill 
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
+**Note**: You now configured WhatsSpy Public for version `1.5.0`. The configuration might update in the future, you need to adapt these changes described in the changelog.
+
 ## 6) Check the system time
 
 Run `date`, this would output something like:
