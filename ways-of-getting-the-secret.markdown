@@ -10,8 +10,8 @@ You need a phone(number) over which you can receive SMS or voice calls for the W
 
 You have three methods:
 
-* Use [WART](https://github.com/mgp25/WART/), a Windows registration tool which allows you to retrieve the secret via a GUI.
 * Use a supplied PHP script `registerTool.php` that will guide you through the steps (use if WART does not work).
+* Use [WART](https://github.com/mgp25/WART/), a Windows registration tool which allows you to retrieve the secret via a GUI.
 * Activate WhatsApp on your jailbroken iPhone or rooted Android phone and retrieve the secret via [this script](https://www.mgp25.com/utilidadiPhone/) (for iPhone users) or the [following APK](https://github.com/venomous0x/WhatsAPI/issues/983) (for Android users).
 
 #### 1) registration via the `registerTool.php` script
