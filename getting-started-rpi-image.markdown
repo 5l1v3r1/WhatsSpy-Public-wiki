@@ -118,12 +118,6 @@ Type `cat /home/pi/tracker.log` after 20 seconds of starting the tracker to chec
 
 **In case it gives an error like:**
 ```
-[error] Tracker Exception! Login failed!
-```
-Make sure you entered the correct phonenumber/secret.
-
-**In case it gives an error like:**
-```
 [error] Tracker Exception! Connection Closed!
 ```
 Make sure your firewall is allowing traffic from your Raspberry Pi. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
