@@ -1,14 +1,6 @@
-
-*"If I open WhatsSpy I get a welcome screen and my password is not accepted" - Follow [the update instructions for `1.5.0`](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/updates).*
-# Please wait with using this guide, a new version will come out today which will have different instructions.
-
-
-
-
-
 # Getting Started with the Rpi Image
 
-*Tested on Rpi Model 1B (4GB) and 2B (16GB) in combination with Windows, QUEMU does not seem to work*
+*Tested on Rpi Model 1B (4GB) and 2B (16GB) in combination with Windows*
 
 On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. 
 
@@ -45,7 +37,7 @@ You have retrieved the WhatsApp secret! Now we can setup WhatsSpy Public.
 
 ## 1) Download
 
-[Download the Raspbian image (1.6GB, unpacked 4GB)](https://drive.google.com/file/d/0B_mlyJwD3c1TakNsdWd2X2ViRGs/view?usp=sharing)
+[Download the Raspbian image 1.6GB, unpacked 4GB **New version is being uploaded and will be up in 10 hours**.
 
 Download this file to your computer, open the `.zip` with WinRAR or 7Zip and extract the `.img` file to your desktop.
 
@@ -78,27 +70,14 @@ Password: `whatsspypublic`
 
 ## 4) Configuration
 
-First execute `bash /home/pi/whatsspy-public-startup` to make sure you have the newest version (don't care about the output yet).
+Execute `sudo nano /var/www/api/config.php` to start editing the config to fill in the following details:
 
-Second: copy the example configuration over to a real config:
-```
-sudo rm /var/www/api/config.php
-sudo cp /var/www/api/config.example.php /var/www/api/config.php
-sudo nano /var/www/api/config.php
-```
-And now fill in the following details:
-
-* Find`$dbAuth` and type between the quotes after `'password'`: `T7hGdg5Y8H3CfNN0yi6G` *(yes that is a zero, not a O)*.
 * Fill in the empty fields in `$whatsappAuth` (`number` and `secret`). The `secret` is the thing you have retrieved in *chapter 0*.
    * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
    * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
-* Change `$whatsspyProfilePath` to: `'/var/www/images/profilepicture/'`;
-* Change `$whatsspyWebProfilePath` to: `'/images/profilepicture/'`;
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
-
-**If anything is unclear, please register at this gitlab and create a new issue!**
 
 ## 5) Check the system time
 
@@ -117,7 +96,6 @@ Now go to this address on your Windows (in for example Chrome or Firefox):
 `http://192.168.2.9/` (where the `192.168.2.9` is the IP in ifconfig).
 
 You need the following authentication:
-Name: `whatsspypublic`
 Password: `whatsspypublic`
 
 In the GUI you can now:
