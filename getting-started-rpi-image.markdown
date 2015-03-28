@@ -2,9 +2,9 @@
 
 *Tested on Rpi Model 1B (4GB) and 2B (16GB)*
 
-On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. 
+On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. In case you don't get this working, you can create an issue on this Gitlab, or contact me on *maikeldus@hotmail.com*.
 
-In case you don't get this working, you can create an issue on this Gitlab, or contact me on *maikeldus@hotmail.com*.
+*Make sure you have a new SIM card or phonenumber that does not actively use WhatsApp ready for this guide, you need this in step 4*.
 
 ## 1) Download
 
