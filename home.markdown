@@ -24,6 +24,17 @@ I made this project for you to realize how broken the privacy options actually a
 * [Publicity page](publicity)
 * Bitcoin donations : 1KjZRyFKcMRu89zLUzeCoLBWuAss4PeWbc
 
+## What can WhatsSpy Public do
+
+**Short**: Profile your daily habits and smartphone usage throughout the day, if you like that or not.
+
+It contains the following functions:
+
+* Track user status / status message and profile picture (history).
+* Track any privacy setting changes.
+* Be notified via various services if a user comes online/changed any of the above in WhatsApp.
+* Group all tracked users and view statistics about them.
+* Share profiles via unique tokens.
 
 ## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS
 
@@ -41,19 +52,33 @@ For updates please check [updatelog and how to update](updates).
 ## Screenshots of the WhatsSpy Public pages
 #### Overview
 
-![overview](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/4054408e2a/overview.png)
+![overview](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/ce2c8c0a4b/overview.png)
+
+#### Overview edit contact
+
+![overview-edit](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/94f2405e0c/overview-edit.png)
 
 #### Compare
 
-![compare](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/5aaf3cc8f0/compare.png)
+![compare](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/8e208706f1/compare.png)
 
 #### Timeline
 
-![timeline](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/69c8b18e94/timeline.png)
+![timeline](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/0e901e0ac6/timeline.png)
 
 #### Statistics
 
-![stats](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/d30caf2749/stats.png)
+![stats](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/72cf35abe3/stats.png)
+
+#### And it's even mobile!
+
+![pin-to-start-mobile](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/bf2a392d8b/pin-to-start-mobile.png)
+*An external installation pinned to the home-screen of an Android phone*
+
+![overview-mobile](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/bebf8d686f/overview-mobile.png)
+
+
+
 
 
 [Publicity](publicity)
