@@ -16,7 +16,7 @@
 * Nginx or Apache with PHP with PDO (you can't host on simple webhoster, **you need a terminal**!)
 * PostgreSQL
 
-**In case you don't have these resources you can also check out the [Raspberry Pi image](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started-rpi-image) (or you can even [emulate it](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/200))**
+**In case you don't have these resources you can also check out the [Raspberry Pi image](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started-rpi-image) (or [emulate it](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/200))**
 
 ## 2) Manual install (Debian/Ubuntu)
 
@@ -30,11 +30,11 @@ sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsq
 2. Verify that your PHP-FPM installation uses the Unix socket:
 ```
 sudo nano /etc/php5/fpm/pool.d/www.conf
-// The following line should in in the config file (and NOT the 127.0.0.1):
+// The following line should in in the config file (and NOT 127.0.0.1):
 listen = /var/run/php5-fpm.sock
 ```
 
-3. Allow local connections for the user `postgres` in PostgreSQL, make sure your `/etc/postgresql/9.1/main/pg_hba.conf` has the following line:
+3. Allow local connections for the user `postgres` in PostgreSQL by makeing sure your `/etc/postgresql/9.1/main/pg_hba.conf` has the following line:
 ```
 local   all             postgres                                trust
 ```
@@ -49,13 +49,14 @@ git pull origin master
 *(Please note that SSH does not work on this Gitlab, only HTTPS)*
 
 5. Get the `secret` from your Phone number required to use WhatsSpy Public:
-* Execute `php /var/www/whatsspy/api/whatsapp/registerTool.php`.
-* Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
-   * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
-   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
-* Request activation via `SMS` and wait for a SMS to arrive at the phone.
-* Enter the retrieved code in the script without any dashes (only the digits!).
-* Write down the `secret` (it's the one-line of strange characters ending with an =).
+
+   * Execute `php /var/www/whatsspy/api/whatsapp/registerTool.php`.
+   * Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
+      * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
+      * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
+   * Request activation via `SMS` and wait for a SMS to arrive at the phone.
+   * Enter the retrieved code in the script without any dashes (only the digits!).
+   * Write down the `secret` (it's the one-line of strange characters ending with an =).
 
 6. Execute the following commands one at a time (CHOOSE a password at first query):
 ```
