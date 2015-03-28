@@ -18,7 +18,8 @@ Make sure that you before the update undertake these steps:
 
 ## Changelog
 
-*At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files).*
+*At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files). If you used `git` (as stated in the getting-started) you can execute `git fetch --all
+` followed by `git reset --hard origin/master`. The Raspberry Pi image does this automatically every 24 hours.*
 
 ---
 **Update 1.5.0** : 
