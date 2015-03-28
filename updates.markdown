@@ -37,7 +37,7 @@ Make sure that you before the update undertake these steps:
 * Remove `$whatsspyWebProfilePath`, this is no longer required.
 * Add `$whatsspyPublicAuth = '<choose-your-login-password>';` to set the password for you WhatsSpy Public installation.
 
-**2)** For Nginx:
+**2)** For Nginx *(Raspberry Pi Image users do step 3 instead of this step)*:
 
 * Execute `sudo nano /etc/nginx/sites-available/default` (or similar, for your Nginx configuration).
 * Remove :
@@ -57,7 +57,7 @@ location /whatsspy/images/profilepicture/ {
 ```
 * Don't forget to reload the configuration by using `sudo service nginx reload`.
 
-**3)** Raspberry Pi image users:
+**3)** Raspberry Pi image users ONLY:
 
 You also need to edit your Nginx config but in a slightly different way ([help](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/203)):
 
