@@ -205,7 +205,7 @@ Once you have populated your database with some users, you can start the tracker
 
 ## 10) Optional steps / handy things to know
 
-* You can enable notifications via *NotifyMyAndroid*, *LiveNotifier* or even WhatsApp. For this you need to edit your `config.php` (like before) and change entries in `$whatsspyNotificatons`. After saving your change restart the tracker by again calling `bash /home/pi/whatsspy-public-startup`.
+* You can enable notifications via *NotifyMyAndroid*, *LiveNotifier* or even WhatsApp. For this you need to edit your `config.php` (like before) and change entries in `$whatsspyNotificatons`. After saving your change restart the tracker.
 * If you want to share profiles via the internet you need to make sure your installation is accessible from the internet.
 
 Please check the [FAQ](FAQ).
