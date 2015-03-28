@@ -1,3 +1,10 @@
+
+# Please wait with using this guide, a new version will come out today which will have different instructions.
+
+
+
+
+
 # Getting Started with the Rpi Image
 
 *Tested on Rpi Model 1B (4GB) and 2B (16GB) in combination with Windows, QUEMU does not seem to work*
