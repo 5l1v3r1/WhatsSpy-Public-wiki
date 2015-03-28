@@ -1,10 +1,8 @@
 # Getting Started with the Rpi Image
 
-*Tested on Rpi Model 1B (4GB) and 2B (16GB)*
+*Tested on Rpi Model 1B (4GB) and 2B (16GB) and one report of working QEMU working. Make sure you have a new SIM card or phonenumber that does not actively use WhatsApp ready for this guide, you need this in step 4.*
 
 On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based, altough using Linux should not be a problem. In case you don't get this working, you can create an issue on this Gitlab, or contact me on *maikeldus@hotmail.com*.
-
-*Make sure you have a new SIM card or phonenumber that does not actively use WhatsApp ready for this guide, you need this in step 4*.
 
 ## 1) Download
 
