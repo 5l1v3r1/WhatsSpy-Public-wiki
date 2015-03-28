@@ -30,9 +30,16 @@ I made this project for you to realize how broken the privacy options actually a
 
 Setting up WhatsSpy Public requires somewhat IT knowledge and you might need a second SIM card. 
 
-**Rpi image**: [Use a Raspberry Pi image with WhatsSpy Public already on it](getting-started-rpi-image).
+You have three options to setup WhatsSpy Public:
 
-**Normal**: [Setup WhatsSpy Public on a existing VPS/Rpi/Server](getting-started).
+
+* **Normal**: [Setup WhatsSpy Public on a existing VPS/Rpi/Server](getting-started).
+* **Raspberry Pi image**: [Use a Raspberry Pi image with WhatsSpy Public already on it](getting-started-rpi-image).
+* **QEMU** Use the emulater QEMU witht he Raspberry pi image [read experience](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/200).
+
+
+
+
 
 *[updatelog and how to update](updates)*
 
