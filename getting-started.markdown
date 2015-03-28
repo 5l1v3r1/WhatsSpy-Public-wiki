@@ -136,7 +136,7 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
   * `$whatsspyProfilePath` is the absolute path for the system to store the profile pictures. For example `/var/www/whatsspy/images/profilepicture/` (default setting), `/var/www/other-dir/images/profilepicture/`. Don't forget the last `/`!
 
 
-**Check folder rights: the tracker needs read/write acces in the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/` and `api/`!**
+**Check folder rights: the tracker needs read/write acces in the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/`!**
 
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
