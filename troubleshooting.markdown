@@ -70,6 +70,10 @@ Look at https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4
 
 This is a problem occuring at WhatsApp and there is no way to fix this. This problem will resolve itself within a day. Make sure you keep the tracker offline for a few hours so you don't spam login requests.
 
+### I don't have any notification options
+
+You need to enable notification options in your `config.php`. After filling these options in you need to restart the tracker.
+
 ### I have started the tracker but the UI shows "tracker offline"
 
 The UI comminucates with the tracker via PostgreSQL. If this problem occurs it means there is something going wrong with PostgreSQL:
