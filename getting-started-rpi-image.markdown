@@ -1,6 +1,6 @@
 # Getting Started with the Rpi Image
 
-*Tested on Rpi Model 1B (4GB) and 2B (16GB) in combination with Windows*
+*Tested on Rpi Model 1B (4GB) and 2B (16GB)*
 
 On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based. 
 
@@ -36,7 +36,7 @@ The login information:
 User: `pi`
 Password: `whatsspypublic`
 
-*(cannot login? check #141)*
+*(cannot login? check #141, you may have a different keyboard layout)*
 
 ## 4) Getting the `secret`
 
@@ -44,6 +44,9 @@ WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. Thi
 
 * Open the terminal and execute `cd /var/www/whatsspy/`.
 * Execute `php api/whatsapp/registerTool.php`.
+* Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
+   * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
+   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Request activation via `SMS` and wait for a SMS to arrive at the phone.
 * Enter the retrieved code in the script without any dashes (only the digits!).
 * Write down the `secret` (it's the one-line of strange characters ending with an =).
