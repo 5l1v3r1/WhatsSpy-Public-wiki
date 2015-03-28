@@ -21,6 +21,42 @@ Make sure that you before the update undertake these steps:
 *At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files).*
 
 ---
+**Update 1.5.0** : 
+
+* Performance improvements in the tracker and the compare page. 
+* Ability to share a group statistics profile or user profile if the installation is available from the internet. 
+* Timeline sound is based on the filter now.
+* Small GUI improvements (like on add new number reset information etc.).
+
+:horse: **Warning:** This update contains a database upgrade. This update will happen automatically. If WhatsSpy Public does not work anymore, this is probably a database issue. Check [troubleshooting](troubleshooting).
+
+:horse: **Warning 2:** This update requires a reconfiguration of Nginx and your `config.php`.
+
+**For the `config.php` (you can copy this over from the `config.example.php`:**
+
+* Remove `$whatsspyWebProfilePath`, this is no longer required.
+* Add `$whatsspyPublicAuth = '<choose-your-login-password>';` to set the password for you WhatsSpy Public installation.
+
+**For Nginx:**
+
+Remove:
+```
+location /whatsspy/ {
+        auth_basic "Restricted";
+        auth_basic_user_file /etc/nginx/.htpasswdwhatsspy; 
+    }
+```
+*Authentication is now done via the GUI of WhatsSpy Public*
+
+Add the following:
+```
+location /whatsspy/images/profilepicture/ {
+        deny all;
+        return 404;
+}
+```
+
+---
 **Update 1.4.4** : Updated hover on status, improved compare page performance slightly, custom script agent retrieves better parameters. Added notifications for privacy changes.
 
 ---
