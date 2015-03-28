@@ -33,6 +33,8 @@ It contains the following functions:
 * Track user status / status message and profile picture (history).
 * Track any privacy setting changes.
 * Be notified via various services if a user comes online/changed any of the above in WhatsApp.
+* Compare users statuses to draw conclusions.
+* Get a timeline view just like Facebook about the tracked users.
 * Group all tracked users and view statistics about them.
 * Share profiles via unique tokens.
 
