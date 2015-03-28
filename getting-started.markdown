@@ -63,9 +63,8 @@ git pull origin master
 ```
 *(Please note that SSH does not work on this Gitlab, only HTTPS)*
 
-### 2.3) Retrieve the `secret`
-
-Get the `secret` from your Phone number required to use WhatsSpy Public:
+### 2.3) Retrieve the `secret` for a secondary WhatsApp account
+WhatsSpy Public **requires** a secondary WhatsApp account. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phone number. You need to register at WhatsApp to retrieve a `secret` which you will need later when setting up WhatsSpy Public.
 
    * Execute `php /var/www/whatsspy/api/whatsapp/registerTool.php`.
    * Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
@@ -74,6 +73,8 @@ Get the `secret` from your Phone number required to use WhatsSpy Public:
    * Request activation via `SMS` and wait for a SMS to arrive at the phone.
    * Enter the retrieved code in the script without any dashes (only the digits!).
    * Write down the `secret` (it's the one-line of strange characters ending with an =).
+
+*There are [two other methods described here](ways-of-getting-the-secret)*
 
 ### 2.4) Setup database
 
