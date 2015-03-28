@@ -39,7 +39,7 @@ Make sure that you before the update undertake these steps:
 
 **2)** For Nginx:
 
-Execute `sudo nano /etc/nginx/sites-available/default`
+Execute `sudo nano /etc/nginx/sites-available/default` (or similar, for your Nginx configuration).
 
 Remove:
 ```
