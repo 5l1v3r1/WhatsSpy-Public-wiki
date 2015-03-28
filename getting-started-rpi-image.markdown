@@ -1,4 +1,5 @@
 
+*"If I open WhatsSpy I get a welcome screen and my password is not accepted" - Follow [the update instructions for `1.5.0`](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/updates).*
 # Please wait with using this guide, a new version will come out today which will have different instructions.
 
 
