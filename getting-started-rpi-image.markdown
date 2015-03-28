@@ -60,6 +60,7 @@ Execute `sudo nano /var/www/api/config.php` to start editing the config to fill 
    * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
    * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
+* You can choose another password for the webUI by changing the value of `$whatsspyPublicAuth`.
 
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
@@ -132,6 +133,8 @@ Make sure the `number` and `secret` are correct. If you think they are correct, 
 
 ## 10) Optional steps / handy things to know
 
+* You can enable notifications via *NotifyMyAndroid*, *LiveNotifier* or even WhatsApp. For this you need to edit your `config.php` (like before) and change entries in `$whatsspyNotificatons`. After saving your change restart the tracker by again calling `bash /home/pi/whatsspy-public-startup`.
+* If you want to share profiles via the internet you need to port forward port 80 on your Raspberry Pi. Use the IP adress you gained in **7)** and [follow this guide].(http://portforward.com/english/applications/port_forwarding/Apache/default.htm)
 * You can use `cat /home/pi/tracker.log` to view any history of the tracker and use `screen -r` to get a live view of the tracker. You can exit this view by using `Ctrl + a` and `Ctrl + d`.
 * I advise you to change the default password of the user `pi` to something else. You can do this by using `passwd`.
 * If you ever choose to shutdown the pi undertake these steps:
