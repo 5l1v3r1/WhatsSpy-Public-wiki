@@ -64,6 +64,15 @@ Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
 **Note**: You now configured WhatsSpy Public for version `1.5.0`. The configuration might update in the future, you need to adapt these changes described in the changelog.
 
+**Apply this fix**: there is a bug which causes an insertion failure, fix this by doing the following:
+
+`psql -U postgres -d whatsspy` and after that execute the following:
+
+```
+GRANT USAGE ON SCHEMA public TO whatsspy;
+```
+and use `\q` to quit (or use `Ctrl`+`Z` in case you can't use `\q`).
+
 ## 6) Check the system time
 
 Run `date`, this would output something like:
