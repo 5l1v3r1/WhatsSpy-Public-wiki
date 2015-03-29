@@ -4,7 +4,10 @@
 
 On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Public already on it. This tutorial is Windows based, altough using Linux should not be a problem. In case you don't get this working, you can create an issue on this Gitlab, or contact me on *maikeldus@hotmail.com*.
 
-*This image is only for usage of WhatsSpy Public, not contributing because it will remove any changes after every update.*
+## 0) Important notes
+
+* This image will auto-update (shipped with version `1.5.0`) thus removing any change you made in the code.
+* The rights in this image are 'loose', don't use this image for any sensitive information, just for the purpose of this PoC.
 
 ## 1) Download
 
