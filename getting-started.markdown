@@ -92,7 +92,7 @@ Create the WhatsSpy user in the database (choose a password):
 ```
 CREATE ROLE whatsspy LOGIN
   PASSWORD 'CHOOSEAPASSWORD'
-  NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
+  NOSUPERUSER INHERIT NOCREATEDB CREATEROLE REPLICATION;
 ```
 *(Using another database username means you need to change every reference in `whatsspy-db.sql`)*
 
