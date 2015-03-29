@@ -66,10 +66,10 @@ Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
 **Apply this fix**: there is a bug which causes an insertion failure, fix this by executing the following:
 
-`psql -U postgres -d whatsspy` and after that execute the following:
-
 ```
-GRANT USAGE ON SCHEMA public TO whatsspy;
+psql -U postgres -d whatsspy
+\connect whatsspy
+ALTER SCHEMA public OWNER TO whatsspy;
 ```
 and use `\q` to quit (or use `Ctrl`+`Z` in case you can't use `\q`).
 
