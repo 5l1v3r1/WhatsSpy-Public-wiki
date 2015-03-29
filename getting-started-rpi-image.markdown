@@ -68,7 +68,6 @@ Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
 ```
 psql -U postgres -d whatsspy
-\connect whatsspy
 ALTER SCHEMA public OWNER TO whatsspy;
 ```
 and use `\q` to quit (or use `Ctrl`+`Z` in case you can't use `\q`).
