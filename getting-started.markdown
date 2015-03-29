@@ -34,7 +34,7 @@ sudo apt-get install postgresql nginx php5 php5-cli php5-curl php5-fpm php5-pgsq
 sudo nano /etc/php5/fpm/pool.d/www.conf
 ```
 
-The following line should be in the config file (and NOT `listen = 127.0.0.1`):
+The following line should be in the config file (and **NOT** `listen = 127.0.0.1`):
 ```
 listen = /var/run/php5-fpm.sock
 ```
