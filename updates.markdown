@@ -33,12 +33,12 @@ Make sure that you before the update undertake these steps:
 
 :horse: **Warning 2:** This update requires a reconfiguration of Nginx and your `config.php`.
 
-**1)** For the `config.php` (you can copy this over from the `config.example.php`):
+**1)** For the `config.php` (you can also copy this over from the `config.example.php`):
 
-* Remove `$whatsspyWebProfilePath`, this is no longer required.
+* Remove `$whatsspyWebProfilePath = '...';`, this is no longer required.
 * Add `$whatsspyPublicAuth = '<choose-your-login-password>';` to set the password for you WhatsSpy Public installation.
 
-**2)** For Nginx *(Raspberry Pi Image users do step 3 instead of this step)*:
+**2)** For Nginx **(Raspberry Pi Image: skip this step)**:
 
 * Execute `sudo nano /etc/nginx/sites-available/default` (or similar, for your Nginx configuration).
 * Remove :
@@ -58,9 +58,7 @@ location /whatsspy/images/profilepicture/ {
 ```
 * Don't forget to reload the configuration by using `sudo service nginx reload`.
 
-**3)** Raspberry Pi image users ONLY:
-
-You also need to edit your Nginx config but in a slightly different way ([help](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/203)):
+**3)** Raspberry Pi image users **ONLY**:
 
 * Execute `sudo nano /etc/nginx/sites-available/default`
 * Remove:
@@ -79,7 +77,7 @@ location /images/profilepicture/ {
 ```
 * Reload config: `sudo service nginx reload`.
 
-**If you use a browser like Chrome, use `Ctrl` + `F5` to force a page refresh.**
+If you open the interface make sure you do a full reload by using `Ctrl` + `F5` in the browser.
 
 ---
 **Update 1.4.4** : Updated hover on status, improved compare page performance slightly, custom script agent retrieves better parameters. Added notifications for privacy changes.
