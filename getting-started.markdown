@@ -125,7 +125,7 @@ psql -U postgres -d whatsspy -f whatsspy-db.sql
 
 ### 2.4) Setup the config
 
-Rename `config.example.php` to `config.php` located at `api/` and fill in the following details: 
+Copy `config.example.php` to `config.php` located at `/var/www/whatsspy/api/` and fill in the following details: 
 
 * Postgresql host/port/dbname/user and password correctly in `$dbAuth`.
 * Insert your `number` and `secret` in `$whatsappAuth`. 
