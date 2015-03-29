@@ -45,11 +45,15 @@ listen = /var/run/php5-fpm.sock
 
 sudo nano /etc/postgresql/9.1/main/pg_hba.conf
 ``` 
-It requires the following line:
+Search for the following line:
+```
+local   all             postgres                                peer
+```
+
+and change it to:
 ```
 local   all             postgres                                trust
 ```
-
 Reload the configuration by using `sudo service postgresql reload`.
 
 ### 2.2) Download WhatsSpy Public
