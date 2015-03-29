@@ -62,9 +62,14 @@ chmod 777 -R /var/www/whatsspy/
 ```
 (chmod 777 is generally not a good practice, but on your Rpi this should be no problem).
 
-### Broken pipe and it stops tracking
+### Broken pipe
 
-Look at https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4
+If the network is unreliable or the hardware very busy this might occur. Make sure you track on a device that is not under full load and the network has not too much switches etc. in between.
+
+### `PHP Parse error: syntax error, unexpected '[' ...`
+
+Make sure you have the newest PHP (5.4+).
+
 
 ### Error: Tree length did not match received length
 
