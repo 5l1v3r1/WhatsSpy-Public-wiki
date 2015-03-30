@@ -144,8 +144,7 @@ The tracker needs read/write acces in the folder `$whatsspyProfilePath`, `api/wh
 ```
 # These are guidelines. For debugging you can use 777 instead of 760.
 # In case you chose other a $whatsspyProfilePath, you need to use this variable.
-sudo chown www-data:www-data -R /var/www/whatsspy/api/whatsapp/src/wadata/
-sudo chown www-data:www-data -R /var/www/whatsspy/images/profilepicture/
+sudo chown www-data:www-data -R /var/www/whatsspy/
 sudo chmod 760 -R /var/www/whatsspy/api/whatsapp/src/wadata/
 sudo chmod 760 -R /var/www/whatsspy/images/profilepicture/
 ```
