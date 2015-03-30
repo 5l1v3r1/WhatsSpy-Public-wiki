@@ -26,6 +26,7 @@ Make sure that you before the update undertake these steps:
 
 * Fixed several timezone issues for people living in half hour timezones.
 * Created "Performance options" to speed up the loading in the GUI.
+* Changed no profile picture to new image.
 
 ---
 **Update 1.5.0** : 
