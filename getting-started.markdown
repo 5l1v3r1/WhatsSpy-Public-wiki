@@ -192,7 +192,7 @@ In case you installed your WhatsSpy Public in a other place you need to edit the
 
 ## 3) Importing users
 
-If everything went well you can now access the WhatsSpy Public interface through your webserver. At this point you need to import users that you want to track ([Troubleshooting](troubleshooting)):
+If everything went well you can now access the WhatsSpy Public interface through your webserver (via `http://<your-ip>/whatsspy/`). At this point you need to import users that you want to track ([Troubleshooting](troubleshooting)):
 
 * Either add any contact manually by using "Add contact by phonenumber".
 * Or use "import google Contacts" which is an script that retrieves all your Google Contacts and gives an SQL statement which insert all users into the database.
