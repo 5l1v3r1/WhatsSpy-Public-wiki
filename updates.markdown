@@ -25,7 +25,7 @@ Make sure that you before the update undertake these steps:
 **Update 1.5.1** : 
 
 * Fixed several timezone issues for people living in half hour timezones.
-* Created "Performance options" to speed up the loading in the GUI.
+* Created "Performance options" to speed up the loading in the GUI, allows customization of the status history length and the tracker session background.
 * Changed no profile picture to new image.
 
 ---
