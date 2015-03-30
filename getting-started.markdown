@@ -107,8 +107,9 @@ CREATE DATABASE whatsspy
 
 Grant the rights:
 ```
-ALTER DATABASE whatsspy OWNER TO whatsspy;
+\connect whatsspy
 GRANT ALL ON DATABASE whatsspy TO whatsspy;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO whatsspy;
 ```
 
 Quit the database:
