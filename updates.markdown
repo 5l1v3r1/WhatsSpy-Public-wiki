@@ -22,6 +22,12 @@ Make sure that you before the update undertake these steps:
 ` followed by `git reset --hard origin/master`. The Raspberry Pi image does this automatically every 24 hours.*
 
 ---
+**Update 1.5.1** : 
+
+* Fixed several timezone issues for people living in half hour timezones.
+* Created "Performance options" to speed up the loading in the GUI.
+
+---
 **Update 1.5.0** : 
 
 * Performance improvements in the tracker and the compare page. 
