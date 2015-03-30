@@ -11,7 +11,7 @@ On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Pu
 
 ## 1) Download
 
-Download the [Raspbian image 1.6GB, unpacked 4GB](https://docs.google.com/uc?id=0B_mlyJwD3c1TcEZBZk55SkQtOEU&export=download)
+Download the [Raspbian image 1.6GB, unpacked 4GB](https://docs.google.com/uc?id=0B_mlyJwD3c1TMkFwQXFMSUVlQ2s&export=download)
 
 Download this file to your computer, open the `.zip` with WinRAR or 7Zip and extract the `.img` file to your desktop.
 
@@ -68,14 +68,6 @@ Execute `sudo nano /var/www/whatsspy/api/config.php` to start editing the config
 Save the file by using `Ctrl+X`, type `y` and press `Enter`.
 
 **Note**: You now configured WhatsSpy Public for version `1.5.0`. The configuration might update in the future, you need to adapt these changes described in the changelog.
-
-**Apply this fix**: there is a bug which causes an insertion failure, fix this by executing the following:
-
-```
-psql -U postgres -d whatsspy
-ALTER SCHEMA public OWNER TO whatsspy;
-```
-and use `\q` to quit (or use `Ctrl`+`Z` in case you can't use `\q`).
 
 ## 6) Check the system time
 
