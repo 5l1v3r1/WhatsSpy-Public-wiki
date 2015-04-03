@@ -212,6 +212,6 @@ Once you have populated your database with some users, you can start the tracker
 
 * You can enable notifications via *NotifyMyAndroid*, *LiveNotifier* or even WhatsApp. For this you need to edit your `config.php` (like before) and change entries in `$whatsspyNotificatons`. After saving your change restart the tracker.
 * If you want to share profiles via the internet you need to make sure your installation is accessible from the internet.
-* If you want to log the tracker session to a log file you can call `` `which php` api/tracker.php | tee /var/log/tracker.log`` instead of step **3.** in **Starting the tracker**.
+* If you want to log the tracker session to a log file you can call `` `which php` api/tracker.php | tee /var/log/tracker.log`` instead of step **3** in **Starting the tracker** (and you must install `tee`).
 
 Please check the [FAQ](FAQ).
