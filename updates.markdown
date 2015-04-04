@@ -22,11 +22,18 @@ Make sure that you before the update undertake these steps:
 ` followed by `git reset --hard origin/master`. The Raspberry Pi image does this automatically every 24 hours.*
 
 ---
+**Update 1.5.2** : 
+
+* Implemented Desktop notifications in the Timeline page.
+* Added option to diable password login (only use if your installation is safe behind a firewall/router!). You will no longer see the login screen.
+* Changed security mechanism to invalidate sessions with old passwords.
+
+---
 **Update 1.5.1** : 
 
 * Fixed several timezone issues for people living in half hour timezones.
 * Created "Performance options" to speed up the loading in the GUI, allows customization of the status history length and the tracker session background.
-* Changed no profile picture.
+* Changed no profile picture to a placeholder.
 * Fixed race condition in the Timeline page causing no live feed.
 
 ---
