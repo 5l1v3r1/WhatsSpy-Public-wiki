@@ -55,6 +55,8 @@ WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. Thi
 
 You have retrieved the WhatsApp secret! Now we can configure WhatsSpy Public.
 
+*There are two other methods [described here](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/ways-of-getting-the-secret) in case this method does not work.*
+
 ## 5) Configuration
 
 Execute `sudo nano /var/www/whatsspy/api/config.php` to start editing the config to fill in the following details:
