@@ -2,7 +2,7 @@
 
 WhatsSpy Public requires a **secondary WhatsApp account**. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phone number. You need to register at WhatsApp to retrieve a `secret` which you will need later when setting up WhatsSpy Public.
 
-**Notice** sometimes you don't seem to receive a SMS. In this case try to use Voice or wait a few days to try again. Also make sure you do not use some free SMS service.
+**Notice** sometimes you don't seem to receive a SMS. In this case wait a few days to try again.
 
 ### 1.1) Getting a phone number
 
