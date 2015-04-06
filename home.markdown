@@ -1,7 +1,7 @@
 **[Version 1.5.2](updates) is now out | [view screenshots](#overview) | [FAQ](FAQ) | [troubleshooting](troubleshooting)** 
 # What is WhatsSpy Public?
 
-WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application that tracks every move of whoever you like to follow. This application is setup as an Proof of Concept that WhatsApp is broken in terms of privacy. Once you've setup this application you can track users that you want to follow on Whatsapp. It keeps track of the following activities:
+WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application that tracks every move on WhatsApp of whoever you like to follow (by only knowing their phonenumber). This application is setup as an Proof of Concept that WhatsApp is broken in terms of privacy. It keeps track of the following activities:
 
 * Online/Offline status **[(even with privacy options set to "nobody")](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/)**
 * Profile pictures*
@@ -10,7 +10,7 @@ WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application th
 
 \* *only if privacy option is set to "everyone" (set by default)*
 
-I made this project for you to realize how broken the privacy options actually are. It just started out as experimenting with WhatsApp to build an bot, but I was stunned when I realized someone could abuse this "online" feature of WhatsApp to track **anyone's** online status (only by the knowledge of their phonenumber).  I could just write a blog article about the privacy issues around WhatsApp, but you wouldn't realize the impact it actually has. Imagine your employee using this information to fire you, or just plain tracking you.
+I made this project for you to realize how broken the privacy options actually are. Imagine your employee using this information to fire you, or just plain tracking your behavior while working, for example.
 
 **Blog articles by Maikel Zweerink:**
 
