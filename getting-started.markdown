@@ -74,7 +74,7 @@ WhatsSpy Public **requires** a secondary WhatsApp account. Once the tracker is s
    * Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
       * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
       * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
-   * Request activation via `SMS` and wait for a SMS to arrive at the phone.
+   * Request activation via `SMS` and wait for a SMS to arrive at the phone  (try `voice` if you did not get the SMS).
    * Enter the retrieved code in the script without any dashes (only the digits!).
    * Write down the `secret` (it's the one-line of strange characters ending with an =).
 
