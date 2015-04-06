@@ -29,7 +29,7 @@ In case of registration via the `registerTool.php` script you need to execute th
 
 #### 2) registration via WART
 
-**WART might tell you the activation code is wrong, use method two in this case.**
+**WART might tell you the activation code is wrong, use method one in this case.**
 
 * Download [WART](https://github.com/mgp25/WART/).
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
