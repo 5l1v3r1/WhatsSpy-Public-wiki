@@ -31,7 +31,7 @@ In case of registration via the `registerTool.php` script you need to execute th
 
 **WART might tell you the activation code is wrong, use method two in this case.**
 
-* Download [WART](https://github.com/mgp25/WART/blob/master/WART-1.8.0.0.exe?raw=true).
+* Download [WART](https://github.com/mgp25/WART/).
 * Open up WART and fill in `phonenumber` and `password` (just choose one).
   * `phonenumber` needs to be the countrycode+phonenumber.
   * `phonenumber` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
