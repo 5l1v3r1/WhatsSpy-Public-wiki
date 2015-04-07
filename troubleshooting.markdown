@@ -23,6 +23,12 @@ This will probably a DB right issue, which you need to fix for future updates. B
 psql -U postgres -d whatsspy -f update/database-<version>.sql
 ```
 
+### An error occurred. please check your configuration (Blank page)
+
+`http://<ipaddress>/whatsspy/api/?whatsspy=getStats` gives a blank page.
+
+Check your `/var/log/nginx/error.log`. The blank page is caused by a internal server error which is an severe exception.
+
 ### Tracker says "An error occured, please check your configuration."
 
 #### Problems while setting it up
