@@ -134,6 +134,7 @@ Copy `config.example.php` to `config.php` located at `/var/www/whatsspy/api/` an
   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174 is correct*
   * `secret` You obtained this in the chapter *2.3) Retrieve the `secret` for a secondary WhatsApp account*.
 * Set the correct timezone of the place where you are in `date_default_timezone_set('MYTIMEZONE');` [(list of timezones)](http://php.net/manual/en/timezones.php).
+* Choose a password for the login later on by changing `$whatsspyPublicAuth = 'whatsspypublic';` to something else.
 * In case you did **not** install WhatsSpy Public in `/var/www/whatsspy/`, set the path for `$whatsspyProfilePath`.
   * `$whatsspyProfilePath` is the absolute path for the system to store the profile pictures. For example `/var/www/whatsspy/images/profilepicture/` (default setting), `/var/www/other-dir/images/profilepicture/`. Don't forget the last `/`!
 
@@ -192,7 +193,7 @@ In case you installed your WhatsSpy Public in a other place you need to edit the
 
 ## 3) Importing users
 
-If everything went well you can now access the WhatsSpy Public interface through your webserver (via `http://<your-ip>/whatsspy/`). At this point you need to import users that you want to track ([Troubleshooting](troubleshooting)):
+If everything went well you can now access the WhatsSpy Public interface through your webserver (via `http://<your-ip>/whatsspy/`) (default password is `whatsspypublic`). At this point you need to import users that you want to track ([Troubleshooting](troubleshooting)):
 
 * Either add any contact manually by using "Add contact by phonenumber".
 * Or use "import google Contacts" which is an script that retrieves all your Google Contacts and gives an SQL statement which insert all users into the database.
