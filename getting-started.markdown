@@ -65,7 +65,7 @@ git init
 git remote add origin https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public.git
 git pull origin master
 ```
-*(Please note that SSH does not work on this Gitlab, only HTTPS)*
+*(Please note that SSH and HTTP does not work on this Gitlab, only HTTPS)*
 
 ### 2.3) Retrieve the `secret` for a secondary WhatsApp account
 WhatsSpy Public **requires** a secondary WhatsApp account. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phone number. You need to register at WhatsApp to retrieve a `secret` which you will need later when setting up WhatsSpy Public.
