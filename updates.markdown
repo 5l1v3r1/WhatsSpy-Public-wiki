@@ -25,7 +25,7 @@ Make sure that you before the update undertake these steps:
 **Update 1.5.3** : 
 
 * Fixed rare race condition in the tracker.
-* Added duration and small GUI overhaul in timeline page.
+* Added duration and combined status information in timeline (thanks to `marcel@mesa.nl`).
 * Added experimental options for start/stop/update from the GUI.
 * Notifications for verfied persons.
 
