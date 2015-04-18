@@ -8,6 +8,7 @@ On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Pu
 
 * This image will auto-update (shipped with version `1.5.0`) thus removing any change you made in the code.
 * The rights in this image are 'loose', don't use this image for any sensitive information, just for the purpose of this PoC.
+* Make sure you **always** shutdown your Rpi properly (not just pulling out the power cord). There is a very high chance the DB will be corrupt on sudden power loss.
 
 ## 1) Download
 
