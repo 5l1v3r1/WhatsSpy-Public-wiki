@@ -13,7 +13,7 @@ Check the [troubleshooting](troubleshooting) page.
 It tracks the following properties:
 
 * Online/offline in realtime (0-4 seconds offset due to WhatsApp or your connection).
-* Status messages every 2 hours but with the original time changed.
+* Status messages every 2 hours but with the original changed at time.
 * Last seen privacy / status message privacy settings every 2 hours.
 * Profile picture (and privacy setting) every 4 hours.
 
