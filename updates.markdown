@@ -22,6 +22,14 @@ Make sure that you before the update undertake these steps:
 ` followed by `git reset --hard origin/master`. The Raspberry Pi image does this automatically every 24 hours.*
 
 ---
+**Update 1.5.4** : 
+
+* Fixed notifications not being sent for privacy changes and errors.
+* Updated literature list and welcome page message.
+* Fixed tracker warnings about closed socket on close.
+* Updated scripts used for experimental feautures.
+
+---
 **Update 1.5.3** : 
 
 * Fixed rare race condition in the tracker.
