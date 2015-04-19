@@ -27,7 +27,7 @@ I made this project for you to realize how broken the privacy options actually a
 
 ## What can WhatsSpy Public do
 
-**Short**: Profile your daily habits and smartphone usage throughout the day, if you like that or not.
+Profile your daily habits and smartphone usage throughout the day, if you like that or not.
 
 It contains the following functions:
 
