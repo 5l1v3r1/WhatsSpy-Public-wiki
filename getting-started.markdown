@@ -21,7 +21,9 @@
 
 ## 2) Manual install (Debian/Ubuntu)
 
-**[troubleshooting](troubleshooting)** | **Video tutorial describing this proces**
+### 2.0) Support
+
+In case you find it hard to setup this project you can follow this **[video tutorial](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/how-to-setup-video)** and use the **[troubleshooting page](troubleshooting)** when you get stuck.
 
 ### 2.1) Required packages and config
 
