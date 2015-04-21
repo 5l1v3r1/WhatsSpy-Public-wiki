@@ -10,6 +10,7 @@
 
 
 **Important links:**
+
 [Project page](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/home) | [Screenshots](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/home#overview) | [Other installation options](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/home#installling-whatsspy-public-on-your-linux-machine-vps-linux-raspberry-pi)
 
 ## 1) Check requirements
