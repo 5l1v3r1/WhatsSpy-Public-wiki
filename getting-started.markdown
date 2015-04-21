@@ -1,26 +1,22 @@
 # Getting started
 
-*Please do not attempt to setup this project if you have no IT knowledge whatsoever! And do not try to set this up on Windows! You're better off with a Virtual Machine containing Ubuntu. You can also try the [Raspberry Pi image](getting-started-rpi-image) (more clear and less steps to undertake)*
+*Please do not attempt to setup this project if you have no IT knowledge whatsoever! And do not try to set this up on Windows! You're better off with a Virtual Machine containing Ubuntu. You can also try the [Raspberry Pi image](getting-started-rpi-image) (which is way easier to setup)*
 
-*Please note that there might be still install bugs or incorrect setup instructions. If you get stuck just create an account on this gitlab server.*
-
-**Blog articles:**
+**Articles which are relevant for this project:**
 
 * [General introduction to WhatsSpy Public](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/)
-* [In-depth about the WhatsApp privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/)
+* [In-depth about the WhatsApp privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/) **(WhatsApp acts like it's part of their service)**
+* [Current status of the problem (15 april 2015 update)](https://maikel.pro/blog/en-status-of-whatsapp-privacy-problem/)
 
 ## 1) Check requirements
 
 * Secondary WhatsApp account (phonenumber that doesn't actively uses WhatsApp, because you can't receive messages when the tracker is online).
-* Linux Server/VPS/RPi/Desktop that runs 24/7 (tested on Debian/Ubuntu) (**Do not use Windows**, use a [virtual machine instead](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html)).
-* Nginx or Apache with PHP with PDO (you can't host on simple webhoster, **you need a terminal**!)
-* PostgreSQL
-
-**In case you don't have these resources you can also check out the [Raspberry Pi image](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started-rpi-image) (or [emulate it](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/200))**
+* Linux Server/VPS/Raspberry Pi/Linux Desktop that runs 24/7 (tested on Debian/Ubuntu) (**Do not use Windows**, use a [virtual machine instead](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html)).
+* Full command line access to your machine (a simple PHP webhoster won't work).
 
 ## 2) Manual install (Debian/Ubuntu)
 
-**[troubleshooting](troubleshooting)**
+**[troubleshooting](troubleshooting)** | **Video tutorial describing this proces**
 
 ### 2.1) Required packages and config
 
