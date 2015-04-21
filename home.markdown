@@ -22,7 +22,7 @@ I made this project for you to realize how broken the privacy options actually a
 
 **Media:**
 
-[@MaikeldusPro](https://twitter.com/MaikeldusPro) | maikeldus@hotmail.com (help/suggestions/info requests) | [Publicity page](publicity) | Bitcoin donations : 1KjZRyFKcMRu89zLUzeCoLBWuAss4PeWbc
+[@MaikeldusPro](https://twitter.com/MaikeldusPro) **|** maikeldus@hotmail.com (help/suggestions/info requests) **|** [Publicity page](publicity) **|** Bitcoin donations : 1KjZRyFKcMRu89zLUzeCoLBWuAss4PeWbc
 
 ## What can WhatsSpy Public do
 
