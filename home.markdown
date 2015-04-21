@@ -18,12 +18,11 @@ I made this project for you to realize how broken the privacy options actually a
 * [In-depth about the WhatsApp privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/) **(WhatsApp acts like it's part of their service)**
 * [Current status of the problem (15 april 2015 update)](https://maikel.pro/blog/en-status-of-whatsapp-privacy-problem/)
 
+*Feel free to contact me for any interesting WhatsApp developments*
+
 **Media:**
 
-* [@MaikeldusPro](https://twitter.com/MaikeldusPro) for any updates and/or future news 
-* contact by email: maikeldus@hotmail.com (help/suggestions/info requests)
-* [Publicity page](publicity)
-* Bitcoin donations : 1KjZRyFKcMRu89zLUzeCoLBWuAss4PeWbc
+[@MaikeldusPro](https://twitter.com/MaikeldusPro) | maikeldus@hotmail.com (help/suggestions/info requests) | [Publicity page](publicity) | Bitcoin donations : 1KjZRyFKcMRu89zLUzeCoLBWuAss4PeWbc
 
 ## What can WhatsSpy Public do
 
