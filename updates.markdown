@@ -2,7 +2,7 @@
 
 This page contains notes about how to update a running instance of WhatsSpy Public. This is always relatively easy. 
 
-**Did you use the Raspbian image? No need to update, this will happen automaticlly within 24 hours. HOWEVER: make sure your `config.php` complies with any changes.**
+**Did you use the Raspberry Pi image installation? No need to update, this will happen automaticlly within 24 hours. HOWEVER: make sure your `config.php` complies with any changes.**
 
 
 ## Before/After updating
