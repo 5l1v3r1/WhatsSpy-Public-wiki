@@ -48,6 +48,8 @@ listen = /var/run/php5-fpm.sock
 
 sudo nano /etc/postgresql/9.1/main/pg_hba.conf
 ``` 
+*This file might be in a different location (like `/etc/postgresql/9.4/main/pg_hba.conf`). You can execute `cd /etc/postgresql/ && ls` to see which version you have. Make sure you have at least Postgres 9.0*
+
 Search for the following line:
 ```
 local   all             postgres                                peer
