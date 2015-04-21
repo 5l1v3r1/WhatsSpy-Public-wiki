@@ -39,14 +39,14 @@ It contains the following functions:
 * Group all tracked users and view statistics about them.
 * Share profiles via unique tokens.
 
-## Installling WhatsSpy Public on your Raspberry Pi/Server/VPS/Ubuntu
+## Installling WhatsSpy Public on your Linux distribution (Debian/Ubuntu) / Raspberry Pi
 
 Setting up WhatsSpy Public requires somewhat IT knowledge and you might need a second SIM card. 
 
 You have three options to setup WhatsSpy Public:
 
 
-* **Normal**: [Setup WhatsSpy Public on a existing VPS/Rpi/Server/Ubuntu](getting-started).
+* **Normal**: [Setup WhatsSpy Public on a existing Linux distribution (Debian/Ubuntu) / Raspberry Pi](getting-started).
 * **Raspberry Pi image**: [Use a Raspberry Pi image with WhatsSpy Public already on it](getting-started-rpi-image).
 * **QEMU** Use the emulator QEMU with the Raspberry pi image on Ubuntu [read experience](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/200#note_1359).
 
