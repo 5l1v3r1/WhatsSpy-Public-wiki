@@ -8,6 +8,8 @@
 * [In-depth about the WhatsApp privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/) **(WhatsApp acts like it's part of their service)**
 * [Current status of the problem (15 april 2015 update)](https://maikel.pro/blog/en-status-of-whatsapp-privacy-problem/)
 
+[Project page](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/home) | [Screenshots](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/home#overview) | [Other installation options](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/home#installling-whatsspy-public-on-your-linux-machine-vps-linux-raspberry-pi)
+
 ## 1) Check requirements
 
 * Secondary WhatsApp account (phonenumber that doesn't actively uses WhatsApp, because you can't receive messages when the tracker is online).
