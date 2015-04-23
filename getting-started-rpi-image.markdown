@@ -8,7 +8,7 @@ On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Pu
 
 * This image will auto-update (shipped with version `1.5.0`) thus removing any change you made in the code.
 * The rights in this image are 'loose', don't use this image for any sensitive information, just for the purpose of this PoC.
-* **Do not just pull out the power cord out of your Raspberry Pi!!** You need to [properly shutdown your Raspberry Pi](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/rpi-image-shutdown) before you can safely remove the power cord. **Don't ignore this: sudden powerloss can be fatal for the Operating System.**
+* **Do not just pull out the power cord out of your Raspberry Pi!!** You need to [properly shutdown your Raspberry Pi](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/rpi-image-tips#shutdown-your-raspberry-pi-in-a-safe-way) before you can safely remove the power cord. **Don't ignore this: sudden powerloss can be fatal for the Operating System.**
 
 ## 1) Download
 
