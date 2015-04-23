@@ -13,4 +13,7 @@ Thanks to [MacTutorials](https://www.youtube.com/channel/UC7jiO1vlWOM-PDtBtYTFBk
 
 Thanks to [MacTutorials](https://www.youtube.com/channel/UC7jiO1vlWOM-PDtBtYTFBkQ) | [German version](https://www.youtube.com/watch?v=EQM1kVzHQlo)
 
+* Please remember that the tracker needs to be online for it to capture live events. If you shutdown the tracker no online/offline events will be captured.
+* Shutting down the tracker can be done by using `Ctrl` and `c` at the same time.
+
 
