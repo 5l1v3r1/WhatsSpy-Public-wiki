@@ -75,7 +75,7 @@ git pull origin master
 ### 2.3) Retrieve the `secret` for a secondary WhatsApp account
 WhatsSpy Public **requires** a secondary WhatsApp account. Once the tracker is started, you will not be able to receive any messages over WhatsApp for this phone number. You need to register at WhatsApp to retrieve a `secret` which you will need later when setting up WhatsSpy Public.
 
-   * Execute `php /var/www/whatsspy/api/whatsapp/registerTool.php`.
+   * Execute `sudo php /var/www/whatsspy/api/whatsapp/registerTool.php`.
    * Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
       * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
       * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
