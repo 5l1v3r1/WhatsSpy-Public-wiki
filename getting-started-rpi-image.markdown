@@ -6,10 +6,17 @@ On this page you will learn how to Setup the Raspberry Pi image with WhatsSpy Pu
 
 ## 0) Important notes
 
+### 0.1) Things you need to know
+
 * This image will auto-update (shipped with version `1.5.0`) thus removing any change you made in the code.
 * The rights in this image are 'loose', don't use this image for any sensitive information, just for the purpose of this PoC.
 * **Do not just pull out the power cord out of your Raspberry Pi!!** You need to [properly shutdown your Raspberry Pi](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/rpi-image-tips#shutdown-your-raspberry-pi-in-a-safe-way) before you can safely remove the power cord. **Don't ignore this: sudden powerloss can be fatal for the Operating System.**
 * If you want a more reliable WhatsSpy Public installation I advise you to [install it manually](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started) on a 24/7 Linux server/desktop.
+
+### 0.2) Support
+
+* [Video tutorial](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/how-to-setup-rpi-video)
+
 
 ## 1) Download
 
