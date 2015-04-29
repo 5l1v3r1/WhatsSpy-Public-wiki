@@ -40,7 +40,7 @@ It contains the following functions:
 
 ## Installling WhatsSpy Public on your Linux Machine / VPS (Linux) / Raspberry Pi
 
-Setting up WhatsSpy Public requires somewhat IT knowledge and you might need a second SIM card. 
+Setting up WhatsSpy Public requires somewhat IT knowledge and you might need a second SIM card. There are for both the normal and Raspberry Pi image installation videos available.
 
 You have three options to setup WhatsSpy Public:
 
