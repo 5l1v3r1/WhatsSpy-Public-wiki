@@ -63,7 +63,7 @@ You have retrieved the WhatsApp secret! Now we can configure WhatsSpy Public.
 
 Execute `sudo nano /var/www/whatsspy/api/config.php` to start editing the config to fill in the following details:
 
-* Fill in the empty fields in `$whatsappAuth` (`number` and `secret`). The `secret` is the thing you have retrieved in *chapter 0*.
+* Fill in the empty fields in `$whatsappAuth` (`number` and `secret`). The `secret` is the thing you have retrieved in *chapter 4*.
    * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
    * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
 * Make sure `date_default_timezone_set('YOURTIMEZONE');` is set according to YOUR timezone ([list of timezones](http://php.net/manual/en/timezones.php)).
