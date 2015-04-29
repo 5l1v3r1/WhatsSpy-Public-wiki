@@ -1,5 +1,6 @@
 # Getting started: Video Tutorial
 
+The [normal installation guide](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started) is used in these videos.
 
 ## Installation of WhatsSpy Public
 
