@@ -22,6 +22,14 @@ Make sure that you before the update undertake these steps:
 ` followed by `git reset --hard origin/master`. The Raspberry Pi image does this automatically every 24 hours.*
 
 ---
+**Update 1.5.5** *(CRITICAL UPDATE)* : 
+
+* Fixed connection closed problem causing no tracking ability.
+* Changed Tracker to work with the newest WhatsApp version.
+* Added filter option to timeline page to filter any tracker events.
+* Added tracker option to ignore `connection closed` errors (to prevent spamming in the GUI).
+
+---
 **Update 1.5.4** : 
 
 * Fixed notifications not being sent for privacy changes and errors.
