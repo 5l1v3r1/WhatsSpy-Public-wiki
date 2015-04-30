@@ -22,7 +22,7 @@ Make sure that you before the update undertake these steps:
 ` followed by `git reset --hard origin/master`. The Raspberry Pi image does this automatically every 24 hours.*
 
 ---
-**Update 1.5.5** *(CRITICAL UPDATE)* : 
+**Update 1.5.5** *(CRITICAL UPDATE, you will get problems if you don't update soon!)* : 
 
 * Fixed connection closed problem causing no tracking ability.
 * Changed Tracker to work with the newest WhatsApp version.
