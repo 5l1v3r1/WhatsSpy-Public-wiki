@@ -7,8 +7,6 @@ This page contains notes about how to update a running instance of WhatsSpy Publ
 
 ## Before/After updating
 
-**Does not apply to the Rpi users who downloaded the image**
-
 Make sure that you before the update undertake these steps:
 
 * Shutdown the tracker by using `screen -r` and then pressing `Ctrl+c` and `Ctrl+a` and `Ctrl+d`.
@@ -18,8 +16,10 @@ Make sure that you before the update undertake these steps:
 
 ## Changelog
 
-*At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files). If you used `git` (as stated in the getting-started) you can execute `cd /var/www/whatsspy/` followed by `git fetch --all
-` followed by `git reset --hard origin/master`. The Raspberry Pi image does this automatically every 24 hours.*
+*At every update you can just re-download the repository and replace it with the current files (make sure you replace and not delete all the files).*
+
+*If you used `git` (as stated in the getting-started) you can execute `cd /var/www/whatsspy/` followed by `git fetch --all
+` followed by `git reset --hard origin/master`. *
 
 ---
 **Update 1.5.5** *(CRITICAL UPDATE, you will get problems if you don't update soon!)* : 
