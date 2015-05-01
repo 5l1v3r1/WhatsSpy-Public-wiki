@@ -6,7 +6,7 @@ WhatsSpy Public might stop tracking due to some unforseen reason. This will show
 
 There can be various reasons for a "connection closed" error. One of the most common problems is a unreliable internet connection, bad hardware or a busy network. 
 
-If it keeps disconnecting with this message in a short timespan this probably due to WhatsApp, you fix this in the following ways:
+**If it keeps disconnecting with this message in a short timespan, this will probably be due to WhatsApp, you can fix this in the following ways:**
 
 * Make sure you run [update 1.5.5](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/updates) or higher (which has some error handling and communication improvements).
 * Open `api/data.php` and change `'keep-alive' 	=> 25];` to a lower value (like for example `'keep-alive' 	=> 10];`. Save file and restart the tracker.
