@@ -10,7 +10,7 @@ There can be various reasons for a "connection closed" error. One of the most co
 
 * Make sure you run [update 1.5.5](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/updates) or higher (which has some error handling and communication improvements).
 * Open `api/data.php` and change `'keep-alive' 	=> 20];` to a lower value (like for example `'keep-alive' 	=> 10];`. Save file and restart the tracker.
-* If none of these problems helped you can silence the connection errors, for this you need to set/add `$whatsspyErrorHandling = ['ignoreConnectionClosed' => true];` to your `config.php`. These connection errors will cause some inaccurate tracking but tries to immediate re-connect to WhatsApp (and also prevent large amount of tracker closed messages in the timeline).
+* If none of these problems helped you can silence the connection errors, for this you need to set/add `$whatsspyErrorHandling = ['ignoreConnectionClosed' => true];` to your `config.php`. *These connection errors will cause some inaccurate tracking but tries to immediate re-connect to WhatsApp (and also prevent large amount of tracker closed messages in the timeline).*
 
 ##  LoginFailureException:
 
