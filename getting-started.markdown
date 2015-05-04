@@ -42,6 +42,8 @@ The following line should be in the config file (and **NOT** `listen = 127.0.0.1
 listen = /var/run/php5-fpm.sock
 ```
 
+If you have changed it make sure you restart it: `sudo service php5-fpm restart`.
+
 **2)** Make sure that your PostgreSQL allows local connections for the user `postgres`:
 
 ```
