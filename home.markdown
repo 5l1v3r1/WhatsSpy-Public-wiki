@@ -72,7 +72,7 @@ For updates please check [updatelog and how to update](updates).
 
 ![stats](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/72cf35abe3/stats.png)
 
-#### And it's even mobile!
+#### And it's even mobile (pinning the webpage, not an APK)!
 
 ![pin-to-start-mobile](https://gitlab.maikel.pro/uploads/maikeldus/WhatsSpy-Public/97f9ee5de9/pin-to-start-mobile.png)
 
