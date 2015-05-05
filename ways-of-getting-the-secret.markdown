@@ -29,6 +29,12 @@ In case of registration via the `registerTool.php` script you need to execute th
 * Enter the retrieved code in the script without any dashes (only the digits!).
 * Write down the `secret` (it's the one-line of strange characters ending with an =).
 
+**You might get an: [status] => fail [reason] => bad_param.**
+
+* This seems to be a problem caused be either your network IP or machine itself. 
+* Contact maikeldus@hotmail.com with your phonenumber and I will request an activation code for you.
+* After this execute`php api/whatsapp/activationTool.php` and proceed with the tutorial.
+
 #### 2) registration via WART
 
 **WART might tell you the activation code is wrong, use method one in this case.**
