@@ -66,6 +66,8 @@ You have retrieved the WhatsApp secret! Now we can configure WhatsSpy Public.
 
 *There are two other methods [described here](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/ways-of-getting-the-secret) in case this method does not work.*
 
+*Did you get `[status] => fail [reason] => bad_param` after choosing SMS or voice? Check [this solution](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/ways-of-getting-the-secret#1-registration-via-the-registertool-php-script).*
+
 ## 5) Configuration
 
 Execute `sudo nano /var/www/whatsspy/api/config.php` to start editing the config to fill in the following details:
