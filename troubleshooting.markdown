@@ -9,6 +9,9 @@ You can create an account on this Gitlab server and ask questions in the Issues 
 ```
 Make sure the `number` and `secret` are correct. First follow the [generation step](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-3-retrieve-the-secret-for-a-secondary-whatsapp-account) again and then edit/verify [your `config.php`](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-4-setup-the-config)
 
+### Raspberry pi image: Couldn´t resolve host ´gitlab.maikel.pro´
+
+Wait for the Raspberry Pi to have an internet connection, this may take a while on some networks. You can test if your internet is working by executing `ping google.com`.
 
 ### Error after update
 
@@ -45,9 +48,9 @@ Try running in case you get any PDO errors: `sudo apt-get install nginx php5-pgs
 
 Check the error logs at /var/log/nginx/error.log if you use Nginx. Apache would be roughly the same.
 
-#### Error after update to `1.3.0`
+#### Error after database update
 
-Update `1.3.0` has a small database adjustment which can cause problems. Check if the `api/?whatsspy=getStats` yields any "The following error occured when trying to upgrade DB:" error. Usually the problem is that the `whatsspy` database user has no rights to alter the database table. You can do the following to adjust this:
+Some updates have a small database adjustment which can cause problems. Check if the `api/?whatsspy=getStats` yields any "The following error occured when trying to upgrade DB:" error. Usually the problem is that the `whatsspy` database user has no rights to alter the database table. You can do the following to adjust this:
 
 ```
 psql -U postgres
