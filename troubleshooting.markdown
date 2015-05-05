@@ -7,7 +7,7 @@ You can create an account on this Gitlab server and ask questions in the Issues 
 ```
 [error] Tracker Exception! Login failure!
 ```
-Make sure the `number` and `secret` are correct. If you think they are correct, please re-use WART to generate a new secret.
+Make sure the `number` and `secret` are correct. First follow the [generation step](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-3-retrieve-the-secret-for-a-secondary-whatsapp-account) again and then edit/verify [your `config.php`](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-4-setup-the-config)
 
 
 ### Error after update
