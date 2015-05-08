@@ -209,10 +209,6 @@ If everything went well you can now access the WhatsSpy Public interface through
 
 **Notice:**
 * Once you have inserted these users they won't show up automatically. They need to be verified by the tracker which is not running yet.
-* Depending on your network connectivity there is maximum capacity the PoC can handle **(guidelines)**.
-    * Raspberry Pi: 50 contacts
-    * Your own computer: 50-100 contacts
-    * VPS/external server: 100-300 contacts
 
 ## 4) Starting the tracker
 Once you have populated your database with some users, you can start the tracker.
