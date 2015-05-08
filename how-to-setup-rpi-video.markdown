@@ -6,7 +6,7 @@ The [Raspberry Pi installation guide](https://gitlab.maikel.pro/maikeldus/WhatsS
 
 [![Video tutorial for the rpi installation of WhatsSpy Public](http://img.youtube.com/vi/kaOq9xmQiLU/0.jpg)](http://www.youtube.com/watch?v=kaOq9xmQiLU)
 
-Thanks to [MacTutorials](https://www.youtube.com/channel/UC7jiO1vlWOM-PDtBtYTFBkQ) | [German version](https://www.youtube.com/watch?v=n0SqhV9YTUk) | [MAC OS verion (English)](https://www.youtube.com/watch?v=w69IIhy-byE) | [MAC OS verion (German)](https://www.youtube.com/watch?v=E-hzjG5lzeI)
+Thanks to [MacTutorials](https://www.youtube.com/channel/UC7jiO1vlWOM-PDtBtYTFBkQ) | [German version](https://www.youtube.com/watch?v=n0SqhV9YTUk) | [Guide for MAC OS (English)](https://www.youtube.com/watch?v=w69IIhy-byE) | [Guide for MAC OS (German)](https://www.youtube.com/watch?v=E-hzjG5lzeI)
 
 ## Usage of WhatsSpy Public
 
