@@ -13,6 +13,8 @@ Make sure that you before the update undertake these steps:
 * Apply the update: by following the changelog.
 * After the update start the tracker again by using `screen -r` and execute `` `which php` api/tracker.php``.
 
+[Video guide available](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/updates-video)
+
 
 ## Changelog
 
