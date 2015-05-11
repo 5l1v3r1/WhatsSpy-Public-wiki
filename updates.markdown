@@ -25,6 +25,12 @@ Make sure that you before the update undertake these steps:
 ` followed by `git reset --hard origin/master`.*
 
 ---
+*Unlabeled version (currently in repository)* : 
+
+* Fixed notice errors in JSON webservice.
+* Added ability to choose the "Top 10" amount of users to display (eg. Top 20, Top 30 ..)
+
+---
 **Update 1.5.5** *(CRITICAL UPDATE, you will get problems if you don't update soon!)* : 
 
 * Fixed connection closed problem causing no tracking ability.
