@@ -188,6 +188,10 @@ server {
         return 404;
     }
 
+    location ~ /whatsspy/api/$ {
+        index index.php;
+    }
+
     location ~ \.php$ {
         try_files $uri =404;
         fastcgi_pass unix:/var/run/php5-fpm.sock;
