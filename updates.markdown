@@ -28,6 +28,8 @@ Make sure that you before the update undertake these steps:
 *Unlabeled version (currently in repository)* : 
 
 * Fixed notice errors in JSON webservice.
+* Fixed exit on unknown message response from WhatsApp.
+* Added ability to finetune online/offline times with heuristic options (in the `config.example.php`).
 * Added ability to choose the "Top 10" amount of users to display (eg. Top 20, Top 30 ..)
 
 ---
