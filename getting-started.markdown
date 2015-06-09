@@ -204,6 +204,8 @@ server {
 ``` 
 In case you installed your WhatsSpy Public in a other place you need to edit the paths slightly. Make sure you reload the configuration by executing `sudo service nginx reload`.
 
+**Note:** Some operating systems might have Apache already running. Make sure you first stop Apache and after that start Nginx (`sudo service apache stop && sudo service nginx restart`).
+
 ## 3) Importing users
 
 If everything went well you can now access the WhatsSpy Public interface through your webserver (via `http://<your-ip>/whatsspy/`) (default password is `whatsspypublic`). At this point you need to import users that you want to track ([Troubleshooting](troubleshooting)):
