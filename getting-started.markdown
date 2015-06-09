@@ -87,7 +87,7 @@ WhatsSpy Public **requires** a secondary WhatsApp account. Once the tracker is s
 
 *There are [two other methods described here](ways-of-getting-the-secret) in case this method does not work.*
 
-*Did you get `[status] => fail [reason] => bad_param` after choosing SMS or voice? Check [this solution](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/ways-of-getting-the-secret#1-registration-via-the-registertool-php-script).*
+*Did you get `[status] => fail [reason] => bad_param` after choosing SMS or voice? Make sure you entered the number correctly, after that check [this solution](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/ways-of-getting-the-secret#1-registration-via-the-registertool-php-script).*
 
 ### 2.4) Setup database
 
