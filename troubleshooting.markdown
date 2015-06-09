@@ -43,6 +43,7 @@ You might have one of the following problems:
 * [PDO](http://php.net/manual/en/book.pdo.php) might be not installed in your PHP (make sure you edit the `php.ini` for both the CGI and CLI).
 * Make sure you have the newest PHP (5.4+)
 * Your configuration might be wrong: Does the PostgreSQL username and password actually work? Does the user have rights to acces the tables? etc.
+* Make sure Nginx runs (instead of something like Apache, use `sudo service apache stop && sudo service nginx restart` to be sure)
 
 Try running in case you get any PDO errors: `sudo apt-get install nginx php5-pgsql postgresql php5-curl php5-cli php5`
 
@@ -75,7 +76,7 @@ chmod 777 -R /var/www/whatsspy/
 
 If the network is unreliable or the hardware very busy this might occur. Make sure you track on a device that is not under full load and the network has not too much switches etc. in between.
 
-### `PHP Parse error: syntax error, unexpected '[' ...`
+### PHP Parse error: `syntax error, unexpected '[' ...`
 
 Make sure you have the newest PHP (5.4+).
 
@@ -122,7 +123,7 @@ If the tracker reports incorrect online/offline activites there is probably a mi
 
 ### IPTables rules
 
-Whatsapp uses an HTTPS connection which is going outbound:
+Whatsapp uses an HTTPS connection which is going outbound (example for `eth0`):
 
 `iptables -A OUTPUT -o eth0 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT`
 
