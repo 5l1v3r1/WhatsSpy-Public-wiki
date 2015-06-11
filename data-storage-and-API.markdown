@@ -1,4 +1,4 @@
-As a developer you might want to use the data gathered by WhatsSpy Public for other (educational) purposes. This page will describe what API calls are available and where the data is stored.
+As a developer you might want to use the data gathered by your local WhatsSpy Public for other (educational) purposes. This page will describe what API calls are available and where the data is stored.
 
 # Where is the data stored?
 
