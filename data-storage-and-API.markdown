@@ -21,7 +21,7 @@ If you want to inspect the database structure in more detail you can look at the
 
 # API calls
 
-All these calls need the URL to your WhatsSpy Public instance in front (eg `http://mydomain.com/whatsspy/`).
+All these calls need the URL to your WhatsSpy Public instance in front (eg `http://mydomain.com/whatsspy/`). Replace the `[1]` in the urls with the values that you desire.
 
 ### Login
 ```
