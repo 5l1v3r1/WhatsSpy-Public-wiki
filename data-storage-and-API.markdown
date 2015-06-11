@@ -21,7 +21,7 @@ If you want to inspect the database structure in more detail you can look at the
 
 # API calls
 
-All these calls need the URL to your WhatsSpy Public instance in front (eg `http://mydomain.com/whatsspy/`). Replace the `[1]` in the urls with the values that you desire.
+All these calls need the URL to your WhatsSpy Public instance in front (eg `http://mydomain.com/whatsspy/`). Replace the `[1]` in the urls with the values that you desire. The WebUI that you use, uses the exact same calls. You can view these API calls by using Developers tools in your webbrowser.
 
 ### Login
 ```
@@ -73,6 +73,81 @@ Update any attribute of a contact.
 * `[6]` **optional**: Either `1` (true) or `0` (false) to notify privacy change.
 * `[7]` **optional**: Either `1` (true) or `0` (false) to notify if on timeline.
 * `[8]` **optional**: The user group names, seperated by `,` (for example `group1,group2`).
+
+### Contact: generate token
+```
+api/?whatsspy=generateToken&number=[1]
+```
+Generate an user token to share the users profile. There can be only one valid token at a time. Generating a new one will invalidate all previous tokens.
+
+* `[1]` **required**: countrycode + local phonenumber (stripped any prefix 0's in front of countrycode and local phonenumber).
+
+### Contact: reset token
+```
+api/?whatsspy=resetToken&number=[1]
+```
+Reset the token, this means that no-one will be able to see the shared profile.
+
+* `[1]` **required**: countrycode + local phonenumber (stripped any prefix 0's in front of countrycode and local phonenumber).
+
+### Contact: Get profilepicture
+```
+api/?whatsspy=getProfilePic&hash=[1]&token=[2]
+```
+Get the profile picture of an contact.
+
+* `[1]` **required**: Users profilepicture hash (can be obtained to query for details of a contact or the `getStats`).
+* `[2]` **optional**: Token authentication (used if cannot `doLogin` because you are an external visitor without the password).
+
+### Contact: Get all user details
+```
+api/?whatsspy=getContactStats&number=[1]&token=[2]
+```
+Get all relevant information of a specific user.
+
+* `[1]` **required**: countrycode + local phonenumber (stripped any prefix 0's in front of countrycode and local phonenumber).
+* `[2]` **optional**: Token authentication (used if cannot `doLogin` because you are an external visitor without the password).
+
+### General: Get overview information
+```
+api/?whatsspy=getStats&token=[1]
+```
+Get the overview information (as used by the WebUI).
+
+* `[1]` **optional**: Token authentication (used if cannot `doLogin` because you are an external visitor without the password).
+
+
+### Group: add new group
+```
+api/?whatsspy=addGroup&name=[1]
+```
+Generate a new group.
+
+* `[1]` **required**: Name of the group.
+
+### Group: Delete group
+```
+api/?whatsspy=deleteGroup&name=[1]
+```
+Delete a group.
+
+* `[1]` **required**: GroupId.
+
+### Group: generate token
+```
+api/?whatsspy=generateToken&group=[1]
+```
+Generate an user token to share the users profile.
+
+* `[1]` **required**: GroupID.
+
+### Group: reset token
+```
+api/?whatsspy=resetToken&group=[1]
+```
+Reset the token, this means that no-one will be able to see the shared profile.
+
+* `[1]` **required**: GroupID.
 
 ### Config: Update config
 ```
