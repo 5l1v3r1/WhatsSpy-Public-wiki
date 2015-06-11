@@ -21,7 +21,9 @@ If you want to inspect the database structure in more detail you can look at the
 
 # API calls
 
-All these calls need the URL to your WhatsSpy Public instance in front (eg `http://mydomain.com/whatsspy/`). Replace the `[1]` in the urls with the values that you desire. The WebUI that you use, uses the exact same calls. You can view these API calls by using Developers tools in your webbrowser.
+All these calls need the URL to your WhatsSpy Public instance in front (eg `http://mydomain.com/whatsspy/`). Replace the `[1]` in the urls with the values that you desire. 
+
+The WebUI that you use, uses the exact same calls. You can view these API calls by using Developers tools in your webbrowser.
 
 ### Login
 ```
@@ -106,7 +108,7 @@ api/?whatsspy=getContactStats&number=[1]&token=[2]
 Get all relevant information of a specific user.
 
 * `[1]` **required**: countrycode + local phonenumber (stripped any prefix 0's in front of countrycode and local phonenumber).
-* `[2]` **optional**: Token authentication (used if cannot `doLogin` because you are an external visitor without the password).
+* `[2]` **optional**: Token authentication (used if cannot `doLogin` because you are an external visitor without the password). NOTE: This output differs than the information you get from a normal `doLogin` (information like phonenumbers is missing).
 
 ### General: Get overview information
 ```
@@ -114,8 +116,51 @@ api/?whatsspy=getStats&token=[1]
 ```
 Get the overview information (as used by the WebUI).
 
-* `[1]` **optional**: Token authentication (used if cannot `doLogin` because you are an external visitor without the password).
+* `[1]` **optional**: Token authentication (used if cannot `doLogin` because you are an external visitor without the password). NOTE: This output differs than the information you get from a normal `doLogin` (information like phonenumbers and other contacts is missing).
 
+### Timeline: timeline information
+```
+api/?whatsspy=getTimelineStats&showTrackerInfo=[1]&activities_since=[2]&sid_status=[3]
+```
+Get timeline information.
+
+* `[1]` **optional**: Output tracker events in the activities feed.
+* `[2]` **optional**: Output events after this epoch timestamp (integer, epoch in seconds).
+* `[3]` **optional**: Get any online status after or equal to this Sid (status id) (integer).
+
+### Statistics: Global stats
+```
+api/?whatsspy=getGlobalStats&component=global_stats&group=[1]
+```
+Get general statistics about the tracker and userbase.
+
+* `[1]` **optional**: GroupID (remove `&group=..` from the query if not used).
+
+### Statistics: Top users
+```
+api/?whatsspy=getGlobalStats&component=top_usage_users&group=[1]&users=[2]
+```
+Give the top x users back with relevant online/status times.
+
+* `[1]` **optional**: GroupID (remove `&group=..` from the query if not used).
+* `[2]` **optional**: Amount of top-x users (like 10,20 etc: integer).
+
+### Statistics: Global stats
+
+```
+api/?whatsspy=getGlobalStats&component=user_status_analytics_user&group=[1]
+```
+Get information back about the online time/status amounts BASED ON USER.
+
+* `[1]` **optional**: GroupID (remove `&group=..` from the query if not used).
+
+### Statistics: Global stats
+```
+api/?whatsspy=getGlobalStats&component=user_status_analytics_time&group=[1]
+```
+Get information back about the online time/status amounts BASED ON TIME (day of week/hour).
+
+* `[1]` **optional**: GroupID (remove `&group=..` from the query if not used).
 
 ### Group: add new group
 ```
@@ -158,6 +203,12 @@ Update the WhatsSpy Public configuration.
 * `[1]` **optional**: Change the default showed length of a contact's timeline (integer in days, like 1,2,3..).
 * `[2]` **optional**: Change the default showed length of tracker sessions (integer in days, like 1,2,3..)
 
+### Other: Version/about information
+```
+api/?whatsspy=getAbout
+```
+Get information about the version, project and other information used in the about page (like notification agents).
+
 ### Logout
 ```
 api/?whatsspy=doLogout
@@ -165,6 +216,13 @@ api/?whatsspy=doLogout
 Logout of WhatsSpy Public.
 
 
+Undocumented API calls:
+
+* doShutdown (experimental)
+* doUpdate (experimental)
+* doStartup (experimental)
+
+Check [the source](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/blob/master/api/index.php) for more information.
 
 # Example usage API
 
