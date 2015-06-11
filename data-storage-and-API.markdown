@@ -15,8 +15,18 @@ The following tables exist:
 * statusmessage_history 
 * statusmessage_privacy_history 
 * tracker_history 
-* whatsspy_config (one row with instance information)
+* whatsspy_config *(one row with instance information)*
 
 If you want to inspect the database structure in more detail you can look at the [generation script](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/blob/master/api/whatsspy-db.sql) or the database itself with for example PgAdmin.
 
 # API calls
+
+All these calls need the URL to your WhatsSpy Public instance in front (eg `http://mydomain.com/whatsspy/`).
+
+### Authenticate you against WhatsSpy public
+```
+api/?whatsspy=doLogin
+```
+*not required when no password is set*
+
+
