@@ -23,10 +23,76 @@ If you want to inspect the database structure in more detail you can look at the
 
 All these calls need the URL to your WhatsSpy Public instance in front (eg `http://mydomain.com/whatsspy/`).
 
-### Authenticate you against WhatsSpy public
+### Login
 ```
-api/?whatsspy=doLogin
+api/?whatsspy=doLogin&password=[1]
 ```
-*not required when no password is set*
+Login to WhatsSpy Public as a client. 
+
+* `[1]` **required**: password used to login to the WebUI.
+
+*Note: not required to call when password is set to false in `config.php`*
+
+### Contact: Add new one
+```
+api/?whatsspy=addContact&number=[1]&countrycode=[2]&name=[3]
+```
+Add a new contact to be verified by the tracker and tracked.
+
+* `[1]` **required**: local phonenumber (excluding the country code)
+* `[2]` **required**: countrycode
+* `[3]` **optional**: name for the contact (optional means you need to remove `&name=..` from the URL otherwise the name will be '')
+
+### Contact: Set inactive
+```
+api/?whatsspy=setContactInactive&number=[1]
+```
+Set a contact inactive. This means the tracker will no longer track the person but all the information stays in the database.
+
+* `[1]` **required**: countrycode + local phonenumber (stripped any prefix 0's in front of countrycode and local phonenumber).
+
+### Contact: Delete contact
+```
+api/?whatsspy=deleteContact&number=[1]
+```
+Delete a contact and all the relevant information.
+
+* `[1]` **required**: countrycode + local phonenumber (stripped any prefix 0's in front of countrycode and local phonenumber).
+
+### Contact: Update contact information
+```
+api/?whatsspy=updateAccount&number=[1]&name=[2]&notify_status=[3]&notify_statusmsg=[4]&notify_profilepic=[5]&notify_privacy=[6]&notify_timeline=[7]&groups=[8]
+```
+Update any attribute of a contact.
+
+* `[1]` **required**: countrycode + local phonenumber (stripped any prefix 0's in front of countrycode and local phonenumber).
+* `[2]` **required**: (soon to be) name of contact.
+* `[3]` **optional**: Either `1` (true) or `0` (false) to notify status change.
+* `[4]` **optional**: Either `1` (true) or `0` (false) to notify statusmsg change.
+* `[5]` **optional**: Either `1` (true) or `0` (false) to notify profile pic change.
+* `[6]` **optional**: Either `1` (true) or `0` (false) to notify privacy change.
+* `[7]` **optional**: Either `1` (true) or `0` (false) to notify if on timeline.
+* `[8]` **optional**: The user group names, seperated by `,` (for example `group1,group2`).
+
+### Config: Update config
+```
+api/?whatsspy=updateConfig&account_show_timeline_length=[1]&account_show_timeline_tracker=[2]
+```
+Update the WhatsSpy Public configuration.
+
+* `[1]` **optional**: Change the default showed length of a contact's timeline (integer in days, like 1,2,3..).
+* `[2]` **optional**: Change the default showed length of tracker sessions (integer in days, like 1,2,3..)
+
+### Logout
+```
+api/?whatsspy=doLogout
+```
+Logout of WhatsSpy Public.
 
 
+
+# Example usage API
+
+* Call `doLogin` with the password `whatsspypublic`.
+* Get the overview page information with `getStats`.
+* Call `doLogout` to logout and stop communicating with WhatsSpy Public.
