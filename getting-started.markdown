@@ -221,6 +221,8 @@ Once you have populated your database with some users, you can start the tracker
 
 1. Execute `screen`
 3. cd to the install of the Whatsspy (`cd /var/www/whatsspy/api/`) and execute `` `which php` tracker.php`` (it is important that you first `cd` and then execute the cmd, otherwise paths will be incorrect).
+   * Make sure you are in the WhatsSpy Public API dir (execute `cd /var/www/whatsspy/api/`).
+   * In case you get a "Permission denied" error try running it as: ``sudo -u www-data `which php` tracker.php``
 4. If all runs well it starts spamming information about privacy options and polls.
 5. It keeps polling every second and outputs any statuses on the screen.
 6. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
