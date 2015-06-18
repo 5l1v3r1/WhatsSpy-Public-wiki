@@ -32,6 +32,7 @@ Make sure that you before the update undertake these steps:
 * Added ability to finetune online/offline times with heuristic options (in the `config.example.php`).
 * Added ability to choose the "Top 10" amount of users to display (eg. Top 20, Top 30 ..)
 * Updated to use the newest WhatsApp API
+* Added [API docs](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/data-storage-and-API) for developers that want to use the tracker for other applications.
 
 ---
 **Update 1.5.5** *(CRITICAL UPDATE, you will get problems if you don't update soon!)* : 
