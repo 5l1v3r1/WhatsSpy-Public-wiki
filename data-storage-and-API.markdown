@@ -68,13 +68,13 @@ api/?whatsspy=updateAccount&number=[1]&name=[2]&notify_status=[3]&notify_statusm
 Update any attribute of a contact.
 
 * `[1]` **required**: countrycode + local phonenumber (stripped any prefix 0's in front of countrycode and local phonenumber).
-* `[2]` **optional**: name of contact.
-* `[3]` **optional**: Either `1` (true) or `0` (false) to notify status change.
-* `[4]` **optional**: Either `1` (true) or `0` (false) to notify statusmsg change.
-* `[5]` **optional**: Either `1` (true) or `0` (false) to notify profile pic change.
-* `[6]` **optional**: Either `1` (true) or `0` (false) to notify privacy change.
-* `[7]` **optional**: Either `1` (true) or `0` (false) to notify if on timeline.
-* `[8]` **optional**: The user group names, seperated by `,` (for example `group1,group2`).
+* `[2]` **required**: name of contact.
+* `[3]` **required**: Either `1` (true) or `0` (false) to notify status change.
+* `[4]` **required**: Either `1` (true) or `0` (false) to notify statusmsg change.
+* `[5]` **required**: Either `1` (true) or `0` (false) to notify profile pic change.
+* `[6]` **required**: Either `1` (true) or `0` (false) to notify privacy change.
+* `[7]` **required**: Either `1` (true) or `0` (false) to notify if on timeline.
+* `[8]` **required**: The user group names, seperated by `,` (for example `group1,group2`).
 
 ### Contact: generate token
 ```
