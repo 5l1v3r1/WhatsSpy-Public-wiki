@@ -152,13 +152,13 @@ Copy `config.example.php` to `config.php` located at `/var/www/whatsspy/api/` an
 The tracker needs read/write acces in the folder `$whatsspyProfilePath`, `api/whatsapp/src/wadata/`.
 
 ```
-# These are guidelines. For debugging you can use 777 instead of 760.
 sudo chown www-data:www-data -R /var/www/whatsspy/
 sudo chmod 775 -R /var/www/whatsspy/
 sudo chmod 760 -R /var/www/whatsspy/api/whatsapp/src/wadata/
 # Did you change $whatsspyProfilePath? chmod 760 this path instead of the one stated below here:
 sudo chmod 760 -R /var/www/whatsspy/images/profilepicture/
 ```
+*(In case you get any `Permission Denied` errors you can execute the same commandos with 770 for debugging)*
 
 ### 2.6) Configure web server
 
