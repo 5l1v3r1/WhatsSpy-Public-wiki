@@ -68,7 +68,7 @@ api/?whatsspy=updateAccount&number=[1]&name=[2]&notify_status=[3]&notify_statusm
 Update any attribute of a contact.
 
 * `[1]` **required**: countrycode + local phonenumber (stripped any prefix 0's in front of countrycode and local phonenumber).
-* `[2]` **required**: (soon to be) name of contact.
+* `[2]` **optional**: name of contact.
 * `[3]` **optional**: Either `1` (true) or `0` (false) to notify status change.
 * `[4]` **optional**: Either `1` (true) or `0` (false) to notify statusmsg change.
 * `[5]` **optional**: Either `1` (true) or `0` (false) to notify profile pic change.
