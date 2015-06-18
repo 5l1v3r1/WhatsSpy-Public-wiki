@@ -23,7 +23,7 @@ If you want to inspect the database structure in more detail you can look at the
 
 All these calls need the URL to your WhatsSpy Public instance in front (eg `http://mydomain.com/whatsspy/`). Replace the `[1]` in the urls with the values that you desire. 
 
-The WebUI that you use, uses the exact same calls. You can view these API calls by using Developers tools in your webbrowser.
+The WebUI that you use, uses the exact same calls. You can view these API calls by using Developers tools in your webbrowser. **Remember** to remove any parameters that you don't want to set (leaving these in will cause the value to be set to an empty string or null)!
 
 ### Login
 ```
