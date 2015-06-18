@@ -12,7 +12,7 @@ Make sure that you before the update undertake these steps:
 
 * Shutdown the tracker by using `screen -r` and then pressing `Ctrl+c` and `Ctrl+a` and `Ctrl+d`.
 * Apply the update: by following the changelog.
-* After the update start the tracker again by using `screen -r` and execute `` `which php` api/tracker.php``.
+* After the update start the tracker again by using `screen -r` and execute `` `which php` tracker.php``.
 
 
 
