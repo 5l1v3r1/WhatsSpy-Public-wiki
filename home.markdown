@@ -12,11 +12,12 @@ WhatsSpy Public (not to confuse with WhatsSpy) is an web-oriented application th
 
 I made this project for you to realize how broken the privacy options actually are. Imagine your employee using this information to fire you, or just plain tracking your behavior while working, for example.
 
-**Blog articles:**
+**References:**
 
 * [General introduction to WhatsSpy Public](https://maikel.pro/blog/en-whatsapp-privacy-options-are-illusions/)
 * [In-depth about the WhatsApp privacy problem](https://maikel.pro/blog/en-whatsapp-privacy-problem-explained-in-detail/) **(WhatsApp acts like it's part of their service)**
 * [Current status of the problem (15 april 2015 update)](https://maikel.pro/blog/en-status-of-whatsapp-privacy-problem/)
+* Thanks to [WHAnonymous](https://github.com/WHAnonymous/Chat-API) (Chat-API)
 
 *Feel free to contact me for any interesting WhatsApp developments*
 
