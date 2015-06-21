@@ -25,6 +25,12 @@ Make sure that you before the update undertake these steps:
 ` followed by `git reset --hard origin/master`.*
 
 ---
+*Unlabeled version* : 
+
+* Fixed bug in overview where the 14 day status count was not displayed correct (thanks anomynous mailer!)
+* Implemented assigning groups to new contact.
+
+---
 **Update 1.5.6** : 
 
 * Fixed notice errors in JSON webservice.
