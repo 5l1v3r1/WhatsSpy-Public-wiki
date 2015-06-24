@@ -46,11 +46,21 @@ Use `screen -r` to re-attach to the tracker session. Now you can use `Ctrl` + `c
 
 ## Automatic updates
 
+Add this line to `crontab -e`:
 ```
-su -s /bin/sh nobody -c 'cd var/www/WhatsSpy-Public/ && git pull -q origin master' >> /var/log/git.log
+su -s /bin/sh nobody -c 'cd /var/www/whatsspy/ && git pull -q origin master' >> /var/log/git.log
 ```
 Thanks to @jXhn
 
-## Automatic startup
+## Disable automatic update on the Rpi Image
+You need to edit two files:
 
-For Debian/Raspbian/Ubuntu there is a startup script available in `api/tools/service-scripts/startup`. Check [this issue](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/7) for more information.
+- Execute `sudo crontab -e` and comment out all lines (by setting `#` in front).
+- Execute `sudo nano /home/whatsspy-public-startup` and comment out the following lines (by setting `#` in front):
+```
+echo "[update] Checking for updates."
+# Force pull
+cd /var/www/whatsspy
+git fetch --all
+git reset --hard origin/master
+```
