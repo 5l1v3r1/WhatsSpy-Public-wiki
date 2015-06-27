@@ -10,7 +10,7 @@ You need a phone(number) over which you can receive SMS or voice calls for the W
 
 ### 1.2) Activation at WhatsApp with your secondary phone number
 
-You have three methods:
+You have four methods:
 
 * Use a supplied PHP script `registerTool.php` that will guide you through the steps (use if WART does not work).
 * Use [WART](https://github.com/mgp25/WART/), a Windows registration tool which allows you to retrieve the secret via a GUI.
@@ -54,8 +54,12 @@ In case of registration via phone you need a **jailbroken iPhone** or a **rooted
 
 * Insert your (new) secondary SIM card in your phone and boot it up.
 * Re-install WhatsApp on your phone and activate it using the new phonenumber.
-* Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret.
+* Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret (check the links above).
 * Write down the `secret` (it's the one-line of strange characters ending with an =).
 * Insert your normal SIM card and re-install WhatsApp for normal use.
 
 **[Do not use the WhatsApp application on your phone when the tracker is running, this creates a broken connection.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
+
+#### 4) Using yowsup-cli (command line tool)
+
+Check this (topic)[https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/347#note_2280]
