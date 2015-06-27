@@ -62,4 +62,4 @@ In case of registration via phone you need a **jailbroken iPhone** or a **rooted
 
 #### 4) Using yowsup-cli (command line tool)
 
-Check this (topic)[https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/347#note_2280]
+Check this [topic](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/347#note_2280)
