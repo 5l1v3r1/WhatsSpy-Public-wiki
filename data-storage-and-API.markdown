@@ -10,6 +10,7 @@ The following tables exist:
 * groups
 * lastseen_privacy_history 
 * profilepic_privacy_history 
+* accounts_to_groups
 * profilepicture_history 
 * status_history 
 * statusmessage_history 
