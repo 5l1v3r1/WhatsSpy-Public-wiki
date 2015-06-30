@@ -9,22 +9,13 @@ You can create an account on this Gitlab server and ask questions in the Issues 
 ```
 Make sure the `number` and `secret` are correct. First follow the [generation step](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-3-retrieve-the-secret-for-a-secondary-whatsapp-account) again and then edit/verify [your `config.php`](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-4-setup-the-config)
 
-### Raspberry pi image: Couldn´t resolve host ´gitlab.maikel.pro´
+### PHP Warning: file_put_contents ... Permission Denied error while starting tracker
+
+Make sure the files have the correct permissions. Follow [this step again](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#25-correct-file-rights) and make sure to start the tracker with `sudo -u www-data `which php` tracker.php`
+
+### Raspberry pi image: Couldn´t resolve host gitlab.maikel.pro
 
 Wait for the Raspberry Pi to have an internet connection, this may take a while on some networks. You can test if your internet is working by executing `ping google.com`.
-
-### Error after update
-
-Check what the URL `api/?whatsspy=getStats` gives you. It might say something like: 
-```
-The following error occured when trying to upgrade DB:
-<something more specific here>
-```
-
-This will probably a DB right issue, which you need to fix for future updates. But you can manually update by using this command:
-```
-psql -U postgres -d whatsspy -f update/database-<version>.sql
-```
 
 ### An error occurred. please check your configuration (Blank page)
 
@@ -36,7 +27,9 @@ Check your `/var/log/nginx/error.log`. The blank page is caused by a internal se
 
 #### Problems while setting it up
 
-Check if `api/?whatsspy=getStats` (if you have installed WhatsSpy Public in `/whatsspy/` this should be `/whatsspy/api/?whatsspy=getStats`) gives any error.
+Check if `/whatsspy/api/?whatsspy=getStats` gives a blank page.
+
+Check the error logs at `/var/log/nginx/error.log` if you use Nginx. Apache would be roughly the same.
 
 You might have one of the following problems:
 
@@ -46,31 +39,6 @@ You might have one of the following problems:
 * Make sure Nginx runs (instead of something like Apache, use `sudo service apache stop && sudo service nginx restart` to be sure)
 
 Try running in case you get any PDO errors: `sudo apt-get install nginx php5-pgsql postgresql php5-curl php5-cli php5`
-
-Check the error logs at /var/log/nginx/error.log if you use Nginx. Apache would be roughly the same.
-
-#### Error after database update
-
-Some updates have a small database adjustment which can cause problems. Check if the `api/?whatsspy=getStats` yields any "The following error occured when trying to upgrade DB:" error. Usually the problem is that the `whatsspy` database user has no rights to alter the database table. You can do the following to adjust this:
-
-```
-psql -U postgres
-\connect whatsspy
-
-ALTER TABLE accounts
-  OWNER TO whatsspy;
-GRANT ALL ON TABLE accounts TO whatsspy;
-
-\q
-```
-Make sure in the future that all the tables belong to the user `whatsspy` (thus repeating these steps for all the tables). 
-
-If this does not fix the problem use:
-
-```
-chmod 777 -R /var/www/whatsspy/
-```
-(chmod 777 is generally not a good practice, but on your Rpi this should be no problem).
 
 ### Broken pipe
 
@@ -118,6 +86,42 @@ psql -U postgres-d whatsspy -f whatsspy-db.sql
 If the tracker reports incorrect online/offline activites there is probably a misconfiguration:
 
 * Check if the timezone in the `config.php` is set properly.
+
+### Error after update
+
+Check what the URL `api/?whatsspy=getStats` gives you. It might say something like: 
+```
+The following error occured when trying to upgrade DB:
+<something more specific here>
+```
+
+This will probably a DB right issue, which you need to fix for future updates. But you can manually update by using this command:
+```
+psql -U postgres -d whatsspy -f update/database-<version>.sql
+```
+
+#### Error after database update
+
+Some updates have a small database adjustment which can cause problems. Check if the `api/?whatsspy=getStats` yields any "The following error occured when trying to upgrade DB:" error. Usually the problem is that the `whatsspy` database user has no rights to alter the database table. You can do the following to adjust this:
+
+```
+psql -U postgres
+\connect whatsspy
+
+ALTER TABLE accounts
+  OWNER TO whatsspy;
+GRANT ALL ON TABLE accounts TO whatsspy;
+
+\q
+```
+Make sure in the future that all the tables belong to the user `whatsspy` (thus repeating these steps for all the tables). 
+
+If this does not fix the problem use:
+
+```
+chmod 777 -R /var/www/whatsspy/
+```
+(chmod 777 is generally not a good practice, but on your Rpi this should be no problem).
 
 
 
