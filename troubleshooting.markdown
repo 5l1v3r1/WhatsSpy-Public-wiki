@@ -17,17 +17,11 @@ Make sure the files have the correct permissions. Follow [this step again](https
 
 Wait for the Raspberry Pi to have an internet connection, this may take a while on some networks. You can test if your internet is working by executing `ping google.com`.
 
-### An error occurred. please check your configuration (Blank page)
-
-`http://<ipaddress>/whatsspy/api/?whatsspy=getStats` gives a blank page.
-
-Check your `/var/log/nginx/error.log`. The blank page is caused by a internal server error which is an severe exception.
-
 ### Tracker says "An error occured, please check your configuration."
 
 #### Problems while setting it up
 
-Check if `/whatsspy/api/?whatsspy=getStats` gives a blank page.
+Check if `http://<ipaddress>/whatsspy/api/?whatsspy=getStats` gives a blank page.
 
 Check the error logs at `/var/log/nginx/error.log` if you use Nginx. Apache would be roughly the same.
 
