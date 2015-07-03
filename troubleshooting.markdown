@@ -7,7 +7,9 @@ You can create an account on this Gitlab server and ask questions in the Issues 
 ```
 [error] Tracker Exception! Login failure!
 ```
-Make sure the `number` and `secret` are correct. First follow the [generation step](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-3-retrieve-the-secret-for-a-secondary-whatsapp-account) again and then edit/verify [your `config.php`](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-4-setup-the-config)
+Make sure the `number` and `secret` are correct. First follow the [generation step](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-3-retrieve-the-secret-for-a-secondary-whatsapp-account) again and then edit/verify [your `config.php`](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-4-setup-the-config).
+
+If you are certain that the number and secret is correct it might be a OS support problem (failing libraries in your system). Try to run it with debug on, but it would be better to use Raspbian or Debian (newest).
 
 ### PHP Warning: file_put_contents ... Permission Denied error while starting tracker
 
