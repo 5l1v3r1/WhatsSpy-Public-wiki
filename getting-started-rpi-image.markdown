@@ -148,8 +148,11 @@ Make sure your firewall is allowing traffic from your Raspberry Pi. You can exit
 ```
 Make sure the `number` and `secret` are correct. If you think they are correct, please re-use the generation script. Another problem can be the fact that you have no internet connection, to check this execute `ping google.com` and check if there are responses. In case you do not get response you might need to [add nameservers](http://superuser.com/questions/617796/how-do-i-set-dns-servers-on-raspberry-pi) to your raspberry pi.
 
+## 10) Expand partition (optional but recommended)
 
-## 10) Optional steps / handy things to know
+If you are using the PoC for an extended amount of time the partition might be full. To expand your partition please check [this how-to](http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition) *(thanks to @Shadow)*
+
+## 11) Optional steps / handy things to know
 
 * You can enable notifications via *NotifyMyAndroid*, *LiveNotifier* or even WhatsApp. For this you need to edit your `config.php` (like before) and change entries in `$whatsspyNotificatons`. After saving your change restart the tracker by again calling `bash /home/pi/whatsspy-public-startup`.
 * If you want to share profiles via the internet you need to port forward port 80 on your Raspberry Pi. Use the IP adress you gained in **7)** and [follow this guide](http://portforward.com/english/applications/port_forwarding/Apache/default.htm).
