@@ -61,8 +61,10 @@ In case of registration via phone you need a **jailbroken iPhone** or a **rooted
 
 * Insert your (new) secondary SIM card in your phone and boot it up.
 * Re-install WhatsApp on your phone and activate it using the new phonenumber.
-* Use either the APK (Android) or the script (iPhone) to retrieve the WhatsApp secret (check the links above).
+* Use either the  [APK](https://github.com/venomous0x/WhatsAPI/issues/983) (Android) or [this script](https://www.mgp25.com/utilidadiPhone/)  (iPhone) to retrieve the WhatsApp secret (check the links above).
 * Write down the `secret` (it's the one-line of strange characters ending with an =).
 * Insert your normal SIM card and re-install WhatsApp for normal use.
+
+### 1.3) Warning
 
 **[Do not use the WhatsApp application on your phone when the tracker is running, this creates a broken connection.](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/4)**
