@@ -148,7 +148,7 @@ Make sure your firewall is allowing traffic from your Raspberry Pi. You can exit
 ```
 [error] Tracker Exception! Login failure!
 ```
-Check [this explanation](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/troubleshooting#login-failure).
+Check [this explanation about login failure](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/troubleshooting#troubleshooting).
 
 Another problem can be the fact that you have no internet connection, to check this execute `ping google.com` and check if there are responses. In case you do not get response you might need to [add nameservers](http://superuser.com/questions/617796/how-do-i-set-dns-servers-on-raspberry-pi) to your raspberry pi.
 
