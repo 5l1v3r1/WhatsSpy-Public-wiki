@@ -232,6 +232,8 @@ Once you have populated your database with some users, you can start the tracker
 5. It keeps polling every second and outputs any statuses on the screen.
 6. You can exit the screen by using `Ctrl+a` and after that `Ctrl+d` (detaching the screen) in your terminal/Putty.
 
+**In case of `[error] Tracker Exception! Login failure!` check [troubleshooting](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/troubleshooting#troubleshooting)**
+
 ## 10) Optional steps / handy things to know
 
 * You can enable notifications via *NotifyMyAndroid*, *LiveNotifier* or even WhatsApp. For this you need to edit your `config.php` (like before) and change entries in `$whatsspyNotificatons`. After saving your change restart the tracker.
