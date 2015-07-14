@@ -16,6 +16,7 @@ If you are certain that the number and secret are correct there might be another
    * In case it tells you the number is blocked, you can no longer use this phonenumber for WhatsApp (its blocked).
    * In case it tells you "Wrong identity" you need to remove all `.dat` files in `/var/www/whatsspy/api/whatsapp/src/wadata` and try to start the tracker again.
 
+Another problem can be the fact that you have no internet connection, to check this execute `ping google.com` and check if there are responses.
 
 ### PHP Warning: file_put_contents ... Permission Denied error while starting tracker
 
