@@ -9,7 +9,13 @@ You can create an account on this Gitlab server and ask questions in the Issues 
 ```
 Make sure the `number` and `secret` are correct. First follow the [generation step](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-3-retrieve-the-secret-for-a-secondary-whatsapp-account) again and then edit/verify [your `config.php`](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started#2-4-setup-the-config).
 
-If you are certain that the number and secret is correct it might be a OS support problem (failing libraries in your system). Try to run it with debug on, but it would be better to use Raspbian or Debian (newest).
+If you are certain that the number and secret are correct there might be another issue. You can debug via the following way:
+
+1. Execute `cd /var/www/whatsspy/api/ && php whatsapp/blockChecker.php` *(Make sure you updated to the latest version, 14 july 2015)*
+2. Enter the phonenumber used in the tracker.
+   * In case it tells you the number is blocked, you can no longer use this phonenumber for WhatsApp (its blocked).
+   * In case it tells you "Wrong identity" you need to remove all `.dat` files in `/var/www/whatsspy/api/whatsapp/src/wadata`.
+
 
 ### PHP Warning: file_put_contents ... Permission Denied error while starting tracker
 
