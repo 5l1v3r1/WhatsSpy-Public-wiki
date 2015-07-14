@@ -14,7 +14,7 @@ If you are certain that the number and secret are correct there might be another
 1. Execute `cd /var/www/whatsspy/api/ && php whatsapp/blockChecker.php` *(Make sure you updated to the latest version, 14 july 2015)*
 2. Enter the phonenumber used in the tracker.
    * In case it tells you the number is blocked, you can no longer use this phonenumber for WhatsApp (its blocked).
-   * In case it tells you "Wrong identity" you need to remove all `.dat` files in `/var/www/whatsspy/api/whatsapp/src/wadata`.
+   * In case it tells you "Wrong identity" you need to remove all `.dat` files in `/var/www/whatsspy/api/whatsapp/src/wadata` and try to start the tracker again.
 
 
 ### PHP Warning: file_put_contents ... Permission Denied error while starting tracker
