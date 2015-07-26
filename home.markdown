@@ -48,7 +48,7 @@ You have three options to setup WhatsSpy Public:
 
 
 * **Normal**: [Setup WhatsSpy Public on a existing Linux Machine (Ubuntu/Debian) / VPS (Linux) / Raspberry Pi](getting-started).
-* **Raspberry Pi image**: [Use a Raspberry Pi image with WhatsSpy Public already on it](getting-started-rpi-image).
+* **Raspberry Pi image**: [Use a Raspberry Pi image with WhatsSpy Public already on it](getting-started-rpi-image) **[Amazon page for buying Rpi 2B](http://www.amazon.com/gp/product/B00T2U7R7I/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00T2U7R7I&linkCode=as2&tag=gitlab-20&linkId=4QR3R64HBVB6T3TA)**.
 * **QEMU** Use the emulator QEMU with the Raspberry pi image on Ubuntu [read experience](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/200#note_1359).
 
 For updates please check [updatelog and how to update](updates).
