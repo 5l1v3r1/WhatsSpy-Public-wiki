@@ -29,6 +29,7 @@ Make sure that you before the update undertake these steps:
 
 * Fixed bug in overview where the 14 day status count was not displayed correct (thanks anomynous mailer!)
 * Implemented assigning groups to new contact.
+* Fixed invisible element overlapping "Expand view" and "Edit" buttons on low resolution screens.
 
 ---
 **Update 1.5.6** : 
