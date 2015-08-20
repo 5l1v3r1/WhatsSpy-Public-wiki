@@ -25,6 +25,11 @@ And verify the phonenumber:
   * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174 is correct*
   * `secret` You obtained this in the chapter *2.3) Retrieve the `secret` for a secondary WhatsApp account*.
 
+##  LoginFailureException after a long succesfull tracking session
+
+You might have a temporary account ban from WhatsApp. It is advised to use two accounts so that you can switch between accounts if you get this error. Switch to another account or stop the tracker for atleast one day and try again.
+
+
 ## Tree length did not match received length!
 
 Restart the tracker. If this does not work wait a few hours and try again. This is an unknown problem caused at WhatsApp side.
