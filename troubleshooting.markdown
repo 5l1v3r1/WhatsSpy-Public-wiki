@@ -19,6 +19,8 @@ If you are certain that the number and secret are correct there might be another
 
 Another problem can be the fact that you have no internet connection, to check this execute `ping google.com` and check if there are responses.
 
+**If you ran a long successful session** and got this error you might have a temporary WA ban. Try to switch to an secondary WA account or stop the tracker for a day.
+
 **Summary of requirements for this to work:**
 
 * Working internet connection (no proxy etc.) over port 443 (HTTPS).
