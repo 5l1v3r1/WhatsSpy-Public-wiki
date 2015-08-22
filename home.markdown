@@ -24,7 +24,7 @@ I made this project for you to realize how broken the privacy options actually a
 
 **Media:**
 
-[@MaikeldusPro](https://twitter.com/MaikeldusPro) **|** maikeldus@hotmail.com (help/suggestions/info requests) **|** [Publicity page](publicity) **|** Bitcoin donations: 1KjZRyFKcMRu89zLUzeCoLBWuAss4PeWbc **|** [Paypal donations](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=94XN3X5EPUMP2&lc=NL&item_name=WhatsSpy%20Public%20Donations&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
+[@MaikeldusPro](https://twitter.com/MaikeldusPro) **|** maikeldus@hotmail.com (help/suggestions/info requests) **|** [Publicity page](publicity) **|** Bitcoin donations: 1NrCxCMjHG13PkgaRptHGogmz4yawaGbvf **|** [Paypal donations](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=94XN3X5EPUMP2&lc=NL&item_name=WhatsSpy%20Public%20Donations&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
 
 ## What can WhatsSpy Public do
 
