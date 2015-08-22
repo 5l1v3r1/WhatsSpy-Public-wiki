@@ -55,7 +55,7 @@ Password: `whatsspypublic`
 
 WhatsSpy Public requires a phonenumber that does not actively uses WhatsApp. This can be for example a landline or just a 5 euro SIM card. Once you have obtained a phonenumber that doesn't use WhatsApp. Execute the following commands on the Raspberry Pi:
 
-* Execute `php /var/www/whatsspy/api/whatsapp/registerTool.php`.
+* Execute `cd /var/www/whatsspy/api/whatsapp/ && php registerTool.php`.
 * Enter your phonenumber that you want to use for the WhatsSpy Public tracker (You cannot use this for WhatsApp while the tracker is running).
    * `number` needs to be <countrycode><phonenumber> without any prefix 0's. *0031 06 120..* becomes *31 6 120..* (no 0's prefix for both the countrycode and phonenumber itself).
    * `number` may only contain digits. Spaces, plus or any other special character are NOT accepted. *Example: 316732174*
