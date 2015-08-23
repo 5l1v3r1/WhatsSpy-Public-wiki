@@ -41,3 +41,7 @@ If you don't use Nginx:
 </VirtualHost> 
 
 ```
+
+Thanks to @Rubix
+
+[Related issue](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/368)
