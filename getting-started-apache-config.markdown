@@ -44,4 +44,4 @@ If you don't use Nginx:
 
 Thanks to @Rubix
 
-[Related issue](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/368)
+[Related issue](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/issues/337)
