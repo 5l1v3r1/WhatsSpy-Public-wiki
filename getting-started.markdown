@@ -209,7 +209,7 @@ In case you installed your WhatsSpy Public in a other place you need to edit the
 
 **Note:** Some operating systems might have Apache already running. Make sure you first stop Apache and after that start Nginx (`sudo service apache stop && sudo service nginx restart`).
 
-**Using Apache Instead:** Check http://puu.sh/iym2b/7224000451.png (thanks @Rubix)
+**Or if you use Apache (otherwise ignore):** Check [this page with the apache config](https://gitlab.maikel.pro/maikeldus/WhatsSpy-Public/wikis/getting-started-apache-config)
 
 ## 3) Importing users
 
